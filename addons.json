@@ -1,4 +1,14 @@
 {
     "addons": [
+        {
+            "name": "placeholder",
+            "description": "",
+            "category": "",
+            "author": "",
+            "blender_version": [0, 0, 0],
+            "addon_version": [0, 0, 0],
+            "url": "",
+            "user": 0
+        }
     ]
 }
