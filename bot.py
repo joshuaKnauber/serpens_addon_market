@@ -13,8 +13,71 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.channel == 766757128152416297:
-        message.channel.send("Hi")
+
+    if message.channel.id == 766772440222138368:
+        if message.attachments:
+            read_file = await message.attachments[0].read()
+            with open('./' + message.attachments[0].filename, "r+") as new_file:
+                print(str(read_file))
+                new_file.seek(0)
+                new_file.write(str(read_file))
+                json_file.truncate()
+
+        else:
+            try:
+                json_data = json.loads(message.content)
+            except json.JSONDecodeError:
+                json_data = None
+        
+            await message.delete()
+
+            if json_data:
+                json_data["user"] = message.author.id
+                if json_data["url"]:
+                    with open('./addons.json', "r+") as json_file:
+                        json_file_data = json.load(json_file)
+                        existing = False
+                        for x, addon in enumerate(json_file_data["addons"]):
+                            if addon["name"] == json_data["name"] and addon["user"] == json_data["user"]:
+                                # delete python file if existing
+                                # overwrite json data with new data
+                                existing = True
+                                json_file_data["addons"][x] = json_data
+
+                        if not existing:
+                            json_file_data["addons"].append(json_data)
+
+                        json_file.seek(0)
+                        json_file.write(json.dumps(json_file_data, sort_keys=True, indent=4))
+                        json_file.truncate()
+                    
+                        if existing:
+                            await message.channel.send("<@" + str(json_data["user"]) + "> Successfully updated your addon! :+1:")
+                        else:
+                            await message.channel.send("<@" + str(json_data["user"]) + "> Successfully added your addon to the marketplace! :grin:")
+
+                else:
+                    with open('./addons.json', "r+") as json_file:
+                        json_file_data = json.load(json_file)
+                        existing = False
+                        for x, addon in enumerate(json_file_data["addons"]):
+                            if addon["name"] == json_data["name"] and addon["user"] == json_data["user"]:
+                                existing = True
+                                json_file_data["addons"][x] = json_data
+
+                        if not existing:
+                            json_file_data["addons"].append(json_data)
+
+                        json_file.seek(0)
+                        json_file.write(json.dumps(json_file_data, sort_keys=True, indent=4))
+                        json_file.truncate()
+                    if existing:
+                        await message.channel.send("<@" + str(json_data["user"]) + "> Successfully updated your addon! Just post your file now :cat:")
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Amazing description! Just post your file next :exploding_head:")
+
+            else:
+                await message.channel.send("<@" + str(message.author.id) + "> Something went wrong :pensive:. Please try again or contact an admin")
 
 client.run(TOKEN)
 
