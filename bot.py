@@ -160,6 +160,9 @@ async def on_message(message):
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong :pensive: Please try again!")
 
         await message.delete()
+        os.system("git add -A")
+        os.system("git commit -m\"Serverlog\"")
+        os.system("git push")
 
 client.run(TOKEN)
 
