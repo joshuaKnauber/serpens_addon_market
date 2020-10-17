@@ -14,7 +14,7 @@ async def on_ready():
 
 def has_open_entry(user_id):
     with open("./open_entries.json") as open_entries:
-        open_entries = json.loads(open_entries)
+        open_entries = json.load(open_entries)
         for entry in open_entries["entries"]:
             if entry["user"] == user_id:
                 return True
@@ -22,33 +22,34 @@ def has_open_entry(user_id):
 
 def find_open_entry(user_id):
     with open("./open_entries.json") as open_entries:
-        open_entries = json.loads(open_entries)
+        open_entries = json.load(open_entries)
         for entry in open_entries["entries"]:
             if entry["user"] == user_id:
                 return entry
     return None
 
 def remove_open_entry(user_id):
-    with open("./open_entries.json") as open_entries:
-        open_entries_json = json.loads(open_entries)
-        for x, entry in open_entries_json["addons"]:
+    with open("./open_entries.json", "r+") as open_entries:
+        open_entries_json = json.load(open_entries)
+        for x, entry in enumerate(open_entries_json["entries"]):
             if entry["user"] == user_id:
-                open_entries_json.pop(x)
+                open_entries_json["entries"].pop(x)
+
         open_entries.seek(0)
         open_entries.write(json.dumps(open_entries_json, skipkeys=True, indent=4))
-        open_entries.close()
+        open_entries.truncate()
 
 def add_open_entry(entry_json):
-    with open("./open_entries.json") as open_entries:
-        open_entries_json = json.loads(open_entries)
-        open_entries_json.append(entry_json)
+    with open("./open_entries.json", "r+") as open_entries:
+        open_entries_json = json.load(open_entries)
+        open_entries_json["entries"].append(entry_json)
         open_entries.seek(0)
         open_entries.write(json.dumps(open_entries_json, skipkeys=True, indent=4))
-        open_entries.close()
+        open_entries.truncate()
 
 def addon_exists(user_id, name):
     with open("./addons.json") as addons:
-        addons = json.loads(addons)
+        addons = json.load(addons)
         for entry in addons["addons"]:
             if entry["user"] == user_id and entry["name"] == name:
                 return True
@@ -56,75 +57,105 @@ def addon_exists(user_id, name):
 
 def remove_addon(user_id, name):
     with open("./addons.json", "r+") as addons:
-        addons_json = json.loads(addons)
-        for x, entry in addons_json["addons"]:
+        addons_json = json.load(addons)
+        for x, entry in enumerate(addons_json["addons"]):
             if entry["user"] == user_id and entry["name"] == name:
-                addons_json.pop(x)
+                addons_json["addons"].pop(x)
         addons.seek(0)
         addons.write(json.dumps(addons_json, skipkeys=True, indent=4))
-        addons.close()
+        addons.truncate()
 
 def add_addon(addon_json):
     with open("./addons.json", "r+") as addons:
-        addons_json = json.loads(addons)
-        addons_json.append(addon_json)
+        addons_json = json.load(addons)
+        addons_json["addons"].append(addon_json)
         addons.seek(0)
         addons.write(json.dumps(addons_json, skipkeys=True, indent=4))
-        addons.close()
+        addons.truncate()
+
+def is_valid_json(json_str):
+    valid = False
+    try:
+        json.loads(json_str)
+        valid = True
+    except json.JSONDecodeError:
+        pass
+
+    return valid
 
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.id == 7667724402221383680:
+    if message.channel.id == 766772440222138368:
+        user_id = message.author.id
         # if message is a file
         if message.attachments:
             addon_file = message.attachments[0]
-            user_id = message.author.id
             # if user has open entry
             if has_open_entry(user_id):
                 # if file is python file
-                if addon_file.file_name.split(".")[-1] == "py":
+                if addon_file.filename.split(".")[-1] == "py":
                     #TODO set filename
                     # save file
-                    await addon_file.save("something.py")
+                    await addon_file.save(addon_file.filename.split(".")[0] + str(user_id) + ".py")
                     # if exists in addons.json
                     if addon_exists(user_id, find_open_entry(user_id)["name"]):
                         # delete old data
-                        remove_addon(user_id, name)
+                        remove_addon(user_id, find_open_entry(user_id)["name"])
+                        await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon!")
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to marketplace!")
 
                     # put open entry and reference to file in addons.json
                     new_entry = find_open_entry(user_id)
-                    new_entry["url"] = "./something.py"
+                    new_entry["url"] = "./" + addon_file.filename.split(".")[0] + str(user_id) + ".py"
                     add_addon(new_entry)
+
+                    
                     # remove open entry
                     remove_open_entry(user_id)
                 
                 else:
-                    await
-                # else
-                    # "post your python file"
-            # else
+                     # "post a python file"
+                    await message.channel.send("<@" + str(message.author.id) + "> Please post a python file!")
+            else:
                 # "post your message first"
+                await message.channel.send("<@" + str(message.author.id) + "> Please post the message you got in blender first!")
 
         else:
-            pass
             # if is valid json
+            if is_valid_json(message.content):
+                json_message = json.loads(message.content)
+                json_message["user"] = user_id
                 # if using url
+                if json_message["url"]:
                     # if exists in addons.json
+                    if addon_exists(user_id, json_message["name"]):
                         # overwrite old data with new data
-                    # else
-                        # add new data to file
-                # else
+                        remove_addon(user_id, json_message["name"])
+                        await message.channel.send("<@" + str(message.author.id) + "> Updated your addon :+1:")
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon :+1:")
+
+                    # add new data to file
+                    add_addon(json_message)
+                else:
                     # if has openentry
+                    if has_open_entry(user_id):
                         # delete old entry
+                        await message.channel.send("<@" + str(message.author.id) + "> Removed your old entry")
+                        remove_open_entry(user_id)
                     # add new entry
-            # else
+                    add_open_entry(json_message)
+                    await message.channel.send("<@" + str(message.author.id) + "> Send your file next!")
+
+            else:
                 # "please try again"
+                await message.channel.send("<@" + str(message.author.id) + "> Something went wrong :pensive: Please try again!")
 
         await message.delete()
-        await message.channel.send("<@" + str(message.author.id) + "> Nice")
 
 client.run(TOKEN)
 
