@@ -1,8 +1,11 @@
 import discord
 import json
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-TOKEN = ""
+TOKEN = os.getenv("DISCORD_TOKEN")
+
 client = discord.Client()
 @client.event
 async def on_ready():
