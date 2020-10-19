@@ -8,3 +8,14 @@ Traceback (most recent call last):
     self._accessor.unlink(self)
 IsADirectoryError: [Errno 21] Is a directory: '/home/finn/serpens_addon_market'
 Connected to Discord!
+[main 93bd002] Updated or added an addon
+ 6 files changed, 69 insertions(+), 26 deletions(-)
+ create mode 100644 addons/gitbuildbot657253258712317952.py
+ rewrite open_entries.json (99%)
+ create mode 100644 output.log
+ create mode 100644 run.sh
+To github.com:joshuaKnauber/serpens_addon_market.git
+   0dc69bb..93bd002  main -> main
+Connected to Discord!
+rm: fehlender Operand
+„rm --help“ liefert weitere Informationen.

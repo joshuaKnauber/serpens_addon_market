@@ -98,13 +98,14 @@ async def on_message(message):
             if has_open_entry(user_id):
                 # if file is python file
                 if addon_file.filename.split(".")[-1] == "py":
-                    #TODO set filename
                     # if exists in addons.json
                     if addon_exists(user_id, find_open_entry(user_id)["name"]):
                         # delete old data
                         filepath = pathlib.Path(os.path.dirname(os.path.realpath(__file__)) + find_open_entry(user_id)["url"])
-                        #if filepath.exists():
-                            #filepath.unlink()
+                        if filepath.exists():
+                            os.system("cd addons")
+                            os.system("rm " + find_open_entry(user_id)["url"])
+                            os.system("cd ..")
 
                         remove_addon(user_id, find_open_entry(user_id)["name"])
                         await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon!")
@@ -118,7 +119,7 @@ async def on_message(message):
                     new_entry = find_open_entry(user_id)
                     new_entry["url"] = "/" + addon_file.filename.split(".")[0] + str(user_id) + ".py"
                     add_addon(new_entry)
-                    
+
                     # remove open entry
                     remove_open_entry(user_id)
 
