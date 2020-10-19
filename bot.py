@@ -1,4 +1,5 @@
 import discord
+import pathlib
 import json
 import os
 from dotenv import load_dotenv
@@ -101,8 +102,9 @@ async def on_message(message):
                     # if exists in addons.json
                     if addon_exists(user_id, find_open_entry(user_id)["name"]):
                         # delete old data
-                        # if os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), find_open_entry(user_id)["url"])):
-                        #     os.remove(os.path.dirname(os.path.realpath(__file__)) + find_open_entry(user_id)["url"])
+                        filepath = pathlib.Path(os.path.dirname(os.path.realpath(__file__)) + find_open_entry(user_id)["url"])
+                        if filepath.exists():
+                            filepath.unlink()
 
                         remove_addon(user_id, find_open_entry(user_id)["name"])
                         await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon!")
@@ -119,7 +121,11 @@ async def on_message(message):
                     
                     # remove open entry
                     remove_open_entry(user_id)
-                
+
+                    os.system("git add -A")
+                    os.system("git commit -m\"Updated or added an addon\"")
+                    os.system("git push")
+
                 else:
                      # "post a python file"
                     await message.channel.send("<@" + str(message.author.id) + "> Please post a python file!")
@@ -144,6 +150,10 @@ async def on_message(message):
 
                     # add new data to file
                     add_addon(json_message)
+
+                    os.system("git add -A")
+                    os.system("git commit -m\"Updated or added an addon\"")
+                    os.system("git push")
                 else:
                     # if has openentry
                     if has_open_entry(user_id):
@@ -159,9 +169,6 @@ async def on_message(message):
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong :pensive: Please try again!")
 
         await message.delete()
-        os.system("git add -A")
-        os.system("git commit -m\"Serverlog\"")
-        os.system("git push")
 
 client.run(TOKEN)
 
