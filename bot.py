@@ -97,7 +97,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.id == 766772440222138368:
+    if message.channel.id == 767853772562366514:
         user_id = message.author.id
         # if message is a file
         if message.attachments:
@@ -111,12 +111,11 @@ async def on_message(message):
                         # delete old data
                         if os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), "addons", find_addon(user_id, find_open_entry(user_id)["name"])["url"])):
                             os.system("rm addons/" + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
-                            #os.system("rm addons/" + find_open_entry(user_id)["url"])
 
                         remove_addon(user_id, find_open_entry(user_id)["name"])
-                        await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon!")
+                        await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon! :+1:")
                     else:
-                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to marketplace!")
+                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to marketplace! :+1:")
 
                     # save file
                     await addon_file.save("./addons/" + addon_file.filename.split(".")[0] + str(user_id) + ".py")
@@ -151,9 +150,9 @@ async def on_message(message):
                     if addon_exists(user_id, json_message["name"]):
                         # overwrite old data with new data
                         remove_addon(user_id, json_message["name"])
-                        await message.channel.send("<@" + str(message.author.id) + "> Updated your addon :+1:")
+                        await message.channel.send("<@" + str(message.author.id) + "> Updated your addon! :+1:")
                     else:
-                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon :+1:")
+                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon! :+1:")
 
                     # add new data to file
                     add_addon(json_message)
