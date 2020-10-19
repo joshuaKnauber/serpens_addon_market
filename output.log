@@ -1,9 +1,1 @@
-addons
-addons.json
-bot.py
-gitpush.sh
-open_entries.json
-output.log
-run.sh
-rm: fehlender Operand
-„rm --help“ liefert weitere Informationen.
+rm: das Entfernen von 'addons/' ist nicht möglich: Ist ein Verzeichnis

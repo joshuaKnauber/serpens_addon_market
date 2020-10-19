@@ -103,10 +103,8 @@ async def on_message(message):
                         # delete old data
                         filepath = pathlib.Path(os.path.dirname(os.path.realpath(__file__)) + find_open_entry(user_id)["url"])
                         if filepath.exists():
-                            os.system("cd addons")
-                            os.system("ls")
-                            os.system("rm " + find_open_entry(user_id)["url"])
-                            os.system("cd ..")
+                            print("rm addons/" + find_open_entry(user_id)["url"])
+                            os.system("rm addons/" + find_open_entry(user_id)["url"])
 
                         remove_addon(user_id, find_open_entry(user_id)["name"])
                         await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon!")
