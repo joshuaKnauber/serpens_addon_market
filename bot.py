@@ -4,7 +4,7 @@ import json
 import os
 from dotenv import load_dotenv
 load_dotenv()
- 
+
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 client = discord.Client()
@@ -117,7 +117,7 @@ async def on_message(message):
 
                     # put open entry and reference to file in addons.json
                     new_entry = find_open_entry(user_id)
-                    new_entry["url"] = "/" + addon_file.filename.split(".")[0] + str(user_id) + ".py"
+                    new_entry["url"] = addon_file.filename.split(".")[0] + str(user_id) + ".py"
                     add_addon(new_entry)
 
                     # remove open entry

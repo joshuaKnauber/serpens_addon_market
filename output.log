@@ -19,3 +19,12 @@ To github.com:joshuaKnauber/serpens_addon_market.git
 Connected to Discord!
 rm: fehlender Operand
 „rm --help“ liefert weitere Informationen.
+[main e49163d] Updated or added an addon
+ 5 files changed, 191 insertions(+), 119 deletions(-)
+ create mode 100644 addons/bot657253258712317952.py
+ delete mode 100644 addons/gui657253258712317952.py
+To github.com:joshuaKnauber/serpens_addon_market.git
+   93bd002..e49163d  main -> main
+Connected to Discord!
+rm: fehlender Operand
+„rm --help“ liefert weitere Informationen.
