@@ -74,6 +74,14 @@ def add_addon(addon_json):
         addons.write(json.dumps(addons_json, skipkeys=True, indent=4))
         addons.truncate()
 
+def find_addon(user_id, name):
+    with open("./addons.json") as addons:
+        addons_json = json.load(addons)
+        for addon in addons_json["addons"]:
+            if addon["user"] == user_id and addon["name"] == name:
+                return addon
+    return None
+
 def is_valid_json(json_str):
     valid = False
     try:
@@ -101,9 +109,9 @@ async def on_message(message):
                     # if exists in addons.json
                     if addon_exists(user_id, find_open_entry(user_id)["name"]):
                         # delete old data
-                        filepath = pathlib.Path(os.path.dirname(os.path.realpath(__file__)) + find_open_entry(user_id)["url"])
+                        filepath = pathlib.Path(os.path.dirname(os.path.realpath(__file__)) + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
                         if filepath.exists():
-                            print("rm addons/" + find_open_entry(user_id)["url"])
+                            print("rm addons/" + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
                             #os.system("rm addons/" + find_open_entry(user_id)["url"])
 
                         remove_addon(user_id, find_open_entry(user_id)["name"])
