@@ -28,3 +28,9 @@ To github.com:joshuaKnauber/serpens_addon_market.git
 Connected to Discord!
 rm: fehlender Operand
 „rm --help“ liefert weitere Informationen.
+[main 3973a27] Updated or added an addon
+ 3 files changed, 12 insertions(+), 3 deletions(-)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   e49163d..3973a27  main -> main
+rm: fehlender Operand
+„rm --help“ liefert weitere Informationen.
