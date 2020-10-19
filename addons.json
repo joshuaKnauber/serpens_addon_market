@@ -18,25 +18,6 @@
             "url": "",
             "price": "",
             "user": 0
-        },
-        {
-            "name": "New huash",
-            "description": "",
-            "category": "General",
-            "author": "",
-            "blender_version": [
-                2,
-                83,
-                6
-            ],
-            "addon_version": [
-                1,
-                5,
-                3
-            ],
-            "url": "append_from_file657253258712317952.py",
-            "price": "Priceless",
-            "user": 657253258712317952
         }
     ]
 }
