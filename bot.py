@@ -104,6 +104,7 @@ async def on_message(message):
                         filepath = pathlib.Path(os.path.dirname(os.path.realpath(__file__)) + find_open_entry(user_id)["url"])
                         if filepath.exists():
                             os.system("cd addons")
+                            os.system("ls")
                             os.system("rm " + find_open_entry(user_id)["url"])
                             os.system("cd ..")
 
