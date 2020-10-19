@@ -109,11 +109,9 @@ async def on_message(message):
                     # if exists in addons.json
                     if addon_exists(user_id, find_open_entry(user_id)["name"]):
                         # delete old data
-                        filepath = pathlib.Path(os.path.dirname(os.path.realpath(__file__)) + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
-                        print(find_addon(user_id, find_open_entry(user_id)["name"])["url"])
+                        filepath = pathlib.Path(os.path.dirname(os.path.realpath(__file__)) + "/" + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
                         if filepath.exists():
-                            pass
-                            #print("rm addons/" + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
+                            print("rm addons/" + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
                             #os.system("rm addons/" + find_open_entry(user_id)["url"])
 
                         remove_addon(user_id, find_open_entry(user_id)["name"])
