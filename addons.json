@@ -38,26 +38,6 @@
             "price": null,
             "blend": false,
             "user": 657253258712317952
-        },
-        {
-            "name": "New Addon",
-            "description": "Pie menu",
-            "category": "General",
-            "author": "Me",
-            "blender_version": [
-                2,
-                83,
-                6
-            ],
-            "addon_version": [
-                1,
-                2,
-                38
-            ],
-            "url": "https://www.youtube.com/watch?v=nwgd1CV__rs",
-            "price": "Free",
-            "blend": false,
-            "user": 657253258712317952
         }
     ]
 }

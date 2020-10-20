@@ -1,3 +1,8 @@
 Connected to Discord!
 Connected to Discord!
 Connected to Discord!
+[main e1e2d99] Removed an addon
+ 3 files changed, 6 insertions(+), 180 deletions(-)
+ delete mode 100644 addons/bot657253258712317952.py
+To github.com:joshuaKnauber/serpens_addon_market.git
+   877f52c..e1e2d99  main -> main
