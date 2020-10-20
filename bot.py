@@ -182,6 +182,9 @@ async def on_message(message):
 
                     remove_addon(user_id, find_addon(user_id, message.content[7:]))
                     await message.channel.send("<@" + str(message.author.id) + "> Removed your Addon!")
+                    os.system("git add -A")
+                    os.system("git commit -m\"Removed an addon\"")
+                    os.system("git push")
 
                 else:
                     await message.channel.send("<@" + str(message.author.id) + "> This addon does not exist")
