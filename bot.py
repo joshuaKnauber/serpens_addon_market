@@ -180,7 +180,7 @@ async def on_message(message):
                     if os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), "addons", find_addon(user_id, message.content[7:])["url"])):
                         os.system("rm addons/" + find_addon(user_id, message.content[7:])["url"])
 
-                    remove_addon(user_id, find_addon(user_id, message.content[7:]))
+                    remove_addon(user_id, message.content[7:])
                     await message.channel.send("<@" + str(message.author.id) + "> Removed your Addon!")
                     os.system("git add -A")
                     os.system("git commit -m\"Removed an addon\"")
