@@ -149,7 +149,12 @@ async def on_message(message):
                     # if exists in addons.json
                     if addon_exists(user_id, json_message["name"]):
                         # overwrite old data with new data
+                        if addon_exists(user_id, find_open_entry(user_id)["name"]):
+                            if os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), "addons", find_addon(user_id, find_open_entry(user_id)["name"])["url"])):
+                                os.system("rm addons/" + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
+
                         remove_addon(user_id, json_message["name"])
+
                         await message.channel.send("<@" + str(message.author.id) + "> Updated your addon! :+1:")
                     else:
                         await message.channel.send("<@" + str(message.author.id) + "> Added your addon! :+1:")
