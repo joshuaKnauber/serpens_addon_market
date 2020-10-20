@@ -18,6 +18,26 @@
             "url": "",
             "price": "",
             "user": 0
+        },
+        {
+            "name": "New Addon",
+            "description": "",
+            "category": "General",
+            "author": "",
+            "blender_version": [
+                2,
+                83,
+                6
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "url": "gitbuildbot657253258712317952.py",
+            "price": null,
+            "blend": false,
+            "user": 657253258712317952
         }
     ]
 }
