@@ -41,9 +41,9 @@
         },
         {
             "name": "Pie Menu",
-            "description": "",
+            "description": "Pie menu",
             "category": "General",
-            "author": "",
+            "author": "Me",
             "blender_version": [
                 2,
                 83,
@@ -51,8 +51,8 @@
             ],
             "addon_version": [
                 1,
-                0,
-                0
+                3,
+                2
             ],
             "url": "append_from_file657253258712317952.py",
             "price": null,
