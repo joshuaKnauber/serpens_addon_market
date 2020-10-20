@@ -175,6 +175,11 @@ async def on_message(message):
                     add_open_entry(json_message)
                     await message.channel.send("<@" + str(message.author.id) + "> Send your file next!")
 
+            elif message.content.split(" ")[0] == "remove":
+                if addon_exists(user_id, message.content[7:]):
+                    if os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), "addons", find_addon(user_id, message.content[7:])["url"])):
+                        os.system("rm addons/" + find_addon(user_id, message.content[7:])["url"])
+
             else:
                 # "please try again"
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong :pensive: Please try again!")
