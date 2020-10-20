@@ -38,6 +38,26 @@
             "price": null,
             "blend": false,
             "user": 657253258712317952
+        },
+        {
+            "name": "Pie Menu",
+            "description": "",
+            "category": "General",
+            "author": "",
+            "blender_version": [
+                2,
+                83,
+                6
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "url": "append_from_file657253258712317952.py",
+            "price": null,
+            "blend": false,
+            "user": 657253258712317952
         }
     ]
 }
