@@ -20,26 +20,6 @@
             "user": 0
         },
         {
-            "name": "New Addon",
-            "description": "",
-            "category": "General",
-            "author": "",
-            "blender_version": [
-                2,
-                83,
-                6
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "url": "bot657253258712317952.py",
-            "price": null,
-            "blend": false,
-            "user": 657253258712317952
-        },
-        {
             "name": "Pie Menu",
             "description": "Pie menu",
             "category": "General",
@@ -56,6 +36,26 @@
             ],
             "url": "pie_menu657253258712317952.py",
             "price": null,
+            "blend": false,
+            "user": 657253258712317952
+        },
+        {
+            "name": "New Addon",
+            "description": "Pie menu",
+            "category": "General",
+            "author": "Me",
+            "blender_version": [
+                2,
+                83,
+                6
+            ],
+            "addon_version": [
+                1,
+                2,
+                38
+            ],
+            "url": "https://www.youtube.com/watch?v=nwgd1CV__rs",
+            "price": "Free",
             "blend": false,
             "user": 657253258712317952
         }
