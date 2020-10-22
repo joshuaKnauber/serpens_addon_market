@@ -18,6 +18,26 @@
             "url": "",
             "price": "",
             "user": 0
+        },
+        {
+            "name": "QuickFrame",
+            "description": "Quickly add a frame in node editors (Supports Serpens editor as well) Keymap: Ctrl+F",
+            "category": "Node Editor",
+            "author": "Brennan Currier",
+            "blender_version": [
+                2,
+                80,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "url": "quickframe148734666659069952.py",
+            "price": null,
+            "blend": false,
+            "user": 148734666659069952
         }
     ]
 }
