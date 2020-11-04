@@ -115,7 +115,7 @@ async def on_message(message):
                         remove_addon(user_id, find_open_entry(user_id)["name"])
                         await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon! :+1:")
                     else:
-                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to marketplace! :+1:")
+                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! :+1:")
 
                     # save file
                     await addon_file.save("./addons/" + addon_file.filename.split(".")[0] + str(user_id) + ".py")
@@ -134,7 +134,7 @@ async def on_message(message):
 
                 else:
                      # "post a python file"
-                    await message.channel.send("<@" + str(message.author.id) + "> Please post a python file!")
+                    await message.channel.send("<@" + str(message.author.id) + "> Please post your addons python file!")
             else:
                 # "post your message first"
                 await message.channel.send("<@" + str(message.author.id) + "> Please post the message you got in blender first!")
@@ -157,7 +157,7 @@ async def on_message(message):
 
                         await message.channel.send("<@" + str(message.author.id) + "> Updated your addon! :+1:")
                     else:
-                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon! :+1:")
+                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! :+1:")
 
                     # add new data to file
                     add_addon(json_message)

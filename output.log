@@ -27,3 +27,20 @@ To github.com:joshuaKnauber/serpens_addon_market.git
  delete mode 100644 addons/pie_menu657253258712317952.py
 To github.com:joshuaKnauber/serpens_addon_market.git
    9a04621..c5c8a89  main -> main
+[main 714c7f6] Updated or added an addon
+ 3 files changed, 164 insertions(+)
+ create mode 100644 addons/quickframe148734666659069952.py
+To github.com:joshuaKnauber/serpens_addon_market.git
+   c5c8a89..714c7f6  main -> main
+Connected to Discord!
+SSL error in data received
+protocol: <asyncio.sslproto.SSLProtocol object at 0x7f578014d5f8>
+transport: <_SelectorSocketTransport fd=7 read=polling write=<idle, bufsize=0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/asyncio/sslproto.py", line 526, in data_received
+    ssldata, appdata = self._sslpipe.feed_ssldata(data)
+  File "/usr/lib/python3.7/asyncio/sslproto.py", line 207, in feed_ssldata
+    self._sslobj.unwrap()
+  File "/usr/lib/python3.7/ssl.py", line 767, in unwrap
+    return self._sslobj.shutdown()
+ssl.SSLError: [SSL: KRB5_S_INIT] application data after close notify (_ssl.c:2609)

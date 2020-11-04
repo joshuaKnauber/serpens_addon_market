@@ -38,6 +38,26 @@
             "price": null,
             "blend": false,
             "user": 148734666659069952
+        },
+        {
+            "name": "Helpful Tutorials",
+            "description": "This add on adds a dropdown in the 3d viewport that contains hyperlinks to several tutorials on youtube based on category as well as some extra's",
+            "category": "Links",
+            "author": "Takeshi_Tenma",
+            "blender_version": [
+                2,
+                90,
+                1
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "url": "helpful_tutorials283004905722085377.py",
+            "price": null,
+            "blend": false,
+            "user": 283004905722085377
         }
     ]
 }
