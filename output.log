@@ -44,3 +44,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3.7/ssl.py", line 767, in unwrap
     return self._sslobj.shutdown()
 ssl.SSLError: [SSL: KRB5_S_INIT] application data after close notify (_ssl.c:2609)
+[main 3397eb9] Updated or added an addon
+ 4 files changed, 3228 insertions(+), 3 deletions(-)
+ create mode 100644 addons/helpful_tutorials283004905722085377.py
+To github.com:joshuaKnauber/serpens_addon_market.git
+   714c7f6..3397eb9  main -> main
