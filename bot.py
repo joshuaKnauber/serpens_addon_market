@@ -98,7 +98,6 @@ async def on_message(message):
         return
 
     if message.content.startswith("Get File "):
-        print("teajnfs")
         filename = message.content.replace("Get File ", "")
         channel = client.get_channel(766772440222138368)
         message = channel.fetch_message(782346623471845446)
