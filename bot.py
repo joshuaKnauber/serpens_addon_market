@@ -98,6 +98,7 @@ async def on_message(message):
         return
 
     if message.content.startswith("Get File "):
+        print("teajnfs")
         filename = message.content.replace("Get File ", "")
         message = client.fetch_message(782346623471845446)
         print(message.content)
@@ -159,7 +160,7 @@ async def on_message(message):
                         channel = client.get_channel(766772440222138368) # 780780646061703178)
                         await addon_file.save("./" + addon_file.filename.split(".")[0] + str(user_id) + ".blend")
                         fileobject = discord.File(addon_file.filename.split(".")[0] + str(user_id) + ".blend")
-                        await channel.send(content=(addon_file.filename.split(".")[0] + str(user_id) + ".blend", file=fileobject)
+                        await channel.send(content=addon_file.filename.split(".")[0] + str(user_id) + ".blend", file=fileobject)
                         os.system("rm " + addon_file.filename.split(".")[0] + str(user_id) + ".blend")
                         # post message
                         await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! :+1:")
