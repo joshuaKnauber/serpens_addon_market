@@ -97,7 +97,12 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.id in [767853772562366514, 696821844975681550]:
+    if message.content.startswith("Get File "):
+        filename = message.content.replace("Get File ", "")
+        message = client.fetch_message(782346623471845446)
+        print(message.content)
+
+    elif message.channel.id in [767853772562366514, 696821844975681550]:
         user_id = message.author.id
         # if message is a file
         if message.attachments:
@@ -154,7 +159,7 @@ async def on_message(message):
                         channel = client.get_channel(766772440222138368) # 780780646061703178)
                         await addon_file.save("./" + addon_file.filename.split(".")[0] + str(user_id) + ".blend")
                         fileobject = discord.File(addon_file.filename.split(".")[0] + str(user_id) + ".blend")
-                        await channel.send(content="I am under the water", file=fileobject)
+                        await channel.send(content=(addon_file.filename.split(".")[0] + str(user_id) + ".blend", file=fileobject)
                         os.system("rm " + addon_file.filename.split(".")[0] + str(user_id) + ".blend")
                         # post message
                         await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! :+1:")
