@@ -105,3 +105,8 @@ Connected to Discord!
  create mode 100644 addons/countLines657253258712317952.py
 To github.com:joshuaKnauber/serpens_addon_market.git
    a0fe264..a145091  main -> main
+[main b32bcfe] Removed an addon
+ 3 files changed, 5 insertions(+), 48 deletions(-)
+ delete mode 100644 addons/countLines657253258712317952.py
+To github.com:joshuaKnauber/serpens_addon_market.git
+   a145091..b32bcfe  main -> main
