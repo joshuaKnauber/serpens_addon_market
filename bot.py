@@ -97,15 +97,16 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.id == 767853772562366514:
+    if message.channel.id in [767853772562366514, 696821844975681550]:
         user_id = message.author.id
         # if message is a file
         if message.attachments:
             addon_file = message.attachments[0]
             # if user has open entry
             if has_open_entry(user_id):
+                using_blender_file = find_open_entry(user_id)["blend"]
                 # if file is python file
-                if addon_file.filename.split(".")[-1] == "py":
+                if addon_file.filename.split(".")[-1] in ["py"]:
                     # if exists in addons.json
                     if addon_exists(user_id, find_open_entry(user_id)["name"]):
                         # delete old data
@@ -113,9 +114,18 @@ async def on_message(message):
                             os.system("rm addons/" + find_addon(user_id, find_open_entry(user_id)["name"])["url"])
 
                         remove_addon(user_id, find_open_entry(user_id)["name"])
-                        await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon! :+1:")
+                        # if blend file
+                        if using_blender_file:
+                            await message.channel.send("<@" + str(message.author.id) + "> Post your blender file next! :cat:")
+                        else:
+                            await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon! :+1:")
+
                     else:
-                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! :+1:")
+                        # if blend file
+                        if using_blender_file:
+                            await message.channel.send("<@" + str(message.author.id) + "> Post your blender file next! :dog:")
+                        else:
+                            await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! :+1:")
 
                     # save file
                     await addon_file.save("./addons/" + addon_file.filename.split(".")[0] + str(user_id) + ".py")
@@ -128,13 +138,29 @@ async def on_message(message):
                     # remove open entry
                     remove_open_entry(user_id)
 
-                    os.system("git add -A")
-                    os.system("git commit -m\"Updated or added an addon\"")
-                    os.system("git push")
+                    # if not blend file
+                    if not using_blender_file:
+                        os.system("git add -A")
+                        os.system("git commit -m\"Updated or added an addon\"")
+                        os.system("git push")
+
+                # if file is .blend
+                elif addon_file.filename.split(".")[-1] == "blend":
+                    # check if has blender file is true
+                    if using_blender_file:
+                        # post blender file in the files channel
+                        client.get_channel(780780646061703178)
+                        await channel.send(content=addon_file.filename.split(".")[0] + str(user_id) + ".blend", file=addon_file)
+                        # post message
+                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! :+1:")
+                        # push
+                        os.system("git add -A")
+                        os.system("git commit -m\"Updated or added an addon\"")
+                        os.system("git push")
 
                 else:
-                     # "post a python file"
-                    await message.channel.send("<@" + str(message.author.id) + "> Please post your addons python file!")
+                    # "post a proper file"
+                    await message.channel.send("<@" + str(message.author.id) + "> Please post a blender or python file!")
             else:
                 # "post your message first"
                 await message.channel.send("<@" + str(message.author.id) + "> Please post the message you got in blender first!")
