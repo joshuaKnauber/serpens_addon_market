@@ -135,11 +135,11 @@ async def on_message(message):
                     new_entry["url"] = addon_file.filename.split(".")[0] + str(user_id) + ".py"
                     add_addon(new_entry)
 
-                    # remove open entry
-                    remove_open_entry(user_id)
-
                     # if not blend file
                     if not using_blender_file:
+                        # remove open entry
+                        remove_open_entry(user_id)
+                        # git push
                         os.system("git add -A")
                         os.system("git commit -m\"Updated or added an addon\"")
                         os.system("git push")
@@ -148,6 +148,8 @@ async def on_message(message):
                 elif addon_file.filename.split(".")[-1] == "blend":
                     # check if has blender file is true
                     if using_blender_file:
+                        # remove open entry
+                        remove_open_entry(user_id)
                         # post blender file in the files channel
                         client.get_channel(780780646061703178)
                         await channel.send(content=addon_file.filename.split(".")[0] + str(user_id) + ".blend", file=addon_file)
