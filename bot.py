@@ -99,7 +99,8 @@ async def on_message(message):
 
     if message.content.startswith("Get File "):
         filename = message.content.replace("Get File ", "")
-        message = client.fetch_message(782346623471845446)
+        channel = client.get_channel(766772440222138368)
+        message = channel.fetch_message(782346623471845446)
         print(message.content)
 
     elif message.channel.id in [767853772562366514, 696821844975681550]:
