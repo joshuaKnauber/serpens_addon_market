@@ -152,7 +152,8 @@ async def on_message(message):
                         remove_open_entry(user_id)
                         # post blender file in the files channel
                         channel = client.get_channel(766772440222138368) # 780780646061703178)
-                        await channel.send(content=addon_file.filename.split(".")[0] + str(user_id) + ".blend", file=addon_file)
+                        await channel.send("I am sentient lol")
+                        # await channel.send(content=addon_file.filename.split(".")[0] + str(user_id) + ".blend", file=addon_file)
                         # post message
                         await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! :+1:")
                         # push
