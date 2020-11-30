@@ -101,8 +101,7 @@ async def on_message(message):
         filename = message.content.replace("Get File ", "")
         channel = client.get_channel(766772440222138368)
         message = await channel.fetch_message(782351857678549023)
-        print("shaoijd")
-        print(message.content)
+        await channel.send(message.content + " URL: " + message.embeds[0].url)
 
     elif message.channel.id in [767853772562366514, 696821844975681550]:
         user_id = message.author.id
