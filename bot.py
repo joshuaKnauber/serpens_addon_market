@@ -97,20 +97,25 @@ def is_valid_json(json_str):
 
     return valid
 
+def save_file(save_file):
+    file_name = save_file.filename
+    channel = client.get_channel(780780646061703178)
+
+    await save_file.save(file_name)
+    fileobject = discord.File(file_name)
+    message = await channel.send(file=fileobject)
+
+    os.system("rm " + file_name)
+
+    return message.attachments[0].url
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
 
-    channel = client.get_channel(780780646061703178)
-    fileobject = discord.File(r"quickframe.py")
-    file_message = await channel.send(file=fileobject)
-    await message.channel.send(file_message.attachments[0].url)
-    fileobject = discord.File(r"kolup_ops.py")
-    file_message = await channel.send(file=fileobject)
-    await message.channel.send(file_message.attachments[0].url)
-
-    if message.channel.id == 767853772562366514:
+    # if message in addon-market
+    if message.channel.id in [767853772562366514, 768053288989360128]:
         user_id = message.author.id
         # if message is a file
         if message.attachments:
@@ -124,13 +129,13 @@ async def on_message(message):
                     if using_blender_file:
                         open_entry = find_open_entry(user_id)
                         remove_open_entry(user_id)
-                        open_entry["url"] = "python_file_url"
+                        open_entry["url"] = save_file(addon_file)
                         add_open_entry(open_entry)
                         await message.channel.send("<@" + str(message.author.id) + "> Post your blender file next " + random_emoji())
                     else:
                         # put open entry and reference to file in addons.json
                         open_entry = find_open_entry(user_id)
-                        open_entry["url"] = "python_file_url"
+                        open_entry["url"] = save_file(addon_file)
                         if addon_exists(user_id, find_open_entry(user_id)["name"]):
                             remove_addon(user_id, find_open_entry(user_id)["name"])
                             remove_open_entry(user_id)
@@ -147,13 +152,13 @@ async def on_message(message):
                     if using_blender_file:
                         open_entry = find_open_entry(user_id)
                         remove_open_entry(user_id)
-                        open_entry["url"] = "zip_file_url"
+                        open_entry["url"] = save_file(addon_file)
                         add_open_entry(open_entry)
                         await message.channel.send("<@" + str(message.author.id) + "> Post your blender file next " + random_emoji())
                     else:
                         # put open entry and reference to file in addons.json
                         open_entry = find_open_entry(user_id)
-                        open_entry["url"] = "zip_file_url"
+                        open_entry["url"] = save_file(addon_file)
                         if addon_exists(user_id, find_open_entry(user_id)["name"]):
                             remove_addon(user_id, find_open_entry(user_id)["name"])
                             remove_open_entry(user_id)
@@ -163,12 +168,14 @@ async def on_message(message):
                             remove_open_entry(user_id)
                             add_addon(open_entry)
                             await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace " + random_emoji())
+
+
                 # elif is blender file
                 elif addon_file.filename.split(".")[-1] == "blend":
                     if using_blender_file:
                         open_entry = find_open_entry(user_id)
                         remove_open_entry(user_id)
-                        open_entry["blend_url"] = "blend_file_url"
+                        open_entry["blend_url"] = save_file(addon_file)
                         add_addon(open_entry)
                         await message.channel.send("<@" + str(message.author.id) + "> Added your addon and blend file to the marketplace " + random_emoji())
                     else:
@@ -181,14 +188,16 @@ async def on_message(message):
                 # "post your message first"
                 await message.channel.send("<@" + str(message.author.id) + "> Please post the message you got in blender first! " + random_emoji())
 
-        # else
+
+
+        # if message is not a file
         else:
             # if is valid json
             if is_valid_json(message.content):
                 json_message = json.loads(message.content)
                 json_message["user"] = user_id
                 # if using url
-                if json_message["url"]:
+                if json_message["external"]:
                     # if exists in addons.json
                     if addon_exists(user_id, json_message["name"]):
                         # overwrite old data with new data
@@ -219,8 +228,9 @@ async def on_message(message):
                     add_open_entry(json_message)
                     await message.channel.send("<@" + str(message.author.id) + "> Send your file next! " + random_emoji())
 
+
             # remove addons
-            elif message.content.split(" ")[0] == "remove":
+            elif message.content.split(" ")[0] == "remove ":
                 # if the addon exists
                 if addon_exists(user_id, message.content[7:]):
                     # remove it from the json file
@@ -241,11 +251,6 @@ async def on_message(message):
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong :pensive: Please try again!")
 
         await message.delete()
-
-
-    # channel = client.get_channel(766772440222138368)
-    # message = await channel.fetch_message(782346623471845446)
-    # await channel.send(" URL: " + message.attachments[0].url)
 
 
 client.run(TOKEN)
