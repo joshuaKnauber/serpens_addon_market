@@ -115,7 +115,7 @@ async def on_message(message):
         return
 
     # if message in addon-market
-    if message.channel.id in [767853772562366514, 768053288989360128]:
+    if message.channel.id == 767853772562366514:
         user_id = message.author.id
         # if message is a file
         if message.attachments:
@@ -123,21 +123,20 @@ async def on_message(message):
             file_name = addon_file.filename
             # if has open entry
             if has_open_entry(user_id):
-                using_blender_file = find_open_entry(user_id)["blend"]
+                open_entry = find_open_entry(user_id)
+                using_blender_file = open_entry["blend"]
                 # if is python file
                 if addon_file.filename.split(".")[-1] == "py":
                     if using_blender_file:
-                        open_entry = find_open_entry(user_id)
                         remove_open_entry(user_id)
                         open_entry["url"] = await save_file(addon_file)
                         add_open_entry(open_entry)
                         await message.channel.send("<@" + str(message.author.id) + "> Post your blender file next " + random_emoji())
                     else:
                         # put open entry and reference to file in addons.json
-                        open_entry = find_open_entry(user_id)
                         open_entry["url"] = await save_file(addon_file)
-                        if addon_exists(user_id, find_open_entry(user_id)["name"]):
-                            remove_addon(user_id, find_open_entry(user_id)["name"])
+                        if addon_exists(user_id, open_entry["name"]):
+                            remove_addon(user_id, open_entry["name"])
                             remove_open_entry(user_id)
                             add_addon(open_entry)
                             await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon " + random_emoji())
@@ -153,17 +152,15 @@ async def on_message(message):
                 # elif is zip file
                 elif addon_file.filename.split(".")[-1] == "zip":
                     if using_blender_file:
-                        open_entry = find_open_entry(user_id)
                         remove_open_entry(user_id)
                         open_entry["url"] = await save_file(addon_file)
                         add_open_entry(open_entry)
                         await message.channel.send("<@" + str(message.author.id) + "> Post your blender file next " + random_emoji())
                     else:
                         # put open entry and reference to file in addons.json
-                        open_entry = find_open_entry(user_id)
                         open_entry["url"] = await save_file(addon_file)
-                        if addon_exists(user_id, find_open_entry(user_id)["name"]):
-                            remove_addon(user_id, find_open_entry(user_id)["name"])
+                        if addon_exists(user_id, open_entry["name"]):
+                            remove_addon(user_id, open_entry["name"])
                             remove_open_entry(user_id)
                             add_addon(open_entry)
                             await message.channel.send("<@" + str(message.author.id) + "> Updated your old addon " + random_emoji())
@@ -179,14 +176,16 @@ async def on_message(message):
                 # elif is blender file
                 elif addon_file.filename.split(".")[-1] == "blend":
                     if using_blender_file:
-                        open_entry = find_open_entry(user_id)
-                        remove_open_entry(user_id)
-                        open_entry["blend_url"] = await save_file(addon_file)
-                        add_addon(open_entry)
-                        os.system("git add -A")
-                        os.system("git commit -m\"Added an addon\"")
-                        os.system("git push")
-                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon and blend file to the marketplace " + random_emoji())
+                        if open_entry["url"]:
+                            remove_open_entry(user_id)
+                            open_entry["blend_url"] = await save_file(addon_file)
+                            add_addon(open_entry)
+                            os.system("git add -A")
+                            os.system("git commit -m\"Added an addon\"")
+                            os.system("git push")
+                            await message.channel.send("<@" + str(message.author.id) + "> Added your addon and blend file to the marketplace " + random_emoji())
+                        else:
+                            await message.channel.send("<@" + str(message.author.id) + "> Please post your python file first! " + random_emoji())
                     else:
                         await message.channel.send("<@" + str(message.author.id) + "> Please select the blender file option before uploading " + random_emoji())
                 # else
@@ -207,19 +206,34 @@ async def on_message(message):
                 json_message["user"] = user_id
                 # if using url
                 if json_message["external"]:
+                    using_blender_file = json_message["blend"]
                     # if exists in addons.json
-                    if addon_exists(user_id, json_message["name"]):
-                        # overwrite old data with new data
-                        if addon_exists(user_id, find_open_entry(user_id)["name"]):
+                    if using_blender_file:
+                        if addon_exists(user_id, json_message["name"]):
                             remove_addon(user_id, json_message["name"])
                             os.system("git add -A")
                             os.system("git commit -m\"Removed an addon\"")
                             os.system("git push")
 
+                        # if has openentry
+                        if has_open_entry(user_id):
+                            # delete old entry
+                            await message.channel.send("<@" + str(message.author.id) + "> Removed your old entry " + random_emoji())
+                            remove_open_entry(user_id)
+                        # add new entry
+                        add_open_entry(json_message)
+                        await message.channel.send("<@" + str(message.author.id) + "> Send your blender file next! " + random_emoji())
 
-                        await message.channel.send("<@" + str(message.author.id) + "> Updated your addon! " + random_emoji())
                     else:
-                        await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! " + random_emoji())
+                        if addon_exists(user_id, json_message["name"]):
+                            remove_addon(user_id, json_message["name"])
+                            os.system("git add -A")
+                            os.system("git commit -m\"Removed an addon\"")
+                            os.system("git push")
+
+                            await message.channel.send("<@" + str(message.author.id) + "> Updated your addon! " + random_emoji())
+                        else:
+                            await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! " + random_emoji())
 
                     # add new data to file
                     add_addon(json_message)
