@@ -145,6 +145,9 @@ async def on_message(message):
                             remove_open_entry(user_id)
                             add_addon(open_entry)
                             await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace " + random_emoji())
+                        os.system("git add -A")
+                        os.system("git commit -m\"Added an addon\"")
+                        os.system("git push")
 
 
                 # elif is zip file
@@ -168,6 +171,9 @@ async def on_message(message):
                             remove_open_entry(user_id)
                             add_addon(open_entry)
                             await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace " + random_emoji())
+                        os.system("git add -A")
+                        os.system("git commit -m\"Added an addon\"")
+                        os.system("git push")
 
 
                 # elif is blender file
@@ -177,6 +183,9 @@ async def on_message(message):
                         remove_open_entry(user_id)
                         open_entry["blend_url"] = await save_file(addon_file)
                         add_addon(open_entry)
+                        os.system("git add -A")
+                        os.system("git commit -m\"Added an addon\"")
+                        os.system("git push")
                         await message.channel.send("<@" + str(message.author.id) + "> Added your addon and blend file to the marketplace " + random_emoji())
                     else:
                         await message.channel.send("<@" + str(message.author.id) + "> Please select the blender file option before uploading " + random_emoji())
