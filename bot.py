@@ -230,7 +230,7 @@ async def on_message(message):
 
 
             # remove addons
-            elif message.content.split(" ")[0] == "remove ":
+            elif message.content.split(" ")[0] == "remove":
                 # if the addon exists
                 if addon_exists(user_id, message.content[7:]):
                     # remove it from the json file

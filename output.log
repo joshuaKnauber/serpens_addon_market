@@ -17,3 +17,4 @@ Traceback (most recent call last):
     if json_message["external"]:
 KeyError: 'external'
 Connected to Discord!
+Connected to Discord!
