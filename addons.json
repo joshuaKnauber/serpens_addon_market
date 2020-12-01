@@ -108,6 +108,28 @@
             "blend": true,
             "external": true,
             "user": 657253258712317952
+        },
+        {
+            "name": "New Addon",
+            "description": "",
+            "category": "General",
+            "author": "",
+            "blender_version": [
+                2,
+                90,
+                1
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "url": "https://cdn.discordapp.com/attachments/780780646061703178/783398032053501952/countLines.py",
+            "price": null,
+            "blend": true,
+            "external": false,
+            "user": 657253258712317952,
+            "blend_url": "https://cdn.discordapp.com/attachments/780780646061703178/783398080573472818/untitled.blend"
         }
     ]
 }
