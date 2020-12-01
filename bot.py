@@ -103,7 +103,10 @@ async def on_message(message):
         return
 
     channel = client.get_channel(780780646061703178)
-    fileobject = discord.File(r"helpful_tutorials.py")
+    fileobject = discord.File(r"quickframe.py")
+    file_message = await channel.send(file=fileobject)
+    await message.channel.send(file_message.attachments[0].url)
+    fileobject = discord.File(r"kolup_ops.py")
     file_message = await channel.send(file=fileobject)
     await message.channel.send(file_message.attachments[0].url)
 
