@@ -18,3 +18,7 @@ Traceback (most recent call last):
 KeyError: 'external'
 Connected to Discord!
 Connected to Discord!
+[main 5dc6730] Removed an addon
+ 3 files changed, 2 insertions(+), 22 deletions(-)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   4b4aa86..5dc6730  main -> main
