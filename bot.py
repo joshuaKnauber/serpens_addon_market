@@ -1,5 +1,6 @@
 import discord
 import pathlib
+import random
 import json
 import os
 from dotenv import load_dotenv
@@ -14,8 +15,8 @@ async def on_ready():
 
 
 def random_emoji():
-    
-    return ":baseball:"
+    emojis = ["baseball", "dog", "cat", "hamster", "mouse", "rabbit", "fox", "bear", "dolphin", "gorilla", "ox", "dragon", "apple", "egg", "cooking", "hamburger", "pizza", "cake", "spoon", "basketball", "yo_yo", "drum", "red_car", "tram", "minidisc", "battery"]
+    return ":" + emojis[random.randint(0, len(emojis)-1)] + ":"
 
 def has_open_entry(user_id):
     with open("./json_data.json") as open_entries:
@@ -101,7 +102,10 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    print(client.emojis)
+    channel = client.get_channel(780780646061703178)
+    fileobject = discord.File(r"helpful_tutorials.py")
+    file_message = await channel.send(file=fileobject)
+    await message.channel.send(file_message.attachments[0].url)
 
     if message.channel.id == 767853772562366514:
         user_id = message.author.id
