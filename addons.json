@@ -15,8 +15,11 @@
                 0,
                 0
             ],
+            "external": false,
             "url": "",
+            "blend_url": "",
             "price": "",
+            "blend": false,
             "user": 0
         },
         {
@@ -34,7 +37,9 @@
                 0,
                 0
             ],
+            "external": false,
             "url": "quickframe148734666659069952.py",
+            "blend_url": "",
             "price": null,
             "blend": false,
             "user": 148734666659069952
@@ -54,7 +59,9 @@
                 0,
                 0
             ],
+            "external": false,
             "url": "helpful_tutorials283004905722085377.py",
+            "blend_url": "",
             "price": null,
             "blend": false,
             "user": 283004905722085377
@@ -74,7 +81,9 @@
                 2,
                 0
             ],
+            "external": false,
             "url": "kolup_ops313773948506734624.py",
+            "blend_url": "",
             "price": null,
             "blend": false,
             "user": 313773948506734624
