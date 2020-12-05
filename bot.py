@@ -115,7 +115,7 @@ async def on_message(message):
         return
 
     # if message in addon-market
-    if message.channel.id == 767853772562366514:
+    if message.channel.id == 7678537725623665140:
         user_id = message.author.id
         # if message is a file
         if message.attachments:
