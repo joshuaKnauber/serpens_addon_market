@@ -115,7 +115,7 @@ async def on_message(message):
         return
 
     # if message in addon-market
-    if message.channel.id == 7678537725623665140:
+    if message.channel.id == 767853772562366514:
         user_id = message.author.id
         # if message is a file
         if message.attachments:
@@ -205,16 +205,47 @@ async def on_message(message):
                 json_message = json.loads(message.content)
                 json_message["user"] = user_id
                 # if using url
-                if json_message["external"]:
-                    using_blender_file = json_message["blend"]
-                    # if exists in addons.json
-                    if using_blender_file:
-                        if addon_exists(user_id, json_message["name"]):
-                            remove_addon(user_id, json_message["name"])
-                            os.system("git add -A")
-                            os.system("git commit -m\"Removed an addon\"")
-                            os.system("git push")
+                if not "external" in json_message:
+                    await message.channel.send("<@" + str(message.author.id) + "> Please use the newest version of the serpens addon! " + random_emoji())
 
+                else:
+                    if json_message["external"]:
+                        using_blender_file = json_message["blend"]
+                        # if exists in addons.json
+                        if using_blender_file:
+                            if addon_exists(user_id, json_message["name"]):
+                                remove_addon(user_id, json_message["name"])
+                                os.system("git add -A")
+                                os.system("git commit -m\"Removed an addon\"")
+                                os.system("git push")
+
+                            # if has openentry
+                            if has_open_entry(user_id):
+                                # delete old entry
+                                await message.channel.send("<@" + str(message.author.id) + "> Removed your old entry " + random_emoji())
+                                remove_open_entry(user_id)
+                            # add new entry
+                            add_open_entry(json_message)
+                            await message.channel.send("<@" + str(message.author.id) + "> Send your blender file next! " + random_emoji())
+
+                        else:
+                            if addon_exists(user_id, json_message["name"]):
+                                remove_addon(user_id, json_message["name"])
+                                os.system("git add -A")
+                                os.system("git commit -m\"Removed an addon\"")
+                                os.system("git push")
+
+                                await message.channel.send("<@" + str(message.author.id) + "> Updated your addon! " + random_emoji())
+                            else:
+                                await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! " + random_emoji())
+
+                        # add new data to file
+                        add_addon(json_message)
+
+                        os.system("git add -A")
+                        os.system("git commit -m\"Updated or added an addon\"")
+                        os.system("git push")
+                    else:
                         # if has openentry
                         if has_open_entry(user_id):
                             # delete old entry
@@ -222,34 +253,7 @@ async def on_message(message):
                             remove_open_entry(user_id)
                         # add new entry
                         add_open_entry(json_message)
-                        await message.channel.send("<@" + str(message.author.id) + "> Send your blender file next! " + random_emoji())
-
-                    else:
-                        if addon_exists(user_id, json_message["name"]):
-                            remove_addon(user_id, json_message["name"])
-                            os.system("git add -A")
-                            os.system("git commit -m\"Removed an addon\"")
-                            os.system("git push")
-
-                            await message.channel.send("<@" + str(message.author.id) + "> Updated your addon! " + random_emoji())
-                        else:
-                            await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! " + random_emoji())
-
-                    # add new data to file
-                    add_addon(json_message)
-
-                    os.system("git add -A")
-                    os.system("git commit -m\"Updated or added an addon\"")
-                    os.system("git push")
-                else:
-                    # if has openentry
-                    if has_open_entry(user_id):
-                        # delete old entry
-                        await message.channel.send("<@" + str(message.author.id) + "> Removed your old entry " + random_emoji())
-                        remove_open_entry(user_id)
-                    # add new entry
-                    add_open_entry(json_message)
-                    await message.channel.send("<@" + str(message.author.id) + "> Send your file next! " + random_emoji())
+                        await message.channel.send("<@" + str(message.author.id) + "> Send your file next! " + random_emoji())
 
 
             # remove addons
