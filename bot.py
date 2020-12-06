@@ -99,7 +99,7 @@ def is_valid_json(json_str):
 
 async def save_file(save_file):
     file_name = save_file.filename
-    channel = client.get_channel(780780646061703178)
+    channel = client.get_channel(785132940278366260)
 
     await save_file.save(file_name)
     fileobject = discord.File(file_name)
@@ -115,7 +115,7 @@ async def on_message(message):
         return
 
     # if message in addon-market
-    if message.channel.id == 767853772562366514:
+    if message.channel.id in [767853772562366514, 768053288989360128]:
         user_id = message.author.id
         # if message is a file
         if message.attachments:
