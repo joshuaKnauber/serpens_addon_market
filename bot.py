@@ -144,9 +144,6 @@ async def on_message(message):
                             remove_open_entry(user_id)
                             add_addon(open_entry)
                             await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace " + random_emoji())
-                        os.system("git add -A")
-                        os.system("git commit -m\"Added an addon\"")
-                        os.system("git push")
 
 
                 # elif is zip file
@@ -168,9 +165,6 @@ async def on_message(message):
                             remove_open_entry(user_id)
                             add_addon(open_entry)
                             await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace " + random_emoji())
-                        os.system("git add -A")
-                        os.system("git commit -m\"Added an addon\"")
-                        os.system("git push")
 
 
                 # elif is blender file
@@ -180,9 +174,6 @@ async def on_message(message):
                             remove_open_entry(user_id)
                             open_entry["blend_url"] = await save_file(addon_file)
                             add_addon(open_entry)
-                            os.system("git add -A")
-                            os.system("git commit -m\"Added an addon\"")
-                            os.system("git push")
                             await message.channel.send("<@" + str(message.author.id) + "> Added your addon and blend file to the marketplace " + random_emoji())
                         else:
                             await message.channel.send("<@" + str(message.author.id) + "> Please post your python file first! " + random_emoji())
@@ -215,9 +206,6 @@ async def on_message(message):
                         if using_blender_file:
                             if addon_exists(user_id, json_message["name"]):
                                 remove_addon(user_id, json_message["name"])
-                                os.system("git add -A")
-                                os.system("git commit -m\"Removed an addon\"")
-                                os.system("git push")
 
                             # if has openentry
                             if has_open_entry(user_id):
@@ -231,9 +219,6 @@ async def on_message(message):
                         else:
                             if addon_exists(user_id, json_message["name"]):
                                 remove_addon(user_id, json_message["name"])
-                                os.system("git add -A")
-                                os.system("git commit -m\"Removed an addon\"")
-                                os.system("git push")
 
                                 await message.channel.send("<@" + str(message.author.id) + "> Updated your addon! " + random_emoji())
                             else:
@@ -242,9 +227,6 @@ async def on_message(message):
                         # add new data to file
                         add_addon(json_message)
 
-                        os.system("git add -A")
-                        os.system("git commit -m\"Updated or added an addon\"")
-                        os.system("git push")
                     else:
                         # if has openentry
                         if has_open_entry(user_id):
@@ -264,9 +246,6 @@ async def on_message(message):
                     remove_addon(user_id, message.content[7:])
                     # send confirmation
                     await message.channel.send("<@" + str(message.author.id) + "> Removed your Addon! " + random_emoji())
-                    os.system("git add -A")
-                    os.system("git commit -m\"Removed an addon\"")
-                    os.system("git push")
 
                 # addon doesn't exist
                 else:
@@ -278,6 +257,9 @@ async def on_message(message):
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong :pensive: Please try again!")
 
         await message.delete()
+        os.system("git add -A")
+        os.system("git commit -m\"Serverlog\"")
+        os.system("git push")
 
 
 client.run(TOKEN)
