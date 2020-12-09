@@ -87,28 +87,6 @@
             "blend_url": "",
             "price": null,
             "user": 313773948506734624
-        },
-        {
-            "name": "Test",
-            "description": "This is a test",
-            "category": "General",
-            "author": "Me",
-            "blender_version": [
-                2,
-                90,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": true,
-            "url": "https://example.com/",
-            "price": "Free",
-            "blend": true,
-            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/786242744939053096/untitled.blend",
-            "user": 657253258712317952
         }
     ]
 }

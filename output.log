@@ -36,3 +36,8 @@ Connected to Discord!
  rewrite json_data.json (90%)
 To github.com:joshuaKnauber/serpens_addon_market.git
    0aef0fa..29a1066  main -> main
+[main 4c37188] Serverlog
+ 3 files changed, 30 insertions(+), 26 deletions(-)
+ rewrite json_data.json (99%)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   29a1066..4c37188  main -> main
