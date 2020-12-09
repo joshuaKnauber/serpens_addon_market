@@ -25,3 +25,9 @@ To github.com:joshuaKnauber/serpens_addon_market.git
  2 files changed, 26 insertions(+), 4 deletions(-)
 To github.com:joshuaKnauber/serpens_addon_market.git
    7903b03..3f63bbe  main -> main
+[main cbb7062] Serverlog
+ 3 files changed, 29 insertions(+), 26 deletions(-)
+ rewrite json_data.json (99%)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   3f63bbe..cbb7062  main -> main
+Connected to Discord!
