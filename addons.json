@@ -109,6 +109,28 @@
             "blend": true,
             "blend_url": "",
             "user": 657253258712317952
+        },
+        {
+            "name": "kolup_superspeeds",
+            "description": "Create a Group Of Objects, Collections and Modifier to turn them off in one simple click for better viewport performance.",
+            "category": "General",
+            "author": "kolupsy",
+            "blender_version": [
+                2,
+                90,
+                0
+            ],
+            "addon_version": [
+                1,
+                1,
+                0
+            ],
+            "external": true,
+            "url": "https://gumroad.com/products/PvIRH/",
+            "price": "Free",
+            "blend": true,
+            "blend_url": "",
+            "user": 657253258712317952
         }
     ]
 }
