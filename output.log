@@ -7,3 +7,8 @@ Connected to Discord!
  2 files changed, 1 insertion(+), 22 deletions(-)
 To github.com:joshuaKnauber/serpens_addon_market.git
    302942b..22c1db7  main -> main
+[main bd90dce] Serverlog
+ 3 files changed, 52 insertions(+), 3 deletions(-)
+ rewrite json_data.json (90%)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   22c1db7..bd90dce  main -> main
