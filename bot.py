@@ -224,8 +224,8 @@ async def on_message(message):
                             else:
                                 await message.channel.send("<@" + str(message.author.id) + "> Added your addon to the marketplace! " + random_emoji())
 
-                        # add new data to file
-                        add_addon(json_message)
+                            # add new data to file
+                            add_addon(json_message)
 
                     else:
                         # if has openentry
