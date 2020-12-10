@@ -49,3 +49,8 @@ To github.com:joshuaKnauber/serpens_addon_market.git
  2 files changed, 26 insertions(+)
 To github.com:joshuaKnauber/serpens_addon_market.git
    d71c1f8..e22e4a6  main -> main
+[main 9ff25dd] Serverlog
+ 2 files changed, 30 insertions(+), 3 deletions(-)
+ rewrite json_data.json (90%)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   e22e4a6..9ff25dd  main -> main

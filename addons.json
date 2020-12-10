@@ -109,6 +109,28 @@
             "blend": false,
             "blend_url": "",
             "user": 313773948506734624
+        },
+        {
+            "name": "Blender Calculator",
+            "description": "A simple calculator for in blender calculations when needed.",
+            "category": "Calculator",
+            "author": "Takeshi Tenma",
+            "blender_version": [
+                2,
+                91,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/786410194778193970/blender_calculator.py",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 283004905722085377
         }
     ]
 }
