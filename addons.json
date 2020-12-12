@@ -131,6 +131,28 @@
             "blend": false,
             "blend_url": "",
             "user": 283004905722085377
+        },
+        {
+            "name": "kolup_sculpting_tools",
+            "description": "Adds a shortcut (alt-W) for selecting your favorite bruhes in an instance. Mapping to graphical tablet recommended! Modify with shift to change the selected Brushes",
+            "category": "Sculpting",
+            "author": "kolupsy",
+            "blender_version": [
+                2,
+                90,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://gumroad.com/l/kolup_sculpt",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 313773948506734624
         }
     ]
 }
