@@ -1,26 +1,3 @@
 {
-    "entries": [
-        {
-            "name": "Evee in Cycles",
-            "description": "Change settings for Evee without leaving cycles",
-            "category": "Render",
-            "author": "TakeshiTenma",
-            "blender_version": [
-                2,
-                91,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": false,
-            "url": "",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 283004905722085377
-        }
-    ]
+    "entries": []
 }

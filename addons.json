@@ -153,6 +153,28 @@
             "blend": false,
             "blend_url": "",
             "user": 313773948506734624
+        },
+        {
+            "name": "Evee in Cycles",
+            "description": "Change settings for Evee without leaving cycles",
+            "category": "Render",
+            "author": "TakeshiTenma",
+            "blender_version": [
+                2,
+                91,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/787369151949176832/evee_in_cycles.py",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 283004905722085377
         }
     ]
 }
