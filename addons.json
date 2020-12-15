@@ -175,6 +175,28 @@
             "blend": false,
             "blend_url": "",
             "user": 283004905722085377
+        },
+        {
+            "name": "magic_trails",
+            "description": "Add a cool weapon trail in realtime.",
+            "category": "Add Mesh",
+            "author": "Kolupsy",
+            "blender_version": [
+                2,
+                90,
+                0
+            ],
+            "addon_version": [
+                1,
+                1,
+                3
+            ],
+            "external": true,
+            "url": "https://gumroad.com/l/magic_trails",
+            "price": "Click for +100% Coolness",
+            "blend": false,
+            "blend_url": "",
+            "user": 313773948506734624
         }
     ]
 }
