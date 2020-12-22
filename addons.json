@@ -197,6 +197,28 @@
             "blend": false,
             "blend_url": "",
             "user": 313773948506734624
+        },
+        {
+            "name": "Easy Resources",
+            "description": "This addon Creates a panel that allows you to easily acces an array of resources ranging from textures & assets to learning sites to further your knowledge in Blender and art in general.",
+            "category": "General",
+            "author": "Johan Tejada",
+            "blender_version": [
+                2,
+                91,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/790804953551208509/Easy_Resources.py",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 662158216532328458
         }
     ]
 }
