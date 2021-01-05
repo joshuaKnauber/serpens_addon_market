@@ -2,10 +2,10 @@
     "packages": [
         {
             "title": "placeholder",
-            "text": ["",""],
+            "text": ["test 1","test 2"],
             "price": "-",
-            "url": "",
-            "author": ""
+            "url": "www.google.com",
+            "author": "me"
         }
     ]
 }
