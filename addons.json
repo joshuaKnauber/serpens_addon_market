@@ -219,6 +219,28 @@
             "blend": false,
             "blend_url": "",
             "user": 662158216532328458
+        },
+        {
+            "name": "ColorManagement",
+            "description": "Easily Access the color management tab in any window",
+            "category": "Scene",
+            "author": "Takeshi_Tenma",
+            "blender_version": [
+                2,
+                91,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/798229049780600882/colormanagement.py",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 283004905722085377
         }
     ]
 }

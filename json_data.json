@@ -1,26 +1,3 @@
 {
-    "entries": [
-        {
-            "name": "ColorManagement",
-            "description": "Easily Access the color management tab in any window",
-            "category": "Scene",
-            "author": "Takeshi_Tenma",
-            "blender_version": [
-                2,
-                91,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": false,
-            "url": "",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 283004905722085377
-        }
-    ]
+    "entries": []
 }
