@@ -1,0 +1,36 @@
+
+*** These modified files were found in JOE when it aborted on Mon Jan 11 18:03:34 2021
+*** JOE was aborted because the terminal closed
+
+*** Datei '(Unbenannt)'
+overwrite
+
+*** Datei '(Unbenannt)'
+root
+
+*** Datei '/home/finn/serpens_addon_market/.git/MERGE_MSG'
+Merge branch 'main' of github.com:joshuaKnauber/serpens_addon_market into main
+
+# Bitte geben Sie eine Commit-Beschreibung ein, um zu erklären, warum dieser
+# Merge erforderlich ist, insbesondere wenn es einen aktualisierten
+# Upstream-Branch mit einem Thema-Branch zusammenführt.
+#
+# Zeilen beginnend mit '#' werden ignoriert, und eine leere Beschreibung
+# bricht den Commit ab.
+
+*** Datei '(Unbenannt)'
+/home/finn/STM32-Discord-Bot/.git/MERGE_MSG
+/home/finn/STM32-Discord-Bot/.git/MERGE_MSG
+/home/finn/STM32-Discord-Bot/.git/MERGE_MSG
+/home/finn/STM32-Discord-Bot/.git/MERGE_MSG
+/home/finn/STM32-Discord-Bot/.git/MERGE_MSG
+/home/finn/STM32-Discord-Bot/.git/COMMIT_EDITMSG
+/home/finn/.gitconfig
+/home/finn/STM32-Discord-Bot/.git/MERGE_MSG
+/home/finn/STM32-Discord-Bot/.git/MERGE_MSG
+/home/finn/serpens_addon_market/.git/MERGE_MSG
+/home/finn/serpens_addon_market/.git/MERGE_MSG
+
+*** Datei '* Startup Log *'
+Bearbeite '/etc/joe/editorrc'...Bearbeite '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc

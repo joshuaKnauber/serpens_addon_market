@@ -1,0 +1,11 @@
+{
+    "packages": [
+        {
+            "title": "placeholder",
+            "text": ["test 1","test 2"],
+            "price": "-",
+            "url": "www.google.com",
+            "author": "me"
+        }
+    ]
+}
