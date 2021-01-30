@@ -241,6 +241,28 @@
             "blend": false,
             "blend_url": "",
             "user": 283004905722085377
+        },
+        {
+            "name": "DupSep",
+            "description": "Duplicate and separate in one go!",
+            "category": "General",
+            "author": "Shinyuu Wolfy",
+            "blender_version": [
+                2,
+                91,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                1
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/805148887106322452/dupsep.py",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 109297162378022912
         }
     ]
 }

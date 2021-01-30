@@ -154,3 +154,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3.7/ssl.py", line 767, in unwrap
     return self._sslobj.shutdown()
 ssl.SSLError: [SSL: KRB5_S_INIT] application data after close notify (_ssl.c:2609)
+[main 5d3372f] Serverlog
+ 2 files changed, 37 insertions(+), 3 deletions(-)
+ rewrite json_data.json (90%)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   cdb7486..5d3372f  main -> main
