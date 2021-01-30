@@ -143,3 +143,14 @@ Hinweis: Vielleicht müssen Sie die externen Änderungen zusammenführen (z. B. 
 Hinweis: bevor Sie erneut "push" ausführen.
 Hinweis: Siehe auch die Sektion 'Note about fast-forwards' in 'git push --help'
 Hinweis: für weitere Details.
+SSL error in data received
+protocol: <asyncio.sslproto.SSLProtocol object at 0x7fb750237898>
+transport: <_SelectorSocketTransport fd=7 read=polling write=<idle, bufsize=0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/asyncio/sslproto.py", line 526, in data_received
+    ssldata, appdata = self._sslpipe.feed_ssldata(data)
+  File "/usr/lib/python3.7/asyncio/sslproto.py", line 207, in feed_ssldata
+    self._sslobj.unwrap()
+  File "/usr/lib/python3.7/ssl.py", line 767, in unwrap
+    return self._sslobj.shutdown()
+ssl.SSLError: [SSL: KRB5_S_INIT] application data after close notify (_ssl.c:2609)

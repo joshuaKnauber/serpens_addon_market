@@ -1,3 +1,26 @@
 {
-    "entries": []
+    "entries": [
+        {
+            "name": "DupSep",
+            "description": "Duplicate and separate in one go!",
+            "category": "General",
+            "author": "Shinyuu Wolfy",
+            "blender_version": [
+                2,
+                91,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                1
+            ],
+            "external": false,
+            "url": "",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 109297162378022912
+        }
+    ]
 }
