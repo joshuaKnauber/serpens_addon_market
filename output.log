@@ -190,3 +190,16 @@ Hinweis: Vielleicht müssen Sie die externen Änderungen zusammenführen (z. B. 
 Hinweis: bevor Sie erneut "push" ausführen.
 Hinweis: Siehe auch die Sektion 'Note about fast-forwards' in 'git push --help'
 Hinweis: für weitere Details.
+[main f587322] Serverlog
+ 2 files changed, 39 insertions(+), 3 deletions(-)
+ rewrite json_data.json (90%)
+To github.com:joshuaKnauber/serpens_addon_market.git
+ ! [rejected]        main -> main (fetch first)
+error: Fehler beim Versenden einiger Referenzen nach 'git@github.com:joshuaKnauber/serpens_addon_market.git'
+Hinweis: Aktualisierungen wurden zurückgewiesen, weil das Remote-Repository Commits enthält,
+Hinweis: die lokal nicht vorhanden sind. Das wird üblicherweise durch einen "push" von
+Hinweis: Commits auf dieselbe Referenz von einem anderen Repository aus verursacht.
+Hinweis: Vielleicht müssen Sie die externen Änderungen zusammenführen (z. B. 'git pull ...')
+Hinweis: bevor Sie erneut "push" ausführen.
+Hinweis: Siehe auch die Sektion 'Note about fast-forwards' in 'git push --help'
+Hinweis: für weitere Details.
