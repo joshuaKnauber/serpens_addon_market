@@ -159,3 +159,8 @@ ssl.SSLError: [SSL: KRB5_S_INIT] application data after close notify (_ssl.c:260
  rewrite json_data.json (90%)
 To github.com:joshuaKnauber/serpens_addon_market.git
    cdb7486..5d3372f  main -> main
+[main 3955ec7] Serverlog
+ 3 files changed, 30 insertions(+), 26 deletions(-)
+ rewrite json_data.json (99%)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   5d3372f..3955ec7  main -> main
