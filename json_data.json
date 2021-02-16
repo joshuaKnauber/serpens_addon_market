@@ -1,3 +1,26 @@
 {
-    "entries": []
+    "entries": [
+        {
+            "name": "Addon_Creation_Template_v1_0_0",
+            "description": "This is a template addon",
+            "category": "3D View",
+            "author": "Enter Your Name Here",
+            "blender_version": [
+                2,
+                80,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "",
+            "price": "",
+            "blend": true,
+            "blend_url": "",
+            "user": 445245317789515776
+        }
+    ]
 }
