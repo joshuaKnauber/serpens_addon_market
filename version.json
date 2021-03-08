@@ -1,12 +1,10 @@
 {
-  "version": [2,0,1],
-  "content": ["Added auto save option to node trees",
-             "Added Run Interface Script and Interface Script Line node",
-             "Added report function to print node",
-             "Added selected output on objects node",
-             "Added Is Export node",
-             "Added context selection to run operator",
-             "Fixed get asset node",
-             "Fixed preference properties not working",
-             "Fixed 3d view properties"]
+  "version": [2,0,2],
+  "content": ["Added 'Object Type' node",
+              "Added functionality to get/set properties of collections",
+              "Option to enable python tooltips in header",
+              "Added use execute checkbox for the run function node",
+              "Fixed print node set to report with multiple inputs",
+              "Fixed crash when copying blend data nodes",
+              "More smaller bugfixes"]
 }
