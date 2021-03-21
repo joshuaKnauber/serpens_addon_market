@@ -1,10 +1,9 @@
 {
-  "version": [2,0,2],
-  "content": ["Added 'Object Type' node",
-              "Added functionality to get/set properties of collections",
-              "Option to enable python tooltips in header",
-              "Added use execute checkbox for the run function node",
-              "Fixed print node set to report with multiple inputs",
-              "Fixed crash when copying blend data nodes",
-              "More smaller bugfixes"]
+  "version": [2,0,3],
+  "content": [
+            "Added version number to default export name",
+            "Added color wheel option to display property node",
+            "Added substring in string node",
+            "Bugfixes"
+        ]
 }
