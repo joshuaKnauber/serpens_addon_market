@@ -1,9 +1,9 @@
 {
-  "version": [2,0,3],
+  "version": [2,0,4],
   "content": [
-            "Added version number to default export name",
-            "Added color wheel option to display property node",
-            "Added substring in string node",
-            "Bugfixes"
+            "Added 'Copy Python' buttons to some nodes",
+            "Added get/set edit select mode nodes",
+            "Added bones to 'Scene Context'",
+            "More fixes"
         ]
 }
