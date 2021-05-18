@@ -1,9 +1,10 @@
 {
-  "version": [2,0,4],
+  "version": [2,0,5],
   "content": [
-            "Added 'Copy Python' buttons to some nodes",
-            "Added get/set edit select mode nodes",
-            "Added bones to 'Scene Context'",
-            "More fixes"
+            "Added portal nodes to transfer data wirelessly (it's the future!!!)",
+            "Removed input from update property node and added self output",
+            "Added Headers to Add to Menu node",
+            "Added On Exit node",
+            "More Bugfixes"
         ]
 }
