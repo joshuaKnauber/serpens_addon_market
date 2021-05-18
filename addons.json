@@ -285,6 +285,28 @@
             "blend": true,
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/811367273037824061/Add-On_Creation_Template_v1_0_0.blend",
             "user": 445245317789515776
+        },
+        {
+            "name": "SwapOrientation",
+            "description": "Swap between portrait and landscape orientation for render.",
+            "category": "Render",
+            "author": "VaguelyButter(Payden Smith)",
+            "blender_version": [
+                2,
+                92,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://gumroad.com/products/mMYMt/",
+            "price": "2.99",
+            "blend": false,
+            "blend_url": "",
+            "user": 379097522024742912
         }
     ]
 }

@@ -259,6 +259,7 @@ async def on_message(message):
         await message.delete()
         os.system("git add -A")
         os.system("git commit -m\"Serverlog\"")
+        os.system("git pull")
         os.system("git push")
 
 
