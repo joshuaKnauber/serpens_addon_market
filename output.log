@@ -2,3 +2,13 @@ Connected to Discord!
 Connected to Discord!
 Connected to Discord!
 Connected to Discord!
+[main 535e522] Serverlog
+ 3 files changed, 27 insertions(+), 217 deletions(-)
+ rewrite output.log (99%)
+Von github.com:joshuaKnauber/serpens_addon_market
+   d14676a..3c9b176  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ version.json | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   3c9b176..8f232c2  main -> main
