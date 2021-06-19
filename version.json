@@ -1,8 +1,11 @@
 {
-  "version": [2,1,0],
+  "version": [2,1,1],
   "content": [
-            "Switched to 2.93 as supported release",
-            "Added snippets for creating custom nodes (see N-Panel and Preferences) [BETA]",
-            "Bugfixes"
+            "Temporary work around for blender bug T88986 (operator properties)",
+            "Fixed Is Export property and node",
+            "Fixed drag add menu with node frames",
+            "Show message about status of auto save when creating addon",
+            "Added toggle system console button in header settings",
+            "More bugfixes",
         ]
 }
