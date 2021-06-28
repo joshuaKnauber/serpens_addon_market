@@ -1,10 +1,11 @@
 {
-  "version": [2,0,5],
+  "version": [2,1,1],
   "content": [
-            "Added portal nodes to transfer data wirelessly (it's the future!!!)",
-            "Removed input from update property node and added self output",
-            "Added Headers to Add to Menu node",
-            "Added On Exit node",
-            "More Bugfixes"
+            "Temporary work around for blender bug T88986 (operator properties)",
+            "Fixed Is Export property and node",
+            "Fixed drag add menu with node frames",
+            "Show message about status of auto save when creating addon",
+            "Added toggle system console button in header settings",
+            "More bugfixes"
         ]
 }
