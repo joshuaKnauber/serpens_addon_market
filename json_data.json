@@ -1,13 +1,13 @@
 {
     "entries": [
         {
-            "name": "Addon_Creation_Template_v1_0_0",
-            "description": "This is a template addon",
-            "category": "3D View",
-            "author": "Enter Your Name Here",
+            "name": "Text_Editor_Easy_Menu",
+            "description": "Adds Easy Save Icons to the Scripting Editor",
+            "category": "Text Editor",
+            "author": "Blanchsb",
             "blender_version": [
                 2,
-                80,
+                92,
                 0
             ],
             "addon_version": [
