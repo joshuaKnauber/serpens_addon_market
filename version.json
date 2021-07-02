@@ -1,11 +1,8 @@
 {
-  "version": [2,1,1],
+  "version": [2,1,2],
   "content": [
-            "Temporary work around for blender bug T88986 (operator properties)",
-            "Fixed Is Export property and node",
-            "Fixed drag add menu with node frames",
-            "Show message about status of auto save when creating addon",
-            "Added toggle system console button in header settings",
-            "More bugfixes"
+            "Added Easy BPY support",
+            "Renamed active collection to scene",
+            "Bugfixes (See product page)"
         ]
 }
