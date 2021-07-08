@@ -351,6 +351,28 @@
             "blend": true,
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/860540395281055804/QuickUV_Serpens.blend",
             "user": 148734666659069952
+        },
+        {
+            "name": "QuickUV",
+            "description": "Pi Menu for some common UV Editing to make the workflow a little less cluttered and faster, Use with Ctrl+Shift+E on both 3D View and Image Editor",
+            "category": "3D View, Image Editor",
+            "author": "Brennan",
+            "blender_version": [
+                2,
+                80,
+                0
+            ],
+            "addon_version": [
+                1,
+                1,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/862581802895147018/quickuv_1.1.0.zip",
+            "price": "",
+            "blend": true,
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/862581992243593267/QuickUV_Serpens.blend",
+            "user": 148734666659069952
         }
     ]
 }
