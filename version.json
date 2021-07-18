@@ -1,8 +1,13 @@
 {
-  "version": [2,1,2],
+  "version": [2,1,3],
   "content": [
-            "Added Easy BPY support",
-            "Renamed active collection to scene",
-            "Bugfixes (See product page)"
+            "Added interface snippets",
+            "Added Addon Info node",
+            "Changed Call Invoke on run operator to input",
+            "Fixed preferences for export in some cases",
+            "Fixed properties in preferences",
+            "Fixed snippet export",
+            "Allow for snippets without execute",
+            "Removed icon from number properties"
         ]
 }
