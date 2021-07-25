@@ -1,0 +1,11 @@
+{
+    "snippets": [
+        {
+            "title": "placeholder",
+            "text": "test text",
+            "price": "-",
+            "url": "www.google.com",
+            "author": "me"
+        }
+    ]
+}
