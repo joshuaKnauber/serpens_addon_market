@@ -169,7 +169,7 @@ async def on_message(message):
             elif open_entries[user_id]["type"] == "snippet":
                 if not open_entries[user_id]["json"]["title"]:
                     open_entries[user_id]["json"]["title"] = message.content
-                    await message.channel.send("- " + message.content + "\n<@" + str(message.author.id) + "> Got it! Now send me a description!")
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Got it! Now send me a description!")
 
                 elif not open_entries[user_id]["json"]["description"]:
                     open_entries[user_id]["json"]["description"] = message.content
