@@ -173,15 +173,15 @@ async def on_message(message):
 
                 elif not open_entries[user_id]["json"]["description"]:
                     open_entries[user_id]["json"]["description"] = message.content
-                    await message.channel.send("<@" + str(message.author.id) + "> Alright! I need an author next!")
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Alright! I need an author next!")
 
                 elif not open_entries[user_id]["json"]["author"]:
                     open_entries[user_id]["json"]["author"] = message.content
-                    await message.channel.send("<@" + str(message.author.id) + "> Nice! Now I need a price or just type **Free**!")
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Nice! Now I need a price or just type **Free**!")
 
                 elif not open_entries[user_id]["json"]["price"]:
                     open_entries[user_id]["json"]["price"] = message.content
-                    await message.channel.send("<@" + str(message.author.id) + "> Type **Yes** if you want to upload a file directly and **No** if you have an external url!")
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Type **Yes** if you want to upload a file directly and **No** if you have an external url!")
 
                 elif not open_entries[user_id]["json"]["url"]:
                     if message.content.lower() == "yes":
@@ -191,7 +191,7 @@ async def on_message(message):
                         open_entries[user_id]["json"]["url"] = "no"
                         await message.channel.send("<@" + str(message.author.id) + "> So you have an external url! Paste it in here and I will upload it")
                     else:
-                        await message.channel.send("<@" + str(message.author.id) + "> I didn't get that. Please type **Yes**, **No** or **Cancel**!")
+                        await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> I didn't get that. Please type **Yes**, **No** or **Cancel**!")
                 
                 elif open_entries[user_id]["json"]["url"] == "yes":
                     if message.attachments:
@@ -210,7 +210,6 @@ async def on_message(message):
                     open_entries[user_id]["json"]["url"] = message.content
                     await message.channel.send("<@" + str(message.author.id) + "> Last question! Type **Yes** if you want to upload a blend file and **No** if you don't")
 
-
                 elif not open_entries[user_id]["json"]["blend_url"]:
                     if message.content.lower() == "yes":
                         open_entries[user_id]["json"]["blend_url"] = "yes"
@@ -220,7 +219,7 @@ async def on_message(message):
                         open_entries.pop(user_id)
                         await message.channel.send("<@" + str(message.author.id) + "> You're done! Thanks for uploading your snippet!")
                     else:
-                        await message.channel.send("<@" + str(message.author.id) + "> I didn't get that. Please type **Yes**, **No** or **Cancel**!")
+                        await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> I didn't get that. Please type **Yes**, **No** or **Cancel**!")
 
                 elif open_entries[user_id]["json"]["blend_url"] == "yes":
                     if message.attachments:
@@ -239,19 +238,19 @@ async def on_message(message):
             elif open_entries[user_id]["type"] == "package":
                 if not open_entries[user_id]["json"]["title"]:
                     open_entries[user_id]["json"]["title"] = message.content
-                    await message.channel.send("<@" + str(message.author.id) + "> Got it! Now send me a description!")
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Got it! Now send me a description!")
 
                 elif not open_entries[user_id]["json"]["description"]:
                     open_entries[user_id]["json"]["description"] = message.content
-                    await message.channel.send("<@" + str(message.author.id) + "> Alright! I need an author next!")
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Alright! I need an author next!")
 
                 elif not open_entries[user_id]["json"]["author"]:
                     open_entries[user_id]["json"]["author"] = message.content
-                    await message.channel.send("<@" + str(message.author.id) + "> Nice! Now I need a price or just type **Free**!")
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Nice! Now I need a price or just type **Free**!")
 
                 elif not open_entries[user_id]["json"]["price"]:
                     open_entries[user_id]["json"]["price"] = message.content
-                    await message.channel.send("<@" + str(message.author.id) + "> Now send me the link to the download page!")
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Now send me the link to the download page!")
 
                 elif not open_entries[user_id]["json"]["url"]:
                     open_entries[user_id]["json"]["url"] = message.content
