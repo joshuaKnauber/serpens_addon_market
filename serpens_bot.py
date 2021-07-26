@@ -107,7 +107,7 @@ async def on_message(message):
         if not user_id in open_entries:
             if message.content.lower() in ["addon", "a"]:
                 open_entries[user_id] = {"type": "addon", "json": {}}
-                await message.channel.send("- " + message.content + "\n<@" + str(message.author.id) + "> You want to upload an Addon! Cool! Just send me the message you got in serpens and paste it in here! You can type **Cancel** at any time to stop your upload process!")
+                await message.channel.send("<@" + str(message.author.id) + "> You want to upload an Addon! Cool! Just send me the message you got in serpens and paste it in here! You can type **Cancel** at any time to stop your upload process!")
             elif message.content.lower() in ["snippet", "s"]:
                 open_entries[user_id] = {"type": "snippet", "json": {"title": "","description": "","price": "","url": "", "blend_url": "", "author": ""}}
                 await message.channel.send("<@" + str(message.author.id) + "> You want to upload a Snippet! Awesome! You can type **Cancel** at any time to stop your upload process! Now let me know what do you want to call it!")
@@ -169,7 +169,7 @@ async def on_message(message):
             elif open_entries[user_id]["type"] == "snippet":
                 if not open_entries[user_id]["json"]["title"]:
                     open_entries[user_id]["json"]["title"] = message.content
-                    await message.channel.send("<@" + str(message.author.id) + "> Got it! Now send me a description!")
+                    await message.channel.send("- " + message.content + "\n<@" + str(message.author.id) + "> Got it! Now send me a description!")
 
                 elif not open_entries[user_id]["json"]["description"]:
                     open_entries[user_id]["json"]["description"] = message.content
