@@ -131,7 +131,7 @@ async def on_message(message):
                             else:
                                 add_addon(open_entries[user_id]["json"])
                                 open_entries.pop(user_id)
-                                await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your addon!")
+                                await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your addon! It might take a few minutes to show up on the marketplace!")
                         else:
                             await message.channel.send("<@" + str(message.author.id) + "> Send me your addons zip file next!")
                     else:
@@ -157,7 +157,7 @@ async def on_message(message):
                                 open_entries[user_id]["json"]["blend_url"] = await save_file(addon_file)
                                 add_addon(open_entries[user_id]["json"])
                                 open_entries.pop(user_id)
-                                await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your addon and blend file!")
+                                await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your addon and blend file! It might take a few minutes to show up on the marketplace!")
                             else:
                                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
                         else:
@@ -217,7 +217,7 @@ async def on_message(message):
                     elif message.content.lower() == "no":
                         add_snippet(open_entries[user_id]["json"])
                         open_entries.pop(user_id)
-                        await message.channel.send("<@" + str(message.author.id) + "> You're done! Thanks for uploading your snippet!")
+                        await message.channel.send("<@" + str(message.author.id) + "> You're done! Thanks for uploading your snippet! It might take a few minutes to show up on the marketplace!")
                     else:
                         await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> I didn't get that. Please type **Yes**, **No** or **Cancel**!")
 
@@ -229,7 +229,7 @@ async def on_message(message):
                             open_entries[user_id]["json"]["blend_url"] = await save_file(blend_file)
                             add_snippet(open_entries[user_id]["json"])
                             open_entries.pop(user_id)
-                            await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your snippet and blend file!")
+                            await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your snippet and blend file! It might take a few minutes to show up on the marketplace!")
                         else:
                             await message.channel.send("<@" + str(message.author.id) + "> Please upload a blend file or type **Cancel**!")
                     else:
@@ -256,7 +256,7 @@ async def on_message(message):
                     open_entries[user_id]["json"]["url"] = message.content
                     add_package(open_entries[user_id]["json"])
                     open_entries.pop(user_id)
-                    await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your package!")
+                    await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your package! It might take a few minutes to show up on the marketplace!")
 
 
         await message.delete()

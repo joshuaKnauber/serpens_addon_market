@@ -6,13 +6,6 @@
             "price": "-",
             "url": "www.google.com",
             "author": "me"
-        },
-        {
-            "title": "Test",
-            "description": "Descipaadsn",
-            "price": "Free",
-            "url": "google.com",
-            "author": "me"
         }
     ]
 }
