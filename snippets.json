@@ -2,9 +2,10 @@
     "snippets": [
         {
             "title": "placeholder",
-            "text": "test text",
+            "description": "test text",
             "price": "-",
             "url": "www.google.com",
+            "blend_url": "",
             "author": "me"
         }
     ]
