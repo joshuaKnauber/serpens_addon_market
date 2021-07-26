@@ -7,6 +7,14 @@
             "url": "www.google.com",
             "blend_url": "",
             "author": "me"
+        },
+        {
+            "title": "My Snippet",
+            "description": "whatever",
+            "price": "3.99",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/869221480431501392/Blanchsb.zip",
+            "blend_url": "",
+            "author": "Jeffrey, Jeffrey Bezos"
         }
     ]
 }
