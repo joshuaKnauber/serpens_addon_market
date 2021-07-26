@@ -1,13 +1,11 @@
 {
-  "version": [2,1,3],
+  "version": [2,1,4],
   "content": [
-            "Added interface snippets",
-            "Added Addon Info node",
-            "Changed Call Invoke on run operator to input",
-            "Fixed preferences for export in some cases",
-            "Fixed properties in preferences",
-            "Fixed snippet export",
-            "Allow for snippets without execute",
-            "Removed icon from number properties"
+            "Added Display Keymap node for custom shortcuts",
+            "Added Snippet marketplace",
+            "Fixed addon preference property updates",
+            "Fixed suggestion menu not working",
+            "Fixed Workspace blend data node",
+            "Changed copy python button for addon preferences"
         ]
 }
