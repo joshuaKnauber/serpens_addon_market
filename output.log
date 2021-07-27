@@ -98,3 +98,9 @@ To github.com:joshuaKnauber/serpens_addon_market.git
 Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    9a7b4bb..ce5f5d4  main -> main
+[main 9adec82] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 510963f45412a2ac97029ff05754014045e29ddc but expected ce5f5d47978d4ef34284eea2ef36a500f30102a3)
+error: Fehler beim Versenden einiger Referenzen nach 'git@github.com:joshuaKnauber/serpens_addon_market.git'
