@@ -111,6 +111,10 @@ async def on_message(message):
             else:
                 await message.channel.send("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n<@" + str(message.author.id) + ">" + random_emoji() + " Hey, I don't have a conversation with you yet, just type:\n\n- **Upload** for uploading\n- **Update** for updating\n- **Remove** for removing")
 
+        elif message.content.lower() == "cancel":
+            open_entries.pop(user_id)
+            await message.channel.send("<@" + str(message.author.id) + "> I canceled your upload! Feel free to try again at any time!")
+
         elif open_entries[user_id]["type"] == "":
             if message.content.lower() in ["addon", "a"]:
                 open_entries[user_id]["type"] = "addon"
@@ -127,11 +131,7 @@ async def on_message(message):
             else:
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
 
-        elif message.content.lower() == "cancel":
-            open_entries.pop(user_id)
-            await message.channel.send("<@" + str(message.author.id) + "> I canceled your upload! Feel free to try again at any time!")
-
-        elif open_entries[user_id]["type"] == "upload":
+        elif open_entries[user_id]["upload_type"] == "upload":
             if open_entries[user_id]["type"] == "addon":
                 if not open_entries[user_id]["json"]:
                     if is_valid_json(message.content):
