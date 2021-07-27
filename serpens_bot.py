@@ -29,6 +29,15 @@ def addon_exists(user_id, name):
                 return True
     return False
 
+def find_addons(user_id):
+    addon_list = []
+    with open("./addons.json") as addons:
+        addons = json.load(addons)
+        for entry in addons["addons"]:
+            if entry["user"] == user_id:
+                addon_list.append(entry)
+    return addon_list
+
 def remove_addon(user_id, name):
     with open("./addons.json", "r+") as addons:
         addons_json = json.load(addons)
@@ -130,6 +139,17 @@ async def on_message(message):
                 await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " a Package! Great! You can type **Cancel** at any time! Now let me know what do you want to call it!")
             else:
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+        elif open_entries[user_id]["upload_type"] == "remove":
+            if open_entries[user_id]["type"] == "addon":
+                addon_string = ""
+                for addon in find_addons(user_id):
+                    addon_string += "- " + addon["name"] + "\n"
+                if addon_string:
+                    await message.channel.send("<@" + str(message.author.id) + "> I found the following addons:\n" + addon_string + "Just type out the one you want to remove!")
+                else:
+                    open_entries.pop(user_id)
+                    await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have an addon uploaded.")
 
         elif open_entries[user_id]["upload_type"] == "upload":
             if open_entries[user_id]["type"] == "addon":
@@ -271,7 +291,7 @@ async def on_message(message):
                     await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your package! It might take a few minutes to show up on the marketplace!")
 
 
-        # await message.delete()
+        await message.delete()
         os.system("git add -A")
         os.system("git commit -m\"Serverlog\"")
         os.system("git pull")
