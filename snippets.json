@@ -7,6 +7,14 @@
             "url": "www.google.com",
             "blend_url": "",
             "author": "me"
+        },
+        {
+            "title": "New Linked Collection",
+            "description": "Create a New Linked Collection. You can define the name of the New Collection and also link it as a Child of another collection if you desire. It has defaults as well. If you leave the New Collection string blank it will create one named \"Collection\". If you leave the Link to Collection string blank it will link to the scene collection.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/869396486092378112/New_Linked_Collection.json",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/869399061541847070/New_Linked_Collection.blend",
+            "author": "blanchsb"
         }
     ]
 }
