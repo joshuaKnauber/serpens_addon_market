@@ -105,21 +105,32 @@ async def on_message(message):
         user_id = message.author.id
 
         if not user_id in open_entries:
+            if message.content.lower() in ["update", "upload", "remove"]:
+                open_entries[user_id] = {"upload_type": message.content.lower(), "type": ""}
+                await message.channel.send("<@" + str(message.author.id) + "> You want to " + message.content.lower() + " something! Cool! Just type:\n\n- **Addon** or **A** for addon\n- **Snippet** or **S** for snippet\n- **Package** or **P** for package")
+            else:
+                await message.channel.send("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n<@" + str(message.author.id) + ">" + random_emoji() + " Hey, I don't have a conversation with you yet, just type:\n\n- **Upload** for uploading\n- **Update** for updating\n- **Remove** for removing")
+
+        elif open_entries[user_id]["type"] == "":
             if message.content.lower() in ["addon", "a"]:
-                open_entries[user_id] = {"type": "addon", "json": {}}
-                await message.channel.send("<@" + str(message.author.id) + "> You want to upload an Addon! Cool! Just send me the message you got in serpens and paste it in here! You can type **Cancel** at any time to stop your upload process!")
+                open_entries[user_id]["type"] = "addon"
+                open_entries[user_id]["json"] =  {}
+                print(open_entries)
+                await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " an Addon! Cool! Just send me the message you got in serpens and paste it in here! You can type **Cancel** at any time!")
             elif message.content.lower() in ["snippet", "s"]:
                 open_entries[user_id] = {"type": "snippet", "json": {"title": "","description": "","price": "","url": "", "blend_url": "", "author": ""}}
-                await message.channel.send("<@" + str(message.author.id) + "> You want to upload a Snippet! Awesome! You can type **Cancel** at any time to stop your upload process! Now let me know what do you want to call it!")
+                await message.channel.send("<@" + str(message.author.id) + "> You want to upload a Snippet! Awesome! You can type **Cancel** at any time! Now let me know what do you want to call it!")
             elif message.content.lower() in ["package", "p"]:
                 open_entries[user_id] = {"type": "package", "json": {"title": "","description": "","price": "","url": "","author": ""}}
-                await message.channel.send("<@" + str(message.author.id) + "> You want to upload a Package! Great! You can type **Cancel** at any time to stop your upload process! Now let me know what do you want to call it!")
+                await message.channel.send("<@" + str(message.author.id) + "> You want to upload a Package! Great! You can type **Cancel** at any time! Now let me know what do you want to call it!")
             else:
                 await message.channel.send("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n<@" + str(message.author.id) + ">" + random_emoji() + " Hey, I don't have a conversation with you yet, just type:\n\n- **Addon** or **A** for uploading an addon\n- **Snippet** or **S** for uploading a snippet\n- **Package** or **P** for uploading a package")
+
         elif message.content.lower() == "cancel":
             open_entries.pop(user_id)
             await message.channel.send("<@" + str(message.author.id) + "> I canceled your upload! Feel free to try again at any time!")
-        else:
+
+        elif open_entries[user_id]["type"] == "upload":
             if open_entries[user_id]["type"] == "addon":
                 if not open_entries[user_id]["json"]:
                     if is_valid_json(message.content):
