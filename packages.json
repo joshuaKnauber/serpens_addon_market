@@ -5,7 +5,8 @@
             "description": "test 1",
             "price": "-",
             "url": "www.google.com",
-            "author": "me"
+            "author": "me",
+            "user": 0
         }
     ]
 }

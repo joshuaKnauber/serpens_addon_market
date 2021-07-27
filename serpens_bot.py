@@ -21,14 +21,6 @@ def random_emoji():
     emojis = ["baseball", "dog", "cat", "hamster", "mouse", "rabbit", "fox", "bear", "dolphin", "gorilla", "ox", "dragon", "apple", "egg", "cooking", "hamburger", "pizza", "cake", "spoon", "basketball", "yo_yo", "drum", "red_car", "tram", "minidisc", "battery", "pig_nose"]
     return ":" + emojis[random.randint(0, len(emojis)-1)] + ":"
 
-def addon_exists(user_id, name):
-    with open("./addons.json") as addons:
-        addons = json.load(addons)
-        for entry in addons["addons"]:
-            if entry["user"] == user_id and entry["name"] == name:
-                return True
-    return False
-
 def find_addons(user_id):
     addon_list = []
     with open("./addons.json") as addons:
@@ -37,6 +29,24 @@ def find_addons(user_id):
             if entry["user"] == user_id:
                 addon_list.append(entry)
     return addon_list
+
+def find_snippets(user_id):
+    snippet_list = []
+    with open("./snippets.json") as snippets:
+        snippets = json.load(snippets)
+        for entry in snippets["snippets"]:
+            if entry["user"] == user_id:
+                snippet_list.append(entry)
+    return snippet_list
+
+def find_packages(user_id):
+    packages_list = []
+    with open("./packages.json") as packages:
+        packages = json.load(packages)
+        for entry in packages["packages"]:
+            if entry["user"] == user_id:
+                packages_list.append(entry)
+    return packages_list
 
 def remove_addon(user_id, name):
     with open("./addons.json", "r+") as addons:
@@ -48,6 +58,26 @@ def remove_addon(user_id, name):
         addons.write(json.dumps(addons_json, skipkeys=True, indent=4))
         addons.truncate()
 
+def remove_snippet(user_id, name):
+    with open("./snippets.json", "r+") as snippets:
+        snippet_json = json.load(snippets)
+        for x, entry in enumerate(snippet_json["snippets"]):
+            if entry["user"] == user_id and entry["title"] == name:
+                snippet_json["snippets"].pop(x)
+        snippets.seek(0)
+        snippets.write(json.dumps(snippet_json, skipkeys=True, indent=4))
+        snippets.truncate()
+
+def remove_package(user_id, name):
+    with open("./packages.json", "r+") as packages:
+        packages_json = json.load(packages)
+        for x, entry in enumerate(packages_json["packages"]):
+            if entry["user"] == user_id and entry["title"] == name:
+                packages_json["packages"].pop(x)
+        packages.seek(0)
+        packages.write(json.dumps(packages_json, skipkeys=True, indent=4))
+        packages.truncate()
+
 def add_addon(addon_json):
     with open("./addons.json", "r+") as addons:
         addons_json = json.load(addons)
@@ -56,13 +86,6 @@ def add_addon(addon_json):
         addons.write(json.dumps(addons_json, skipkeys=True, indent=4))
         addons.truncate()
 
-def find_addon(user_id, name):
-    with open("./addons.json") as addons:
-        addons_json = json.load(addons)
-        for addon in addons_json["addons"]:
-            if addon["user"] == user_id and addon["name"] == name:
-                return addon
-    return None
 
 def add_snippet(snippet_json):
     with open("./snippets.json", "r+") as snippets:
@@ -120,36 +143,96 @@ async def on_message(message):
             else:
                 await message.channel.send("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n<@" + str(message.author.id) + ">" + random_emoji() + " Hey, I don't have a conversation with you yet, just type:\n\n- **Upload** for uploading\n- **Update** for updating\n- **Remove** for removing")
 
+
         elif message.content.lower() == "cancel":
             open_entries.pop(user_id)
             await message.channel.send("<@" + str(message.author.id) + "> I canceled your upload! Feel free to try again at any time!")
+
 
         elif open_entries[user_id]["type"] == "":
             if message.content.lower() in ["addon", "a"]:
                 open_entries[user_id]["type"] = "addon"
                 open_entries[user_id]["json"] =  {}
-                await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " an Addon! Cool! Just send me the message you got in serpens and paste it in here! You can type **Cancel** at any time!")
+                if open_entries[user_id]["upload_type"] == "upload":
+                    await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " an Addon! Cool! Just send me the message you got in serpens and paste it in here! You can type **Cancel** at any time!")
+                elif open_entries[user_id]["upload_type"] == "remove":
+                    addon_string = ""
+                    for addon in find_addons(user_id):
+                        addon_string += "- " + addon["name"] + "\n"
+                    if addon_string:
+                        await message.channel.send("<@" + str(message.author.id) + "> I found the following addons:\n" + addon_string + "Just type out the one you want to remove!")
+                    else:
+                        open_entries.pop(user_id)
+                        await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have an addon uploaded")
+
             elif message.content.lower() in ["snippet", "s"]:
                 open_entries[user_id]["type"] = "snippet"
-                open_entries[user_id]["json"] =  {"title": "","description": "","price": "","url": "", "blend_url": "", "author": ""}
-                await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " a Snippet! Awesome! You can type **Cancel** at any time! Now let me know what do you want to call it!")
+                open_entries[user_id]["json"] =  {"title": "","description": "","price": "","url": "", "blend_url": "", "author": "", "user": user_id}
+                if open_entries[user_id]["upload_type"] == "upload":
+                    await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " a Snippet! Awesome! You can type **Cancel** at any time! Now let me know what do you want to call it!")
+                elif open_entries[user_id]["upload_type"] == "remove":
+                    snippet_string = ""
+                    for snippet in find_snippets(user_id):
+                        snippet_string += "- " + snippet["title"] + "\n"
+                    if snippet_string:
+                        await message.channel.send("<@" + str(message.author.id) + "> I found the following snippets:\n" + snippet_string + "Just type out the one you want to remove!")
+                    else:
+                        open_entries.pop(user_id)
+                        await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have a snippet uploaded")
+
             elif message.content.lower() in ["package", "p"]:
                 open_entries[user_id]["type"] = "package"
-                open_entries[user_id]["json"] =  {"title": "","description": "","price": "","url": "", "blend_url": "", "author": ""}
-                await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " a Package! Great! You can type **Cancel** at any time! Now let me know what do you want to call it!")
+                open_entries[user_id]["json"] =  {"title": "","description": "","price": "","url": "", "blend_url": "", "author": "", "user": user_id}
+                if open_entries[user_id]["upload_type"] == "upload":
+                    await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " a Package! Great! You can type **Cancel** at any time! Now let me know what do you want to call it!")
+                elif open_entries[user_id]["upload_type"] == "remove":
+                    packages_string = ""
+                    for package in find_packages(user_id):
+                        packages_string += "- " + package["title"] + "\n"
+                    if packages_string:
+                        await message.channel.send("<@" + str(message.author.id) + "> I found the following packages:\n" + packages_string + "Just type out the one you want to remove!")
+                    else:
+                        open_entries.pop(user_id)
+                        await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have a package uploaded")
+
             else:
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
 
+
         elif open_entries[user_id]["upload_type"] == "remove":
             if open_entries[user_id]["type"] == "addon":
-                addon_string = ""
+                addon_names = {}
                 for addon in find_addons(user_id):
-                    addon_string += "- " + addon["name"] + "\n"
-                if addon_string:
-                    await message.channel.send("<@" + str(message.author.id) + "> I found the following addons:\n" + addon_string + "Just type out the one you want to remove!")
-                else:
+                    addon_names[addon["name"].lower()] = addon["name"]
+                if message.content.lower() in addon_names:
+                    remove_addon(user_id, addon_names[message.content.lower()])
                     open_entries.pop(user_id)
-                    await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have an addon uploaded.")
+                    await message.channel.send("<@" + str(message.author.id) + "> Removed your addon! It might take a few minutes to get removed from the marketplace!")
+                else:
+                    await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+            
+            elif open_entries[user_id]["type"] == "snippet":
+                snippet_names = {}
+                for snippet in find_snippets(user_id):
+                    snippet_names[snippet["title"].lower()] = snippet["title"]
+                if message.content.lower() in snippet_names:
+                    remove_snippet(user_id, snippet_names[message.content.lower()])
+                    open_entries.pop(user_id)
+                    await message.channel.send("<@" + str(message.author.id) + "> Removed your snippet! It might take a few minutes to get removed from the marketplace!")
+                else:
+                    await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+            elif open_entries[user_id]["type"] == "package":
+                package_names = {}
+                for package in find_packages(user_id):
+                    package_names[package["title"].lower()] = package["title"]
+                if message.content.lower() in package_names:
+                    remove_package(user_id, package_names[message.content.lower()])
+                    open_entries.pop(user_id)
+                    await message.channel.send("<@" + str(message.author.id) + "> Removed your package! It might take a few minutes to get removed from the marketplace!")
+                else:
+                    await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
 
         elif open_entries[user_id]["upload_type"] == "upload":
             if open_entries[user_id]["type"] == "addon":
@@ -292,10 +375,10 @@ async def on_message(message):
 
 
         await message.delete()
-        os.system("git add -A")
-        os.system("git commit -m\"Serverlog\"")
-        os.system("git pull")
-        os.system("git push")
+        # os.system("git add -A")
+        # os.system("git commit -m\"Serverlog\"")
+        # os.system("git pull")
+        # os.system("git push")
 
 
 client.run(TOKEN)
