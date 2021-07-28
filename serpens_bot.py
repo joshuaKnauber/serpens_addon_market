@@ -48,6 +48,27 @@ def find_packages(user_id):
                 packages_list.append(entry)
     return packages_list
 
+def get_addon(user_id, name):
+    addon = {}
+    for entry in find_addons(user_id):
+        if entry["name"] == name:
+            addon = entry
+    return addon
+
+def get_snippet(user_id, title):
+    snippet = {}
+    for entry in find_snippets(user_id):
+        if entry["title"] == title:
+            snippet = entry
+    return snippet
+
+def get_package(user_id, title):
+    package = {}
+    for package_entry in find_packages(user_id):
+        if package_entry["title"] == title:
+            package = package_entry
+    return package
+
 def remove_addon(user_id, name):
     with open("./addons.json", "r+") as addons:
         addons_json = json.load(addons)
@@ -164,6 +185,16 @@ async def on_message(message):
                     else:
                         open_entries.pop(user_id)
                         await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have an addon uploaded")
+                elif open_entries[user_id]["upload_type"] == "update":
+                    open_entries[user_id]["name"] = ""
+                    addon_string = ""
+                    for addon in find_addons(user_id):
+                        addon_string += "- " + addon["name"] + "\n"
+                    if addon_string:
+                        await message.channel.send("<@" + str(message.author.id) + "> I found the following addons:\n" + addon_string + "Just type out the one you want to update!")
+                    else:
+                        open_entries.pop(user_id)
+                        await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have an addon uploaded")
 
             elif message.content.lower() in ["snippet", "s"]:
                 open_entries[user_id]["type"] = "snippet"
@@ -179,10 +210,19 @@ async def on_message(message):
                     else:
                         open_entries.pop(user_id)
                         await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have a snippet uploaded")
+                elif open_entries[user_id]["upload_type"] == "update":
+                    snippet_string = ""
+                    for snippet in find_snippets(user_id):
+                        snippet_string += "- " + snippet["title"] + "\n"
+                    if snippet_string:
+                        await message.channel.send("<@" + str(message.author.id) + "> I found the following snippets:\n" + snippet_string + "Just type out the one you want to update!")
+                    else:
+                        open_entries.pop(user_id)
+                        await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have a snippet uploaded")
 
             elif message.content.lower() in ["package", "p"]:
                 open_entries[user_id]["type"] = "package"
-                open_entries[user_id]["json"] =  {"title": "","description": "","price": "","url": "", "blend_url": "", "author": "", "user": user_id}
+                open_entries[user_id]["json"] =  {"title": "","description": "","price": "","url": "", "author": "", "user": user_id}
                 if open_entries[user_id]["upload_type"] == "upload":
                     await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " a Package! Great! You can type **Cancel** at any time! Now let me know what do you want to call it!")
                 elif open_entries[user_id]["upload_type"] == "remove":
@@ -194,13 +234,186 @@ async def on_message(message):
                     else:
                         open_entries.pop(user_id)
                         await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have a package uploaded")
+                elif open_entries[user_id]["upload_type"] == "update":
+                    packages_string = ""
+                    for package in find_packages(user_id):
+                        packages_string += "- " + package["title"] + "\n"
+                    if packages_string:
+                        await message.channel.send("<@" + str(message.author.id) + "> I found the following packages:\n" + packages_string + "Just type out the one you want to update!")
+                    else:
+                        open_entries.pop(user_id)
+                        await message.channel.send("<@" + str(message.author.id) + "> Seems like you don't have a package uploaded")
 
             else:
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
 
 
         elif open_entries[user_id]["upload_type"] == "update":
-            print("test")
+            if open_entries[user_id]["type"] == "addon":
+                if not open_entries[user_id]["name"]:
+                    addon_names = {}
+                    for addon in find_addons(user_id):
+                        addon_names[addon["name"].lower()] = addon["name"]
+                    if message.content.lower() in addon_names:
+                        open_entries[user_id]["name"] = addon_names[message.content.lower()]
+                        await message.channel.send("<@" + str(message.author.id) + "> Got it! Next send me the new message you copied in serpens!")
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+                elif not open_entries[user_id]["json"]:
+                    if is_valid_json(message.content):
+                        open_entries[user_id]["json"] = json.loads(message.content)
+                        open_entries[user_id]["json"]["user"] = user_id
+                        if open_entries[user_id]["json"]["external"]:
+                            if open_entries[user_id]["json"]["blend"]:
+                                await message.channel.send("<@" + str(message.author.id) + "> Send me your blend file next!")
+                            else:
+                                remove_addon(user_id, open_entries[user_id]["name"])
+                                add_addon(open_entries[user_id]["json"])
+                                open_entries.pop(user_id)
+                                await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your addon! It might take a few minutes to show up on the marketplace!")
+                        else:
+                            await message.channel.send("<@" + str(message.author.id) + "> Send me your addons zip file next!")
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Please send me the message you copied in serpens first or type **Cancel**!")
+                else:
+                    if message.attachments:
+                        addon_file = message.attachments[0]
+                        file_name = addon_file.filename
+                        if not open_entries[user_id]["json"]["external"] and not open_entries[user_id]["json"]["url"]:
+                            if ".zip" in file_name:
+                                open_entries[user_id]["json"]["url"] = await save_file(addon_file)
+                                if open_entries[user_id]["json"]["blend"]:
+                                    await message.channel.send("<@" + str(message.author.id) + "> Send me your blend file next!")
+                                else:
+                                    remove_addon(user_id, open_entries[user_id]["name"])
+                                    add_addon(open_entries[user_id]["json"])
+                                    open_entries.pop(user_id)
+                                    await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your addon!")
+                            else:
+                                await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+                        elif open_entries[user_id]["json"]["blend"]:
+                            if ".blend" in file_name:
+                                open_entries[user_id]["json"]["blend_url"] = await save_file(addon_file)
+                                remove_addon(user_id, open_entries[user_id]["name"])
+                                add_addon(open_entries[user_id]["json"])
+                                open_entries.pop(user_id)
+                                await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your addon and blend file! It might take a few minutes to show up on the marketplace!")
+                            else:
+                                await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+                        else:
+                            await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+            elif open_entries[user_id]["type"] == "snippet":
+                if not open_entries[user_id]["json"]["title"]:
+                    snippet_names = {}
+                    for snippet in find_snippets(user_id):
+                        snippet_names[snippet["title"].lower()] = snippet["title"]
+                    if message.content.lower() in snippet_names:
+                        open_entries[user_id]["json"]["title"] = snippet_names[message.content.lower()]
+                        await message.channel.send("<@" + str(message.author.id) + "> Got it! Your current description is:\n'" + get_snippet(user_id, snippet_names[message.content.lower()])["description"] + "'\nType a new description or just copy and paste this one again!")
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+                elif not open_entries[user_id]["json"]["description"]:
+                    open_entries[user_id]["json"]["description"] = message.content
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Alright! Your current author is:\n'" + get_snippet(user_id, open_entries[user_id]["json"]["title"])["author"] + "'\nType a new author or just copy and paste this one again!")
+                
+                elif not open_entries[user_id]["json"]["author"]:
+                    open_entries[user_id]["json"]["author"] = message.content
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Cool! Your current price is:\n'" + get_snippet(user_id, open_entries[user_id]["json"]["title"])["price"] + "'\nType a new price or just copy and paste this one again!")
+                
+                elif not open_entries[user_id]["json"]["price"]:
+                    open_entries[user_id]["json"]["price"] = message.content
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Type **Yes** if you want to upload a file directly and **No** if you have an external url!")
+
+                elif not open_entries[user_id]["json"]["url"]:
+                    if message.content.lower() == "yes":
+                        open_entries[user_id]["json"]["url"] = "yes"
+                        await message.channel.send("<@" + str(message.author.id) + "> You want to upload a file directly! Just send it in here and I will upload it!")
+                    elif message.content.lower() == "no":
+                        open_entries[user_id]["json"]["url"] = "no"
+                        await message.channel.send("<@" + str(message.author.id) + "> So you have an external url! Paste it in here and I will upload it")
+                    else:
+                        await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> I didn't get that. Please type **Yes**, **No** or **Cancel**!")
+
+                elif open_entries[user_id]["json"]["url"] == "yes":
+                    if message.attachments:
+                        addon_file = message.attachments[0]
+                        file_name = addon_file.filename
+                        if ".zip" in file_name or ".json" in file_name:
+                            open_entries[user_id]["json"]["url"] = await save_file(addon_file)
+                            await message.channel.send("<@" + str(message.author.id) + "> Last question! Type **Yes** if you want to upload a blend file and **No** if you don't")
+                        else:
+                            await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+                elif open_entries[user_id]["json"]["url"] == "no":
+                    open_entries[user_id]["json"]["url"] = message.content
+                    await message.channel.send("<@" + str(message.author.id) + "> Last question! Type **Yes** if you want to upload a blend file and **No** if you don't")
+
+                elif not open_entries[user_id]["json"]["blend_url"]:
+                    if message.content.lower() == "yes":
+                        open_entries[user_id]["json"]["blend_url"] = "yes"
+                        await message.channel.send("<@" + str(message.author.id) + "> You want to upload a blend file! Just send it in here and I will upload it!")
+                    elif message.content.lower() == "no":
+                        remove_snippet(user_id, open_entries[user_id]["json"]["title"])
+                        add_snippet(open_entries[user_id]["json"])
+                        open_entries.pop(user_id)
+                        await message.channel.send("<@" + str(message.author.id) + "> You're done! Thanks for updating your snippet! It might take a few minutes to change on the marketplace!")
+                    else:
+                        await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> I didn't get that. Please type **Yes**, **No** or **Cancel**!")
+
+                elif open_entries[user_id]["json"]["blend_url"] == "yes":
+                    if message.attachments:
+                        blend_file = message.attachments[0]
+                        file_name = blend_file.filename
+                        if ".blend" in file_name:
+                            open_entries[user_id]["json"]["blend_url"] = await save_file(blend_file)
+                            remove_snippet(user_id, open_entries[user_id]["json"]["title"])
+                            add_snippet(open_entries[user_id]["json"])
+                            open_entries.pop(user_id)
+                            await message.channel.send("<@" + str(message.author.id) + "> Thanks for updating your snippet and blend file! It might take a few minutes to change on the marketplace!")
+                        else:
+                            await message.channel.send("<@" + str(message.author.id) + "> Please upload a blend file or type **Cancel**!")
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+
+            elif open_entries[user_id]["type"] == "package":
+                if not open_entries[user_id]["json"]["title"]:
+                    package_names = {}
+                    for package in find_packages(user_id):
+                        package_names[package["title"].lower()] = package["title"]
+                    if message.content.lower() in package_names:
+                        open_entries[user_id]["json"]["title"] = package_names[message.content.lower()]
+                        await message.channel.send("<@" + str(message.author.id) + "> Got it! Your current description is:\n'" + get_package(user_id, package_names[message.content.lower()])["description"] + "'\nType a new description or just copy and paste this one again!")
+                    else:
+                        await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
+
+                elif not open_entries[user_id]["json"]["description"]:
+                    open_entries[user_id]["json"]["description"] = message.content
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Alright! Your current author is:\n'" + get_package(user_id, open_entries[user_id]["json"]["title"])["author"] + "'\nType a new author or just copy and paste this one again!")
+                
+                elif not open_entries[user_id]["json"]["author"]:
+                    open_entries[user_id]["json"]["author"] = message.content
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Cool! Your current price is:\n'" + get_package(user_id, open_entries[user_id]["json"]["title"])["price"] + "'\nType a new price or just copy and paste this one again!")
+                
+                elif not open_entries[user_id]["json"]["price"]:
+                    open_entries[user_id]["json"]["price"] = message.content
+                    await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> Your current url is:\n'" + get_package(user_id, open_entries[user_id]["json"]["title"])["url"] + "'\nType a new url or just copy and paste this one again!")
+
+                elif not open_entries[user_id]["json"]["url"]:
+                    open_entries[user_id]["json"]["url"] = message.content
+                    remove_package(user_id, open_entries[user_id]["json"]["title"])
+                    add_package(open_entries[user_id]["json"])
+                    open_entries.pop(user_id)
+                    await message.channel.send("<@" + str(message.author.id) + "> Thanks for updating your package! It might take a few minutes to change on the marketplace!")
 
 
         elif open_entries[user_id]["upload_type"] == "remove":
@@ -214,7 +427,7 @@ async def on_message(message):
                     await message.channel.send("<@" + str(message.author.id) + "> Removed your addon! It might take a few minutes to get removed from the marketplace!")
                 else:
                     await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
-            
+
             elif open_entries[user_id]["type"] == "snippet":
                 snippet_names = {}
                 for snippet in find_snippets(user_id):
@@ -378,11 +591,11 @@ async def on_message(message):
                     await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your package! It might take a few minutes to show up on the marketplace!")
 
 
-        await message.delete()
-        os.system("git add -A")
-        os.system("git commit -m\"Serverlog\"")
-        os.system("git pull")
-        os.system("git push")
+        # await message.delete()
+        # os.system("git add -A")
+        # os.system("git commit -m\"Serverlog\"")
+        # os.system("git pull")
+        # os.system("git push")
 
 
 client.run(TOKEN)
