@@ -591,11 +591,11 @@ async def on_message(message):
                     await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your package! It might take a few minutes to show up on the marketplace!")
 
 
-        # await message.delete()
-        # os.system("git add -A")
-        # os.system("git commit -m\"Serverlog\"")
-        # os.system("git pull")
-        # os.system("git push")
+        await message.delete()
+        os.system("git add -A")
+        os.system("git commit -m\"Serverlog\"")
+        os.system("git pull")
+        os.system("git push")
 
 
 client.run(TOKEN)
