@@ -199,6 +199,10 @@ async def on_message(message):
                 await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
 
 
+        elif open_entries[user_id]["upload_type"] == "update":
+            print("test")
+
+
         elif open_entries[user_id]["upload_type"] == "remove":
             if open_entries[user_id]["type"] == "addon":
                 addon_names = {}
@@ -307,7 +311,7 @@ async def on_message(message):
                         await message.channel.send("<@" + str(message.author.id) + "> So you have an external url! Paste it in here and I will upload it")
                     else:
                         await message.channel.send("- " + message.content + "\n\n<@" + str(message.author.id) + "> I didn't get that. Please type **Yes**, **No** or **Cancel**!")
-                
+
                 elif open_entries[user_id]["json"]["url"] == "yes":
                     if message.attachments:
                         addon_file = message.attachments[0]
@@ -375,10 +379,10 @@ async def on_message(message):
 
 
         await message.delete()
-        # os.system("git add -A")
-        # os.system("git commit -m\"Serverlog\"")
-        # os.system("git pull")
-        # os.system("git push")
+        os.system("git add -A")
+        os.system("git commit -m\"Serverlog\"")
+        os.system("git pull")
+        os.system("git push")
 
 
 client.run(TOKEN)
