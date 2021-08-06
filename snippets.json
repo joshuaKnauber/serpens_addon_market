@@ -17,6 +17,15 @@
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/872681131143745556/New_Linked_Collection_Snippet.blend",
             "author": "blanchsb",
             "user": 445245317789515776
+        },
+        {
+            "title": "Changelog Interface",
+            "description": "Used in the Addon Prefs for making a Changelog",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/873041395630350396/Changelog_Interface.json",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/873041583338057738/Changelog_Interface.blend",
+            "author": "blanchsb",
+            "user": 445245317789515776
         }
     ]
 }
