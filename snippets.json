@@ -26,6 +26,15 @@
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/873041583338057738/Changelog_Interface.blend",
             "author": "blanchsb",
             "user": 445245317789515776
+        },
+        {
+            "title": "Allows you to easily move objects to a collection.",
+            "description": "Allows you to move objects to a collection",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/874856352906875000/Move_to_Collection.json",
+            "blend_url": "",
+            "author": "Thornton Strolia",
+            "user": 860649977595428925
         }
     ]
 }
