@@ -354,12 +354,12 @@
         },
         {
             "name": "Batch Material Settings",
-            "description": "Batch Material Settings",
+            "description": "Apply defined principled BSDF shader settings to Materials",
             "category": "Material",
             "author": "Elin",
             "blender_version": [
                 2,
-                80,
+                90,
                 3
             ],
             "addon_version": [
