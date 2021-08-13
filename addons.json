@@ -355,7 +355,7 @@
         {
             "name": "Batch Material Settings",
             "description": "Batch Material Settings",
-            "category": "User Interface",
+            "category": "Material",
             "author": "Elin",
             "blender_version": [
                 2,
