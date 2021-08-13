@@ -351,6 +351,28 @@
             "blend": true,
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/862581992243593267/QuickUV_Serpens.blend",
             "user": 148734666659069952
+        },
+        {
+            "name": "Batch Material Settings",
+            "description": "Batch Material Settings",
+            "category": "User Interface",
+            "author": "Elin",
+            "blender_version": [
+                2,
+                80,
+                3
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://github.com/Ladypoly/Serpens-Bledner-Addons/raw/main/batch_material_settings_1.0.0.zip",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 372105319721074690
         }
     ]
 }
