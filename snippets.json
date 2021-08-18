@@ -35,6 +35,15 @@
             "blend_url": "",
             "author": "Thornton Strolia",
             "user": 860649977595428925
+        },
+        {
+            "title": "S",
+            "description": "Set parameter on any Material Node",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/877647025976532992/Set_Material_Node.json",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/877647134093111356/SetMaterialProperties_Snippet.blend",
+            "author": "Elin",
+            "user": 372105319721074690
         }
     ]
 }
