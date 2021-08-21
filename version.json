@@ -1,11 +1,12 @@
 {
-  "version": [2,1,4],
+  "version": [2,1,5],
   "content": [
-            "Added Display Keymap node for custom shortcuts",
-            "Added Snippet marketplace",
-            "Fixed addon preference property updates",
-            "Fixed suggestion menu not working",
-            "Fixed Workspace blend data node",
-            "Changed copy python button for addon preferences"
+            "Added actions to append from file",
+            "Added register and unregister to script node",
+            "Added file select to run script node",
+            "Added clamp node",
+            "Variables and properties are now supported in snippets",
+            "Enum sockets are now supported by snippets and can be edited on functions",
+            "Bugfixes"
         ]
 }
