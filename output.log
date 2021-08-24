@@ -603,3 +603,12 @@ Merge made by the 'recursive' strategy.
  1 file changed, 2 insertions(+), 2 deletions(-)
 To github.com:joshuaKnauber/serpens_addon_market.git
    95c314f..80ea08c  main -> main
+[main 1a692ae] Serverlog
+ 1 file changed, 9 insertions(+)
+Von github.com:joshuaKnauber/serpens_addon_market
+   80ea08c..f66d092  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ version.json | 15 ++++++++-------
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   f66d092..42f668e  main -> main
