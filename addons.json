@@ -373,6 +373,28 @@
             "blend": false,
             "blend_url": "",
             "user": 372105319721074690
+        },
+        {
+            "name": "Quad Sphere",
+            "description": "Simply add Quad Spheres to your scenes",
+            "category": "Add Mesh",
+            "author": "Tobin",
+            "blender_version": [
+                2,
+                93,
+                3
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/881334819554992178/quad_sphere_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 851564008460779553
         }
     ]
 }
