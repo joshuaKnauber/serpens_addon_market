@@ -395,6 +395,28 @@
             "blend": false,
             "blend_url": "",
             "user": 851564008460779553
+        },
+        {
+            "name": "IL GRANDE POMODORO",
+            "description": "Useful set of Time Based Applications (Project Tracker and Pomodoro Timer) to help you keep track of your time spent in each blender Project.",
+            "category": "3D View",
+            "author": "Shawn Blanch (blanchsb)",
+            "blender_version": [
+                2,
+                92,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://blanchsb.gumroad.com/l/pomodoro_addon",
+            "price": "$10.00",
+            "blend": false,
+            "blend_url": "",
+            "user": 445245317789515776
         }
     ]
 }
