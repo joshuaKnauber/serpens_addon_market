@@ -44,6 +44,15 @@
             "blend_url": "",
             "author": "Thornton Strolia",
             "user": 860649977595428925
+        },
+        {
+            "title": "Get Children of Object",
+            "description": "Get Children of Named Object or Active Object if Named object is not found or input parameter is left blank.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/886970839642304512/Get_Children_of_Object.json",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/886970918394552390/Get_Children_of_Object.blend",
+            "author": "blanchsb",
+            "user": 445245317789515776
         }
     ]
 }
