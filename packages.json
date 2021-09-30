@@ -7,6 +7,14 @@
             "url": "www.google.com",
             "author": "me",
             "user": 0
+        },
+        {
+            "title": "Pose Bones",
+            "description": "Custom Node for accessing the blend data on active/selected pose bones in the scene",
+            "price": "Free",
+            "url": "https://blanchsb.gumroad.com/l/package_pose_bones",
+            "author": "blanchsb",
+            "user": 445245317789515776
         }
     ]
 }
