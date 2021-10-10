@@ -1,12 +1,10 @@
 {
-  "version": [2,1,5],
+  "version": [2,1,6],
   "content": [
-            "Added actions to append from file",
-            "Added register and unregister to script node",
-            "Added file select to run script node",
-            "Added clamp node",
-            "Variables and properties are now supported in snippets",
-            "Enum sockets are now supported by snippets and can be edited on functions",
+            "Added action recorder node",
+            "You can now use functions inside snippets",
+            "Added selector panel for custom vars and props to snippets",
+            "Run function now can delay when the function runs",
             "Bugfixes"
-        ]
+  ]
 }
