@@ -417,6 +417,28 @@
             "blend": false,
             "blend_url": "",
             "user": 445245317789515776
+        },
+        {
+            "name": "Serpens Buttons",
+            "description": "auick access to frequently used buttons",
+            "category": "3D View",
+            "author": "vranimeted",
+            "blender_version": [
+                2,
+                93,
+                5
+            ],
+            "addon_version": [
+                1,
+                0,
+                1
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/896861281892581426/serpens_buttons_1.0.1.zip",
+            "price": "",
+            "blend": true,
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/896861336473071686/Serpens_Buttons_Addon.blend",
+            "user": 272275672947490817
         }
     ]
 }
