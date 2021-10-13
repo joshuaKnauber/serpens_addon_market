@@ -53,6 +53,15 @@
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/886970918394552390/Get_Children_of_Object.blend",
             "author": "blanchsb",
             "user": 445245317789515776
+        },
+        {
+            "title": "Addon Detection Snippet",
+            "description": "Quickly see if the addon required for your button/feature to work is enabled by removing the embross from the button if it's disabled.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/897685799036915732/Addon_Detection_Snippet.json",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/897686032252821504/Snippet_-_Addon_Detection.blend",
+            "author": "vranimeted/blanchsb",
+            "user": 272275672947490817
         }
     ]
 }
