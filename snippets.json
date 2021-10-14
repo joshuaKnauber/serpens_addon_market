@@ -62,6 +62,15 @@
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/897686032252821504/Snippet_-_Addon_Detection.blend",
             "author": "vranimeted/blanchsb",
             "user": 272275672947490817
+        },
+        {
+            "title": "Addon Detection Snippet v3",
+            "description": "Quickly see if the addon required for your button/feature to work is enabled by removing the embross from the button if it's disabled. \n*v3 has an option to use icons to indicate if the addon is enabled or disabled.  Blend file has custom icons.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/898280298108825600/Addon_Detection_Snippet_v3.json",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/898280399644528650/Snippet_-_Addon_Detection.blend",
+            "author": "vranimeted/blanchsb",
+            "user": 272275672947490817
         }
     ]
 }
