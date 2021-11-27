@@ -461,6 +461,28 @@
             "blend": true,
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/913401584761856080/Rigid_Body_Joint_Helpers.blend",
             "user": 239562006154182657
+        },
+        {
+            "name": "Sculpt Texture Tool Lite",
+            "description": "Helpful Toolset Sculpt Texture Adjustments",
+            "category": "3D View",
+            "author": "blanchsb",
+            "blender_version": [
+                2,
+                92,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://blanchsb.gumroad.com/l/BrushTextureToolsLite",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 445245317789515776
         }
     ]
 }
