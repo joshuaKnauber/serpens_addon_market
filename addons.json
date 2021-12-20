@@ -441,28 +441,6 @@
             "user": 272275672947490817
         },
         {
-            "name": "Rigid Body Joint Speedy Pivots",
-            "description": "adds buttons to rigid body joint constraint",
-            "category": "Physics",
-            "author": "vuaieo",
-            "blender_version": [
-                3,
-                10,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/913401384274112522/rigid_body_joint_speedy_pivots_1.0.0.zip",
-            "price": "",
-            "blend": true,
-            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/913401584761856080/Rigid_Body_Joint_Helpers.blend",
-            "user": 239562006154182657
-        },
-        {
             "name": "Sculpt Texture Tool Lite",
             "description": "Helpful Toolset Sculpt Texture Adjustments",
             "category": "3D View",
@@ -483,6 +461,28 @@
             "blend": false,
             "blend_url": "",
             "user": 445245317789515776
+        },
+        {
+            "name": "Rigid Body Joint Speedy Pivots",
+            "description": "adds buttons to rigid body joint constraint",
+            "category": "Physics",
+            "author": "vuaieo",
+            "blender_version": [
+                3,
+                10,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                2
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/922489353375191050/rigid_body_joint_speedy_pivots_1.0.2.zip",
+            "price": "",
+            "blend": true,
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/922489616626507786/Rigid_Body_Joint_Helpers.blend",
+            "user": 239562006154182657
         }
     ]
 }
