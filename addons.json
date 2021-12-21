@@ -483,6 +483,28 @@
             "blend": true,
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/922489616626507786/Rigid_Body_Joint_Helpers.blend",
             "user": 239562006154182657
+        },
+        {
+            "name": "Rigid Body Joint Speedy Pivots",
+            "description": "adds buttons to rigid body joint constraint",
+            "category": "Physics",
+            "author": "vuaieo",
+            "blender_version": [
+                3,
+                10,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                3
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/922747705577578567/rigid_body_joint_speedy_pivots_1.0.3.zip",
+            "price": "",
+            "blend": true,
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/922747771935662120/Rigid_Body_Joint_Helpers.blend",
+            "user": 239562006154182657
         }
     ]
 }
