@@ -527,28 +527,6 @@
             "blend": false,
             "blend_url": "",
             "user": 551410115719200779
-        },
-        {
-            "name": "Node++",
-            "description": "A pack of Node Groups that take Geometry Nodes to the next level!",
-            "category": "Node",
-            "author": "artofriaz3d",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": true,
-            "url": "https://artofriaz3d.gumroad.com/l/Nodeplusplus",
-            "price": "$8",
-            "blend": false,
-            "blend_url": "",
-            "user": 551410115719200779
         }
     ]
 }

@@ -1,10 +1,7 @@
 {
-  "version": [2,1,6],
+  "version": [2,1,7],
   "content": [
-            "Added action recorder node",
-            "You can now use functions inside snippets",
-            "Added selector panel for custom vars and props to snippets",
-            "Run function now can delay when the function runs",
-            "Bugfixes"
+            "Fixed variables taking long to add in complex files",
+            "Fixed function returns breaking when disconnected temporarily",
   ]
 }
