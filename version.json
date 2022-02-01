@@ -2,6 +2,6 @@
   "version": [2,1,7],
   "content": [
             "Fixed variables taking long to add in complex files",
-            "Fixed function returns breaking when disconnected temporarily",
+            "Fixed function returns breaking when disconnected temporarily"
   ]
 }
