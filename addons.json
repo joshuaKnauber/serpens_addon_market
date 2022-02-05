@@ -549,6 +549,28 @@
             "blend": false,
             "blend_url": "",
             "user": 888099443574984754
+        },
+        {
+            "name": "LGTKIT",
+            "description": "A Lighting Shelf that allows you to quickly access and tweak all lights in the current scene with a variety of filters/",
+            "category": "User Interface",
+            "author": "NO-CONFORM",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                0,
+                0,
+                2
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/939429561983201351/lgtkit_0.0.2.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 70997958769770496
         }
     ]
 }
