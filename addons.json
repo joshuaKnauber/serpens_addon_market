@@ -529,28 +529,6 @@
             "user": 551410115719200779
         },
         {
-            "name": "NSUNS Modding Addon",
-            "description": "This Is A Modding Addon For NSUNS4",
-            "category": "Modding",
-            "author": "Clavilux",
-            "blender_version": [
-                2,
-                90,
-                0
-            ],
-            "addon_version": [
-                0,
-                0,
-                3
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/938178787999359006/nsuns_modding_addon.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 888099443574984754
-        },
-        {
             "name": "LGTKIT",
             "description": "A Lighting Shelf that allows you to quickly access and tweak all lights in the current scene with a variety of filters/",
             "category": "User Interface",
