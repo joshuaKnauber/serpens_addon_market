@@ -571,6 +571,28 @@
             "blend": false,
             "blend_url": "",
             "user": 888099443574984754
+        },
+        {
+            "name": "VSE Add Menu N-Panel",
+            "description": "Moves the Add Menu to the N-Panel in the Video Sequence Editor",
+            "category": "Sequencer",
+            "author": "blanchsb",
+            "blender_version": [
+                2,
+                92,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://blanchsb.gumroad.com/l/Blender_Addon_VSE_Add_Menu_NPanel",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 445245317789515776
         }
     ]
 }
