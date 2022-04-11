@@ -551,28 +551,6 @@
             "user": 70997958769770496
         },
         {
-            "name": "NSUNS Modding Addon",
-            "description": "This Is A Modding Addon For NSUNS Games",
-            "category": "Modding",
-            "author": "Clavilux",
-            "blender_version": [
-                2,
-                90,
-                0
-            ],
-            "addon_version": [
-                0,
-                0,
-                6
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/939522545412087850/nsuns_modding_addon.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 888099443574984754
-        },
-        {
             "name": "VSE Add Menu N-Panel",
             "description": "Moves the Add Menu to the N-Panel in the Video Sequence Editor",
             "category": "Sequencer",
