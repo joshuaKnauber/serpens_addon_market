@@ -691,3 +691,12 @@ To github.com:joshuaKnauber/serpens_addon_market.git
 Connected to Discord!
 Connected to Discord!
 Connected to Discord!
+[main b9f7ea8] Serverlog
+ 1 file changed, 8 insertions(+)
+Von github.com:joshuaKnauber/serpens_addon_market
+   af49988..2dab9cc  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ addons.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   2dab9cc..5d3d612  main -> main
