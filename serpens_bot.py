@@ -156,7 +156,7 @@ async def save_snippet(save_file, user_id):
     with open(file_name,"r+") as file_text:
         snippet = json.loads(file_text.read())
         if "version" in snippet:
-            open_entries[user_id]["serpens_version"] = snippet["version"]
+            open_entries[user_id]["json"]["serpens_version"] = snippet["version"]
     fileobject = discord.File(file_name)
     message = await channel.send(file=fileobject)
 
