@@ -110,3 +110,12 @@ To github.com:joshuaKnauber/serpens_addon_market.git
 Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    b247359..b0702f4  main -> main
+[main 6a39896] Serverlog
+ 1 file changed, 5 insertions(+)
+Von github.com:joshuaKnauber/serpens_addon_market
+   b0702f4..9b19ccc  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ snippets.json | 11 +----------
+ 1 file changed, 1 insertion(+), 10 deletions(-)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   9b19ccc..a68d373  main -> main

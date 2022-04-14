@@ -71,6 +71,16 @@
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/898280399644528650/Snippet_-_Addon_Detection.blend",
             "author": "vranimeted/blanchsb",
             "user": 272275672947490817
+        },
+        {
+            "title": "A",
+            "description": "B",
+            "price": "D",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/964110340491198524/interface.json",
+            "blend_url": "",
+            "author": "C",
+            "user": 657253258712317952,
+            "serpens_version": 3
         }
     ]
 }
