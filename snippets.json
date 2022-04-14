@@ -71,6 +71,15 @@
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/898280399644528650/Snippet_-_Addon_Detection.blend",
             "author": "vranimeted/blanchsb",
             "user": 272275672947490817
+        },
+        {
+            "title": "Test",
+            "description": "this is a test",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/964093155014225940/interface.json",
+            "blend_url": "",
+            "author": "Me",
+            "user": 657253258712317952
         }
     ]
 }
