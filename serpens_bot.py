@@ -153,7 +153,7 @@ async def save_snippet(save_file, user_id):
     channel = client.get_channel(785132940278366260)
 
     await save_file.save(file_name)
-    with open(file_name) as file_text:
+    with open(file_name,"r+") as file_text:
         snippet = json.loads(file_text.read())
         if "version" in snippet:
             open_entries[user_id]["serpens_version"] = snippet["version"]
@@ -361,7 +361,7 @@ async def on_message(message):
                         addon_file = message.attachments[0]
                         file_name = addon_file.filename
                         if ".zip" in file_name or ".json" in file_name:
-                            open_entries[user_id]["json"]["url"] = await save_file(addon_file)
+                            open_entries[user_id]["json"]["url"] = await save_snippet(addon_file, user_id)
                             await message.channel.send("<@" + str(message.author.id) + "> Last question! Type **Yes** if you want to upload a blend file and **No** if you don't")
                         else:
                             await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
@@ -546,7 +546,7 @@ async def on_message(message):
                         addon_file = message.attachments[0]
                         file_name = addon_file.filename
                         if ".zip" in file_name or ".json" in file_name:
-                            open_entries[user_id]["json"]["url"] = await save_file(addon_file)
+                            open_entries[user_id]["json"]["url"] = await save_snippet(addon_file, user_id)
                             await message.channel.send("<@" + str(message.author.id) + "> Last question! Type **Yes** if you want to upload a blend file and **No** if you don't")
                         else:
                             await message.channel.send("<@" + str(message.author.id) + "> Something went wrong there. Please try again or type **Cancel**!")
