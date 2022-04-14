@@ -148,6 +148,22 @@ async def save_file(save_file):
 
     return message.attachments[0].url
 
+async def save_snippet(save_file, user_id):
+    file_name = save_file.filename
+    channel = client.get_channel(785132940278366260)
+
+    await save_file.save(file_name)
+    with open(file_name) as file_text:
+        snippet = json.loads(file_text.read())
+        if "version" in snippet:
+            open_entries[user_id]["serpens_version"] = snippet["version"]
+    fileobject = discord.File(file_name)
+    message = await channel.send(file=fileobject)
+
+    os.system("rm " + file_name)
+
+    return message.attachments[0].url
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
