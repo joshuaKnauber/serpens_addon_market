@@ -6,7 +6,8 @@
             "price": "-",
             "url": "www.google.com",
             "author": "me",
-            "user": 0
+            "user": 0,
+            "version": 3
         },
         {
             "title": "Pose Bones",
@@ -14,7 +15,8 @@
             "price": "Free",
             "url": "https://blanchsb.gumroad.com/l/package_pose_bones",
             "author": "blanchsb",
-            "user": 445245317789515776
+            "user": 445245317789515776,
+            "version": 2
         }
     ]
 }
