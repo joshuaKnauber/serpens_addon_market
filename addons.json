@@ -585,29 +585,6 @@
             "addon_version": [
                 1,
                 0,
-                0
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/969623680080547870/serpens_iii_wrangler_1.0.0.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
-            "name": "Serpens III Wrangler",
-            "description": "Alt+RightClick in the Serpens Editor",
-            "category": "Node",
-            "author": "Corza",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
                 1
             ],
             "external": false,
