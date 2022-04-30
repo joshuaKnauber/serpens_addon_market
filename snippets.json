@@ -71,6 +71,16 @@
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/898280399644528650/Snippet_-_Addon_Detection.blend",
             "author": "vranimeted/blanchsb",
             "user": 272275672947490817
+        },
+        {
+            "title": "Create a Material",
+            "description": "Creates an material index slot for the active object and then creates a material and assigns it to the new slot",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/969926210182344704/CreateMaterial.json",
+            "blend_url": "",
+            "author": "Corza",
+            "user": 458056640307134465,
+            "serpens_version": 3
         }
     ]
 }
