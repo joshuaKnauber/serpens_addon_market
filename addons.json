@@ -571,6 +571,29 @@
             "blend": false,
             "blend_url": "",
             "user": 445245317789515776
+        },
+        {
+            "name": "Serpens III Wrangler",
+            "description": "A node wrangler made just for serpens III",
+            "category": "Node",
+            "author": "Corza",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                5
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/975402644506042409/serpens_iii_wrangler_1.0.5.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 458056640307134465,
+            "serpens_version": 3
         }
     ]
 }
