@@ -101,6 +101,16 @@
             "author": "Corza",
             "user": 458056640307134465,
             "serpens_version": 3
+        },
+        {
+            "title": "Vector Split Combine",
+            "description": "Use this Snippet to do some tedious vector split and combine ops. Combine unique XYZ(W) values to get a vector 3 or 4. Or you can place a unique X/Y/Z/W into a Vector 3 or Vector 4, or you can Make a Vec 3 from Vec 4 and vice versa! It's a big node but you can hide sockets not in use with Ctrl + H after connecting it up.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/975610042466328576/SN_Vector_Split_Combine.json",
+            "blend_url": "",
+            "author": "blanchsb",
+            "user": 445245317789515776,
+            "serpens_version": 3
         }
     ]
 }
