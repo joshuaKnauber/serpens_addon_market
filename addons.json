@@ -596,7 +596,7 @@
             "serpens_version": 3
         },
         {
-            "name": "Remove all vertex groups",
+            "name": "Warps VGroup Remover",
             "description": "This will remove Vertex groups on any slected objects you select (works on Meshes) (will be in 3D_viewport Npanel)",
             "category": "Mesh",
             "author": "WarpedMethods9",
@@ -614,7 +614,7 @@
             "url": "https://warpedmethods9.gumroad.com/l/zznjb",
             "price": "Free",
             "blend": true,
-            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/978152202050863164/Warps_VGroup_Remover.blend",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/978154474357030912/Warps_VGroup_Remover.blend",
             "user": 318855117304627201,
             "serpens_version": 3
         }
