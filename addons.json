@@ -596,29 +596,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens III Wrangler",
-            "description": "A node wrangler made just for serpens III",
-            "category": "Node",
-            "author": "Corza",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                6
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/981131109939183626/serpens_iii_wrangler_1.0.6b.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
             "name": "Crease Pie Menu",
             "description": "Adds a pie menu in edit mode  for quickly adjusting the crease value of edges. There's an option for setting it to 1 and an option to clear the crease (sets it to 0) and an option to use the standard crease edge operator.",
             "category": "Designer Tools",
@@ -639,6 +616,29 @@
             "blend": false,
             "blend_url": "",
             "user": 569496454486556673,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens III Wrangler",
+            "description": "A node wrangler made just for serpens III",
+            "category": "Node",
+            "author": "Corza",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                6
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/981769327697080340/serpens_iii_wrangler_1.0.6c.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 458056640307134465,
             "serpens_version": 3
         }
     ]
