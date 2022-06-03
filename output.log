@@ -1213,3 +1213,12 @@ To github.com:joshuaKnauber/serpens_addon_market.git
 Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    28296d8..7c9783f  main -> main
+[main 0b130f6] Serverlog
+ 1 file changed, 5 insertions(+)
+Von github.com:joshuaKnauber/serpens_addon_market
+   7c9783f..7bbd89e  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ packages.json | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   7bbd89e..122f2c0  main -> main
