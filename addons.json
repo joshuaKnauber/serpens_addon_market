@@ -755,6 +755,29 @@
             "blend_url": "",
             "user": 366995900779855872,
             "serpens_version": 3
+        },
+        {
+            "name": "Workspace Pie Menu",
+            "description": "",
+            "category": "3D View",
+            "author": "AltTab",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://alttab.gumroad.com/l/WorkspaceSwitcher",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 366995900779855872,
+            "serpens_version": 3
         }
     ]
 }
