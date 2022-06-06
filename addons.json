@@ -709,6 +709,29 @@
             "blend_url": "",
             "user": 366995900779855872,
             "serpens_version": 3
+        },
+        {
+            "name": "Alt Tab Fractals",
+            "description": "A set of tools for creating fractals",
+            "category": "3D View",
+            "author": "Alt Tab",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://alttab.gumroad.com/l/Fractals",
+            "price": "3",
+            "blend": false,
+            "blend_url": "",
+            "user": 366995900779855872,
+            "serpens_version": 3
         }
     ]
 }
