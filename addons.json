@@ -663,6 +663,29 @@
             "blend_url": "",
             "user": 458056640307134465,
             "serpens_version": 3
+        },
+        {
+            "name": "Pie Menu Geometry Nodes",
+            "description": "Opens PieMenu when inside Geometry Nodes editor.",
+            "category": "Geometry Nodes",
+            "author": "Fluffy",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://alttab.gumroad.com/l/GeoNodes",
+            "price": "2",
+            "blend": false,
+            "blend_url": "",
+            "user": 366995900779855872,
+            "serpens_version": 3
         }
     ]
 }
