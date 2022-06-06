@@ -686,6 +686,29 @@
             "blend_url": "",
             "user": 366995900779855872,
             "serpens_version": 3
+        },
+        {
+            "name": "Pie Menu Shader Editor",
+            "description": "Opens PieMenu when inside shader editor providing an overview of all nodes.",
+            "category": "Shader Nodes",
+            "author": "Fluffy",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://alttab.gumroad.com/l/ShaderNodes",
+            "price": "2",
+            "blend": false,
+            "blend_url": "",
+            "user": 366995900779855872,
+            "serpens_version": 3
         }
     ]
 }
