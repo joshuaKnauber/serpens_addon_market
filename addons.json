@@ -642,29 +642,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens III Wrangler",
-            "description": "A node wrangler made just for Serpens III",
-            "category": "Node",
-            "author": "Corza",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                7
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/982214231774609448/serpens_iii_wrangler_1.0.7.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
             "name": "Pie Menu Geometry Nodes",
             "description": "Opens PieMenu when inside Geometry Nodes editor.",
             "category": "Geometry Nodes",
@@ -777,6 +754,29 @@
             "blend": false,
             "blend_url": "",
             "user": 366995900779855872,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens III Wrangler",
+            "description": "A node wrangler made just for Serpens III",
+            "category": "Node",
+            "author": "Corza",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                7
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/983629204400799764/serpens_iii_wrangler_1.0.7c.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 458056640307134465,
             "serpens_version": 3
         }
     ]
