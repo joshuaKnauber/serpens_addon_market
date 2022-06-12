@@ -778,6 +778,28 @@
             "blend_url": "",
             "user": 458056640307134465,
             "serpens_version": 3
+        },
+        {
+            "name": "Additional Shortcuts",
+            "description": "Adds some handy shortcuts to NLA panel",
+            "category": "Animation",
+            "author": "Zachariasz Jedrzejczyk",
+            "blender_version": [
+                3,
+                10,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                3
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/985469639964381184/AdditionalShortcuts.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 509376502652207136
         }
     ]
 }
