@@ -777,6 +777,29 @@
             "blend": false,
             "blend_url": "",
             "user": 509376502652207136
+        },
+        {
+            "name": "Separate Curves",
+            "description": "Separates Curves by Property",
+            "category": "3D View",
+            "author": "D0ppelgaenger",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/987313778309869638/separate_curves_1.0.0.zip",
+            "price": "",
+            "blend": true,
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/987313980760551424/Separate_Curves.blend",
+            "user": 331873931378032653,
+            "serpens_version": 3
         }
     ]
 }
