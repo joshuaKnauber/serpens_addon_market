@@ -791,13 +791,13 @@
             "addon_version": [
                 1,
                 0,
-                0
+                1
             ],
             "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/987313778309869638/separate_curves_1.0.0.zip",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/987408584457478224/separate_curves_1.0.1.zip",
             "price": "",
-            "blend": true,
-            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/987313980760551424/Separate_Curves.blend",
+            "blend": false,
+            "blend_url": "",
             "user": 331873931378032653,
             "serpens_version": 3
         }
