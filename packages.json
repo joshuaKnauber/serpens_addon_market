@@ -34,6 +34,14 @@
             "url": "https://blanchsb.gumroad.com/l/Serpens3_Program_Extras",
             "author": "blanchsb",
             "user": 445245317789515776
+        },
+        {
+            "title": "Script Function",
+            "description": "Single new node to run a script function, and return the result.",
+            "price": "Free",
+            "url": "https://github.com/Mahrkeenerh/SerpensScriptFunction/archive/refs/tags/v1.0.0.zip",
+            "author": "Mahrkeenerh",
+            "user": 502918323491569675
         }
     ]
 }
