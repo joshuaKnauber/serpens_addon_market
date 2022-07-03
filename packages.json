@@ -42,14 +42,6 @@
             "url": "https://github.com/Mahrkeenerh/SerpensScriptFunction/releases/download/v1.0.1/script_function.zip",
             "author": "Mahrkeenerh",
             "user": 502918323491569675
-        },
-        {
-            "title": "Addon Installed",
-            "description": "Checks if a plugin is installed by using the plugins bl_info name",
-            "price": "Free",
-            "url": "https://design-demo.co.uk/Addon%20Installed.zip",
-            "author": "SkdSam",
-            "user": 371583582969528331
         }
     ]
 }
