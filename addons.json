@@ -808,8 +808,8 @@
             "author": "bleedn",
             "blender_version": [
                 3,
-                1,
-                2
+                2,
+                0
             ],
             "addon_version": [
                 1,
@@ -817,7 +817,7 @@
                 0
             ],
             "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/994098290708713572/dummy_materials_1.0.0.zip",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/994098774727196713/dummy_materials_1.0.0.zip",
             "price": "",
             "blend": false,
             "blend_url": "",
