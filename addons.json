@@ -800,6 +800,29 @@
             "blend_url": "",
             "user": 331873931378032653,
             "serpens_version": 3
+        },
+        {
+            "name": "Dummy Materials",
+            "description": "Instantly add dummy materials to your models",
+            "category": "3D View",
+            "author": "bleedn",
+            "blender_version": [
+                3,
+                1,
+                2
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/994098290708713572/dummy_materials_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 442425669276663809,
+            "serpens_version": 3
         }
     ]
 }
