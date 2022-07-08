@@ -45,8 +45,8 @@
         },
         {
             "title": "Addon Installed",
-            "description": "Serpens 3 Check a plugin is installed using the plugins bl_info name",
-            "price": "Free!",
+            "description": "Serpens 3 Check a plugin is installed and is active using the plugins name only",
+            "price": "Free",
             "url": "https://design-demo.co.uk/Addon%20Installed.zip",
             "author": "skdsam",
             "user": 371583582969528331
