@@ -823,6 +823,29 @@
             "blend_url": "",
             "user": 442425669276663809,
             "serpens_version": 3
+        },
+        {
+            "name": "SPPies",
+            "description": "Multi Addon Pie Helper",
+            "category": "3D View",
+            "author": "Sam Poole",
+            "blender_version": [
+                3,
+                2,
+                0
+            ],
+            "addon_version": [
+                2,
+                1,
+                5
+            ],
+            "external": true,
+            "url": "https://spool.gumroad.com/l/lkgvf",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 400396627111575554,
+            "serpens_version": 3
         }
     ]
 }
