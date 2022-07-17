@@ -602,6 +602,7 @@ async def on_message(message):
 
                 elif not open_entries[user_id]["json"]["url"]:
                     open_entries[user_id]["json"]["url"] = message.content
+                    open_entries[user_id]["json"]["version"] = 3
                     add_package(open_entries[user_id]["json"])
                     open_entries.pop(user_id)
                     await message.channel.send("<@" + str(message.author.id) + "> Thanks for uploading your package! It might take a few minutes to show up on the marketplace!")

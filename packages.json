@@ -33,7 +33,8 @@
             "price": "Free",
             "url": "https://blanchsb.gumroad.com/l/Serpens3_Program_Extras",
             "author": "blanchsb",
-            "user": 445245317789515776
+            "user": 445245317789515776,
+            "version": 3
         },
         {
             "title": "Script Function",
@@ -41,7 +42,8 @@
             "price": "Free",
             "url": "https://github.com/Mahrkeenerh/SerpensScriptFunction/releases/download/v1.0.1/script_function.zip",
             "author": "Mahrkeenerh",
-            "user": 502918323491569675
+            "user": 502918323491569675,
+            "version": 3
         },
         {
             "title": "Addon Installed",
@@ -49,7 +51,8 @@
             "price": "Free",
             "url": "https://design-demo.co.uk/Addon%20Installed.zip",
             "author": "skdsam",
-            "user": 371583582969528331
+            "user": 371583582969528331,
+            "version": 3
         },
         {
             "title": "tesadgf",
@@ -57,7 +60,8 @@
             "price": "1 Million $",
             "url": "www.myspace.com",
             "author": "me obviously",
-            "user": 657253258712317952
+            "user": 657253258712317952,
+            "version": 3
         }
     ]
 }
