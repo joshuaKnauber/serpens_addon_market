@@ -862,29 +862,6 @@
                 0,
                 0
             ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1003752292446654534/Easy_Soft_Body.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 974863262518751282,
-            "serpens_version": 3
-        },
-        {
-            "name": "Easy Soft Body",
-            "description": "A nice fast Soft Body simulation with few clicks.",
-            "category": "Physics",
-            "author": "Luca Boisvert",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
             "external": true,
             "url": "{\"name\": \"Easy Soft Body\", \"description\": \"A nice fast Soft Body simulation with few clicks.\", \"category\": \"Physics\", \"author\": \"Luca Boisvert\", \"blender_version\": [3, 0, 0], \"addon_version\": [1, 0, 0], \"external\": false, \"url\": \"\", \"price\": \"\", \"blend\": false, \"blend_url\": \"\", \"user\": 0, \"serpens_version\": 3}",
             "price": "7$",
