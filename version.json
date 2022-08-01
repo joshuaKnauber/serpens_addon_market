@@ -1,8 +1,8 @@
 {
-  "version": [3,1,1],
+  "version": [3,1,2],
   "content": [
-            "Write Text File node",
-            "Watch Run Script changes option",
+            "Outputs for interface nodes",
+            "Context Overrides",
             "Bugfixes",
             "See the documentation for a full changelog"
   ]
