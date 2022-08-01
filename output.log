@@ -2468,3 +2468,12 @@ Merge made by the 'recursive' strategy.
  1 file changed, 18 deletions(-)
 To github.com:joshuaKnauber/serpens_addon_market.git
    937cbd6..ece3c80  main -> main
+[main a528d51] Serverlog
+ 1 file changed, 9 insertions(+)
+Von github.com:joshuaKnauber/serpens_addon_market
+   ece3c80..779e474  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ version.json | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+To github.com:joshuaKnauber/serpens_addon_market.git
+   779e474..df01ccd  main -> main
