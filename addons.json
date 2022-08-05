@@ -869,6 +869,29 @@
             "blend_url": "",
             "user": 974863262518751282,
             "serpens_version": 3
+        },
+        {
+            "name": "Render/Viewport Transparency",
+            "description": "Allows you to enable transparancy for the viewport or render only",
+            "category": "Render",
+            "author": "Sam Morse-Brown",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1004932230273040484/renderviewport_transparency_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 398213075590709261,
+            "serpens_version": 3
         }
     ]
 }
