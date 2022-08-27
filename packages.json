@@ -47,7 +47,7 @@
         },
         {
             "title": "Extended Scripting",
-            "description": "Extends the Serpens scripting capabilities with new nodes.",
+            "description": "Serpens 3: Extends scripting capabilities with new nodes.",
             "price": "Free",
             "url": "https://github.com/Mahrkeenerh/SerpensExtendedScripting",
             "author": "Mahrkeenerh",
