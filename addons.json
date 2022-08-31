@@ -892,6 +892,29 @@
             "blend_url": "",
             "user": 398213075590709261,
             "serpens_version": 3
+        },
+        {
+            "name": "Image Manager",
+            "description": "Set of filters and tools to manage your textures ",
+            "category": "UV",
+            "author": "Lynchon",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                0,
+                1,
+                4
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1014499035870134342/image_manager_0.1.4.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 615823208549187584,
+            "serpens_version": 3
         }
     ]
 }
