@@ -111,6 +111,16 @@
             "author": "blanchsb",
             "user": 445245317789515776,
             "serpens_version": 3
+        },
+        {
+            "title": "Generate Dynamic Enum",
+            "description": "Generate Dynamic Enum from a List or a Collection",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1015015258529738782/Generate_Dynamic_Enum.json",
+            "blend_url": "",
+            "author": "Mahrkeenerh",
+            "user": 502918323491569675,
+            "serpens_version": 3
         }
     ]
 }
