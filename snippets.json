@@ -121,6 +121,16 @@
             "author": "Mahrkeenerh",
             "user": 502918323491569675,
             "serpens_version": 3
+        },
+        {
+            "title": "Is variable null",
+            "description": "To find the variable is null or not.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1032226357171716116/Is_variable_null.json",
+            "blend_url": "",
+            "author": "Dox",
+            "user": 656464800271958057,
+            "serpens_version": 3
         }
     ]
 }
