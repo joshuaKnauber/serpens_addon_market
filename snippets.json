@@ -131,6 +131,16 @@
             "author": "Dox",
             "user": 656464800271958057,
             "serpens_version": 3
+        },
+        {
+            "title": "Move To Collection (S3)",
+            "description": "Moves all selected objects to a named collection.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1033957551873740860/MoveToCollection_S3.json",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/1033957659830927410/MoveToCollection_S3.blend",
+            "author": "ro0nik",
+            "user": 138103216473767936,
+            "serpens_version": 3
         }
     ]
 }
