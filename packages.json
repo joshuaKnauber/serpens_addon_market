@@ -52,6 +52,15 @@
             "author": "Corza",
             "user": 458056640307134465,
             "version": 3
+        },
+        {
+            "title": "Serpens 3 - Program Extras (Toggle Blender Keymaps)",
+            "description": "Program nodes created by blanchsb. Latest node is a Toggle User Keymap node to let you toggle any Keymap.",
+            "price": "Free",
+            "url": "https://blanchsb.gumroad.com/l/Serpens3_Program_Extras",
+            "author": "blanchsb",
+            "user": 445245317789515776,
+            "version": 3
         }
     ]
 }
