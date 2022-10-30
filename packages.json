@@ -28,15 +28,6 @@
             "version": 3
         },
         {
-            "title": "Program Extras",
-            "description": "Serpens 3 Program Extras Nodes",
-            "price": "Free",
-            "url": "https://blanchsb.gumroad.com/l/Serpens3_Program_Extras",
-            "author": "blanchsb",
-            "user": 445245317789515776,
-            "version": 3
-        },
-        {
             "title": "Addon Installed",
             "description": "Serpens 3 Check a plugin is installed and is active using the plugins name only",
             "price": "Free",
