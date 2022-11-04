@@ -309,28 +309,6 @@
             "user": 379097522024742912
         },
         {
-            "name": "Text_Editor_Easy_Menu",
-            "description": "Adds Easy Save Icons to the Scripting Editor",
-            "category": "Text Editor",
-            "author": "Blanchsb",
-            "blender_version": [
-                2,
-                92,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/858935988797177856/text_editor_easy_menu_1.0.0.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 445245317789515776
-        },
-        {
             "name": "QuickUV",
             "description": "Pi Menu for some common UV Editing to make the workflow a little less cluttered and faster, Use with Ctrl+Shift+E on both 3D View and Image Editor",
             "category": "3D View, Image Editor",
