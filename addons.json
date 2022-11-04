@@ -265,28 +265,6 @@
             "user": 109297162378022912
         },
         {
-            "name": "Addon_Creation_Template_v1_0_0",
-            "description": "This is a template addon",
-            "category": "3D View",
-            "author": "blanchsb",
-            "blender_version": [
-                2,
-                80,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": true,
-            "url": "https://gum.co/serpens_add-on_creation_template",
-            "price": "Free or Donate",
-            "blend": true,
-            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/811367273037824061/Add-On_Creation_Template_v1_0_0.blend",
-            "user": 445245317789515776
-        },
-        {
             "name": "SwapOrientation",
             "description": "Swap between portrait and landscape orientation for render.",
             "category": "Render",
