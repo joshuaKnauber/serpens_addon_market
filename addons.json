@@ -894,6 +894,29 @@
             "blend_url": "",
             "user": 445245317789515776,
             "serpens_version": 3
+        },
+        {
+            "name": "Coders Assistant",
+            "description": "Helpful Menu Tools in Blender to use while coding.",
+            "category": "User Interface",
+            "author": "blanchsb",
+            "blender_version": [
+                3,
+                3,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://blanchsb.gumroad.com/l/coders_assistant",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 445245317789515776,
+            "serpens_version": 3
         }
     ]
 }
