@@ -141,6 +141,16 @@
             "author": "ro0nik",
             "user": 138103216473767936,
             "serpens_version": 3
+        },
+        {
+            "title": "NewCollection",
+            "description": "Node to allow you to easily create a New Linked Collection within the Active Scene.  Inputs: 1. Collection_Name - can either type or connect String to name New Collection; 2. Make_Child_of_Active_Object_Collection - Boolean to choose create a New Child Collection to Collection of Active Object.  Output: Collection_Name - passes created New Collection name on (can be different than Collection_Name Input if string already exists as Collection, e.g., New_Collection already exists and New_Collection.001 is created and passed on).",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1042051668977664040/NewCollection.json",
+            "blend_url": "",
+            "author": "Ayjent",
+            "user": 731504149677473972,
+            "serpens_version": 3
         }
     ]
 }
