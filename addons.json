@@ -917,6 +917,29 @@
             "blend_url": "",
             "user": 445245317789515776,
             "serpens_version": 3
+        },
+        {
+            "name": "Collector",
+            "description": "Make Collections with Child and Object Move Options",
+            "category": "User Interface",
+            "author": "Ayjent",
+            "blender_version": [
+                3,
+                1,
+                0
+            ],
+            "addon_version": [
+                1,
+                1,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1042399017377730640/collector_1.1.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 731504149677473972,
+            "serpens_version": 3
         }
     ]
 }
