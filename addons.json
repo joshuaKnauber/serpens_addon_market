@@ -940,6 +940,29 @@
             "blend_url": "",
             "user": 731504149677473972,
             "serpens_version": 3
+        },
+        {
+            "name": "Set Origin Pie Menu",
+            "description": "Pie Menu for Setting the Origin",
+            "category": "3D View",
+            "author": "blanchsb",
+            "blender_version": [
+                3,
+                3,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1043682915558641746/set_origin_pie_menu_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 445245317789515776,
+            "serpens_version": 3
         }
     ]
 }
