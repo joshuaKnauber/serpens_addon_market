@@ -3748,3 +3748,8 @@ ssl.SSLError: [SSL: KRB5_S_INIT] application data after close notify (_ssl.c:260
 Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    2c5bcdc..f3e54d7  main -> main
+[main c6e4a02] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   f3e54d7..c6e4a02  main -> main
