@@ -1009,6 +1009,29 @@
             "blend_url": "",
             "user": 445245317789515776,
             "serpens_version": 3
+        },
+        {
+            "name": "Layer Creator",
+            "description": "Easily create and manage image texture layers using existing images or new images with settings of your choice.",
+            "category": "3D View",
+            "author": "shadewho",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "{\"name\": \"Layer Creator\", \"description\": \"Easily create and manage image texture layers using existing images or new images with settings of your choice.\", \"category\": \"3D View\", \"author\": \"shadewho\", \"blender_version\": [3, 0, 0], \"addon_version\": [1, 0, 0], \"external\": true, \"url\": \"https://blendermarket.com/products/layer-creator\", \"price\": \"8\", \"blend\": false, \"blend_url\": \"\", \"user\": 0, \"serpens_version\": 3}",
+            "price": "8",
+            "blend": false,
+            "blend_url": "",
+            "user": 957530751908315146,
+            "serpens_version": 3
         }
     ]
 }
