@@ -963,29 +963,6 @@
             "blend_url": "",
             "user": 445245317789515776,
             "serpens_version": 3
-        },
-        {
-            "name": "Serpens Node Wrangler",
-            "description": "A Node Wrangler made with Serpens for Serpens",
-            "category": "Node",
-            "author": "Corza",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                3,
-                0,
-                0
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1043830708705169489/Serpens_Node_Wrangler_3.0.0.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 458056640307134465,
-            "serpens_version": 3
         }
     ]
 }
