@@ -986,6 +986,29 @@
             "blend_url": "",
             "user": 458056640307134465,
             "serpens_version": 3
+        },
+        {
+            "name": "Convert To Pie Menu",
+            "description": "Pie menu for Convert to Operators",
+            "category": "3D View",
+            "author": "blanchsb",
+            "blender_version": [
+                3,
+                3,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1044290936961769563/convert_to_pie_menu_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 445245317789515776,
+            "serpens_version": 3
         }
     ]
 }
