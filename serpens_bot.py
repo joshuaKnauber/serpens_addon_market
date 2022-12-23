@@ -144,7 +144,7 @@ async def save_file(save_file):
     fileobject = discord.File(file_name)
     message = await channel.send(file=fileobject)
 
-    os.system("rm -rf" + file_name)
+    os.system("rm" + file_name)
 
     return message.attachments[0].url
 
@@ -153,15 +153,10 @@ async def save_snippet(save_file, user_id):
     channel = client.get_channel(785132940278366260)
 
     await save_file.save(file_name)
-    if file_name.split(".")[-1] == "zip":
-        with open(file_name,"r+") as file_text:
-            snippet = json.loads(file_text.read())
-            if "version" in snippet:
-                open_entries[user_id]["json"]["serpens_version"] = snippet["version"]
     fileobject = discord.File(file_name)
     message = await channel.send(file=fileobject)
 
-    os.system("rm -rf" + file_name)
+    os.system("rm" + file_name)
 
     return message.attachments[0].url
 
