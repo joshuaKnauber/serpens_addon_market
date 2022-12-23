@@ -210,7 +210,7 @@ async def on_message(message):
 
             elif message.content.lower() in ["snippet", "s"]:
                 open_entries[user_id]["type"] = "snippet"
-                open_entries[user_id]["json"] =  {"title": "","description": "","price": "","url": "", "blend_url": "", "author": "", "user": user_id}
+                open_entries[user_id]["json"] =  {"title": "","description": "","price": "","url": "", "blend_url": "", "author": "", "serpens_version": 3, "user": user_id}
                 if open_entries[user_id]["upload_type"] == "upload":
                     await message.channel.send("<@" + str(message.author.id) + "> You want to " + open_entries[user_id]["upload_type"] + " a Snippet! Awesome! You can type **Cancel** at any time! Now let me know what do you want to call it!")
                 elif open_entries[user_id]["upload_type"] == "remove":
