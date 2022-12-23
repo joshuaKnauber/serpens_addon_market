@@ -73,36 +73,6 @@
             "user": 272275672947490817
         },
         {
-            "title": "Create a Material",
-            "description": "Creates an material index slot for the active object and then creates a material and assigns it to the new slot",
-            "price": "Free",
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/969926210182344704/CreateMaterial.json",
-            "blend_url": "",
-            "author": "Corza",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
-            "title": "Distance between two points",
-            "description": "Finds the distance between two points",
-            "price": "Free",
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/970434964497768458/distance_between_two_points.json",
-            "blend_url": "",
-            "author": "Corza",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
-            "title": "Location between two points",
-            "description": "Finds the location between two points",
-            "price": "Free",
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/970445297966809218/location_between_two_points.json",
-            "blend_url": "",
-            "author": "Corza",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
             "title": "Vector Split Combine",
             "description": "Use this Snippet to do some tedious vector split and combine ops. Combine unique XYZ(W) values to get a vector 3 or 4. Or you can place a unique X/Y/Z/W into a Vector 3 or Vector 4, or you can Make a Vec 3 from Vec 4 and vice versa! It's a big node but you can hide sockets not in use with Ctrl + H after connecting it up.",
             "price": "Free",
@@ -149,6 +119,56 @@
             "url": "https://cdn.discordapp.com/attachments/785132940278366260/1042051668977664040/NewCollection.json",
             "blend_url": "",
             "author": "Ayjent",
+            "user": 731504149677473972,
+            "serpens_version": 3
+        },
+        {
+            "title": "S",
+            "description": "Get a list all blender data",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1048645834671136848/List_all_Blend_data.json",
+            "blend_url": "",
+            "author": "skdsam",
+            "user": 371583582969528331,
+            "serpens_version": 3
+        },
+        {
+            "title": "True Deselect ALL",
+            "description": "Truly Deselect any Active or Selected Object in both Viewport and in the Outliner",
+            "price": "Free!",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1053738272095993856/True_Deselect_ALL.json",
+            "blend_url": "",
+            "author": "Meshbuilders",
+            "user": 685191287854727184,
+            "serpens_version": 3
+        },
+        {
+            "title": "RGB to HSV conversion",
+            "description": "Convert RGB to HSV",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1055612583618551808/RGB_to_HSV.json",
+            "blend_url": "",
+            "author": "shadewho",
+            "user": 957530751908315146,
+            "serpens_version": 3
+        },
+        {
+            "title": "HSV to RGB converter",
+            "description": "Convert HSV to RGB",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1055613697915109456/HSV_to_RGB.json",
+            "blend_url": "",
+            "author": "shadewho",
+            "user": 957530751908315146,
+            "serpens_version": 3
+        },
+        {
+            "title": "Exclude Layer Collection",
+            "description": "Node with Boolean to Choose name of \"layer collection\" in Outliner to \"exclude\" that deactivates the specified layer collection and all children and objects from the viewport.  The Outliner is not that intuitive to utilize exclude function.  Corza should get credit for this snippet as he had the solution.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1055771526378565683/Exclude_Layer_Collection.json",
+            "blend_url": "",
+            "author": "Ayjent/Corza",
             "user": 731504149677473972,
             "serpens_version": 3
         }
