@@ -33,3 +33,82 @@ To github.com:joshuaKnauber/serpens_addon_market.git
 Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    ee139c7..25540ed  main -> main
+[main c0bab97] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   25540ed..c0bab97  main -> main
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/finn/.local/lib/python3.7/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "serpens_bot.py", line 550, in on_message
+    open_entries[user_id]["json"]["url"] = await save_snippet(addon_file, user_id)
+  File "serpens_bot.py", line 158, in save_snippet
+    snippet = json.loads(file_text.read())
+  File "/usr/lib/python3.7/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb1 in position 183: invalid start byte
+Connected to Discord!
+[main ee8162a] Serverlog
+ 1 file changed, 17 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   e4ac421..ee8162a  main -> main
+[main cddb663] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   ee8162a..cddb663  main -> main
+[main 4add457] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   cddb663..4add457  main -> main
+[main e042c0f] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   4add457..e042c0f  main -> main
+[main 4884669] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   e042c0f..4884669  main -> main
+[main e613ca1] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   4884669..e613ca1  main -> main
+[main 66ba4f7] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   e613ca1..66ba4f7  main -> main
+[main c185da2] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   66ba4f7..c185da2  main -> main
+sh: 1: rmSerpens_Node_Wrangler_3.0.0.zip: not found
+[main 5e908da] Serverlog
+ 2 files changed, 6 insertions(+)
+ create mode 100644 Serpens_Node_Wrangler_3.0.0.zip
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   c185da2..5e908da  main -> main
+[main b201a24] Serverlog
+ 2 files changed, 15 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   5e908da..b201a24  main -> main
+[main 78d8314] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   b201a24..78d8314  main -> main
+[main a5b3996] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   78d8314..a5b3996  main -> main
