@@ -181,6 +181,16 @@
             "author": "no",
             "serpens_version": 3,
             "user": 657253258712317952
+        },
+        {
+            "title": "CRZ Snippets",
+            "description": "A snippet pack made by Corza",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1056185338206375986/CRZ_Snippets.zip",
+            "blend_url": "",
+            "author": "Corza",
+            "serpens_version": 3,
+            "user": 458056640307134465
         }
     ]
 }
