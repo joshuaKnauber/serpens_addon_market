@@ -191,6 +191,16 @@
             "author": "Corza",
             "serpens_version": 3,
             "user": 458056640307134465
+        },
+        {
+            "title": "Database",
+            "description": "Use SQLite within your plugin",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1057032301713834014/Database.zip",
+            "blend_url": "",
+            "author": "skdsam",
+            "serpens_version": 3,
+            "user": 371583582969528331
         }
     ]
 }
