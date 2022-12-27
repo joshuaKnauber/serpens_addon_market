@@ -400,3 +400,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    078f32d..a59c3dc  main -> main
 sh: 1: rmRemove_Custom_Property_Materials.json: not found
+[main f7c652b] Serverlog
+ 2 files changed, 49 insertions(+)
+ create mode 100644 Remove_Custom_Property_Materials.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   a59c3dc..f7c652b  main -> main

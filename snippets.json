@@ -231,6 +231,16 @@
             "author": "skdsam",
             "serpens_version": 3,
             "user": 371583582969528331
+        },
+        {
+            "title": "Remove Custom Property Materials",
+            "description": "Remove custom properties from materials",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1057399479340388373/Remove_Custom_Property_Materials.json",
+            "blend_url": "",
+            "author": "skdsam",
+            "serpens_version": 3,
+            "user": 371583582969528331
         }
     ]
 }
