@@ -211,6 +211,16 @@
             "author": "skdsam",
             "serpens_version": 3,
             "user": 371583582969528331
+        },
+        {
+            "title": "Hide Show viewport and render",
+            "description": "Hide or show all objects viewport or render setting",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1057351116976832532/Show_hide_viewport_and_render.json",
+            "blend_url": "",
+            "author": "skdsam",
+            "serpens_version": 3,
+            "user": 371583582969528331
         }
     ]
 }

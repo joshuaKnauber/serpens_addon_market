@@ -306,3 +306,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    5ee4bd3..66e4b33  main -> main
 sh: 1: rmShow_hide_viewport_and_render.json: not found
+[main 4f687ff] Serverlog
+ 2 files changed, 64 insertions(+)
+ create mode 100644 Show_hide_viewport_and_render.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   66e4b33..4f687ff  main -> main
