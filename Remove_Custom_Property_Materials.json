@@ -1,0 +1,43 @@
+{
+    "version": 3,
+    "name": "Remove Custom Properties material",
+    "func_name": "sna_remove_custom_properties_material_39B4B",
+    "inputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_CollectionPropertySocket",
+            "name": "Materials",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_BooleanSocket",
+            "name": "RemoveAll",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_StringSocket",
+            "name": "PropertyName",
+            "subtype": "NONE"
+        }
+    ],
+    "outputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        }
+    ],
+    "function": "def sna_remove_custom_properties_material_39B4B(Materials, RemoveAll, PropertyName):\n    for i_14D04 in range(len(Materials)):\n        Matz = Materials[i_14D04]\n        propertyNamez = PropertyName\n        remove_allz = RemoveAll\n        # Get the object\n        mat = Matz\n        # Set this to True to remove all custom properties, or False to remove a specific property by name\n        remove_all = remove_allz\n        # Set this to the name of the custom property to remove (only used if remove_all is False)\n        property_name = propertyNamez\n        if remove_all:\n            # Remove all custom properties\n            custom_properties = [prop for prop in mat.keys() if prop not in mat.bl_rna.properties]\n            # Delete the custom properties\n            for prop in custom_properties:\n                del mat[prop]\n        else:\n            # Remove a specific custom property by name\n            if property_name in mat:\n                del mat[property_name]\n    return",
+    "import": "import bpy",
+    "imperative": "",
+    "register": "",
+    "unregister": "",
+    "variables": [],
+    "properties": [],
+    "variable_defs": {},
+    "properties_defs": {}
+}
