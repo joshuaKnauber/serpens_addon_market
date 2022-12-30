@@ -1,0 +1,49 @@
+{
+    "version": 3,
+    "name": "Add Delete Custom Property",
+    "func_name": "sna_add_delete_custom_property_76CEF",
+    "inputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_EnumSocket",
+            "name": "Select",
+            "subtype": "CUSTOM_ITEMS",
+            "enum_items": "['Add', 'Delete']"
+        },
+        {
+            "idname": "SN_CollectionPropertySocket",
+            "name": "Collection",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_StringSocket",
+            "name": "Property_Name",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_DataSocket",
+            "name": "Value",
+            "subtype": "NONE"
+        }
+    ],
+    "outputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        }
+    ],
+    "function": "def sna_add_delete_custom_property_76CEF(Select, Collection, Property_Name, Value):\n    if Select == \"Add\":\n        for i_8DEB1 in range(len(Collection)):\n            CustomProp = Property_Name\n            Valz = Value\n            ObjectName = Collection[i_8DEB1]\n            # Get a reference to the active object\n            obj = ObjectName\n            # Set a new custom property on the object\n            obj[CustomProp] = Valz\n    elif Select == \"Delete\":\n        for i_952C9 in range(len(Collection)):\n            CustomProp = Property_Name\n            ObjectName = Collection[i_952C9]\n            # Get the object\n            obj = ObjectName\n            # Set this to the name of the custom property to remove (only used if remove_all is False)\n            property_name = CustomProp\n            # Remove a specific custom property by name\n            if property_name in obj:\n                del obj[property_name]\n    else:\n        pass\n    return",
+    "import": "import bpy\nimport bpy",
+    "imperative": "",
+    "register": "",
+    "unregister": "",
+    "variables": [],
+    "properties": [],
+    "variable_defs": {},
+    "properties_defs": {}
+}
