@@ -499,3 +499,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    4604ae2..a40362c  main -> main
 sh: 1: rmReset_Cursor.json: not found
+[main 31f8c75] Serverlog
+ 2 files changed, 34 insertions(+)
+ create mode 100644 Reset_Cursor.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   a40362c..31f8c75  main -> main
