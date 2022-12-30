@@ -1,0 +1,28 @@
+{
+    "version": 3,
+    "name": "Reset_Cursor",
+    "func_name": "sna_reset_cursor_8AC2B",
+    "inputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        }
+    ],
+    "outputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        }
+    ],
+    "function": "def sna_reset_cursor_8AC2B():\n    if (bpy.context.area.ui_type == 'VIEW_3D'):\n        output_0_7d599 = sna_compare_vec3_53998_7D599(bpy.context.scene.cursor.location, (0.0, 0.0, 0.0))\n        if output_0_7d599:\n            pass\n        else:\n            bpy.context.scene.cursor.location = (0.0, 0.0, 0.0)\n            bpy.context.scene.cursor.rotation_euler = (0.0, 0.0, 0.0)\n",
+    "import": "\n",
+    "imperative": "def sna_compare_vec3_53998_7D599(A, B):\n    return (((A[0] == B[0]) and (A[1] == B[1])) and (A[2] == B[2]))\n",
+    "register": "\n",
+    "unregister": "\n",
+    "variables": [],
+    "properties": [],
+    "variable_defs": {},
+    "properties_defs": {}
+}
