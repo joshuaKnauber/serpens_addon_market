@@ -447,3 +447,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    ffb941a..ec88ff8  main -> main
 sh: 1: rmAdd_Delete_Custom_Property.json: not found
+[main 3536938] Serverlog
+ 2 files changed, 55 insertions(+)
+ create mode 100644 Add_Delete_Custom_Property.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   ec88ff8..3536938  main -> main

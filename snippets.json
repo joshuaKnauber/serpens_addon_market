@@ -241,6 +241,16 @@
             "author": "skdsam",
             "serpens_version": 3,
             "user": 371583582969528331
+        },
+        {
+            "title": "Add Delete Custom Property",
+            "description": "Add Delete Custom Property for all possible locations",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1058425845569560636/Add_Delete_Custom_Property.json",
+            "blend_url": "",
+            "author": "skdsam",
+            "serpens_version": 3,
+            "user": 371583582969528331
         }
     ]
 }
