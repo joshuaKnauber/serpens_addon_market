@@ -271,6 +271,16 @@
             "author": "Mahrkeenerh",
             "serpens_version": 3,
             "user": 502918323491569675
+        },
+        {
+            "title": "Append and Prepend material Object Names",
+            "description": "Append and Prepend material Object Names",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1059227212433346630/Append_Prepend_material_Object_Names.json",
+            "blend_url": "",
+            "author": "skdsam",
+            "serpens_version": 3,
+            "user": 371583582969528331
         }
     ]
 }

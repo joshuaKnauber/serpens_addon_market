@@ -593,3 +593,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    b807793..024bdcc  main -> main
 sh: 1: rmAppend_Prepend_material_Object_Names.json: not found
+[main d5ca96e] Serverlog
+ 2 files changed, 55 insertions(+)
+ create mode 100644 Append_Prepend_material_Object_Names.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   024bdcc..d5ca96e  main -> main
