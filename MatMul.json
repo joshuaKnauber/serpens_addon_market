@@ -1,0 +1,43 @@
+{
+    "version": 3,
+    "name": "MatMul",
+    "func_name": "sna_matmul_7354A",
+    "inputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_DataSocket",
+            "name": "left",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_DataSocket",
+            "name": "right",
+            "subtype": "NONE"
+        }
+    ],
+    "outputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_DataSocket",
+            "name": "product",
+            "subtype": "NONE"
+        }
+    ],
+    "function": "def sna_matmul_7354A(left, right):\n    return_F325E = left @ right\n    return return_F325E\n",
+    "import": "\n",
+    "imperative": "\n",
+    "register": "\n",
+    "unregister": "\n",
+    "variables": [],
+    "properties": [],
+    "variable_defs": {},
+    "properties_defs": {}
+}
