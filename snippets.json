@@ -261,6 +261,16 @@
             "author": "Meshbuilders",
             "serpens_version": 3,
             "user": 685191287854727184
+        },
+        {
+            "title": "MatMul",
+            "description": "Multiply two variables (vectors or matrices) together",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1059140326176071721/MatMul.json",
+            "blend_url": "",
+            "author": "Mahrkeenerh",
+            "serpens_version": 3,
+            "user": 502918323491569675
         }
     ]
 }

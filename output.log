@@ -546,3 +546,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    bd87e66..d8b358d  main -> main
 sh: 1: rmMatMul.json: not found
+[main cf58c42] Serverlog
+ 2 files changed, 49 insertions(+)
+ create mode 100644 MatMul.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   d8b358d..cf58c42  main -> main
