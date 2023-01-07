@@ -640,3 +640,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    f9917be..f1dc060  main -> main
 sh: 1: rmRemove_all_Materials.json: not found
+[main 2be0720] Serverlog
+ 2 files changed, 39 insertions(+)
+ create mode 100644 Remove_all_Materials.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   f1dc060..2be0720  main -> main

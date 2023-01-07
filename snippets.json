@@ -281,6 +281,16 @@
             "author": "skdsam",
             "serpens_version": 3,
             "user": 371583582969528331
+        },
+        {
+            "title": "Remove all Materials",
+            "description": "Remove all Materials from objects",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1061376557509251183/Remove_all_Materials.json",
+            "blend_url": "",
+            "author": "skdsam",
+            "serpens_version": 3,
+            "user": 371583582969528331
         }
     ]
 }
