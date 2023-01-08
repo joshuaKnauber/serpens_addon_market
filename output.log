@@ -744,3 +744,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    7533843..4b4d892  main -> main
 sh: 1: rmExapnd_Collapse_Collections.json: not found
+[main 41c805d] Serverlog
+ 2 files changed, 34 insertions(+)
+ create mode 100644 Exapnd_Collapse_Collections.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   4b4d892..41c805d  main -> main

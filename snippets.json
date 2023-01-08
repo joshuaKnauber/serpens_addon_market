@@ -301,6 +301,16 @@
             "author": "Meshbuilders",
             "serpens_version": 3,
             "user": 685191287854727184
+        },
+        {
+            "title": "Expand_Collapse Collections",
+            "description": "Toggle between Expanding and Collapsing Collections\nNote: Affects all Top Level Collections",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1061649189144117361/Exapnd_Collapse_Collections.json",
+            "blend_url": "",
+            "author": "Meshbuilders",
+            "serpens_version": 3,
+            "user": 685191287854727184
         }
     ]
 }
