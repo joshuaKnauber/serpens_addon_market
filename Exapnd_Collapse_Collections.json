@@ -1,0 +1,28 @@
+{
+    "version": 3,
+    "name": "Expand_Collapse Collections",
+    "func_name": "sna_expand_collapse_collections_10865",
+    "inputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        }
+    ],
+    "outputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        }
+    ],
+    "function": "def sna_expand_collapse_collections_10865():\n    area_8FB5D = find_area_by_type(bpy.context.screen, 'OUTLINER', 0)\n    with bpy.context.temp_override(area=area_8FB5D, ):\n        bpy.ops.outliner.expanded_toggle('INVOKE_DEFAULT', )\n        if bpy.context and bpy.context.screen:\n            for a in bpy.context.screen.areas:\n                a.tag_redraw()\n",
+    "import": "\n",
+    "imperative": "def find_areas_of_type(screen, area_type):\n    areas = []\n    for area in screen.areas:\n        if area.type == area_type:\n            areas.append(area)\n    return areas\n\n\ndef find_area_by_type(screen, area_type, index):\n    areas = find_areas_of_type(screen, area_type)\n    if areas:\n        return areas[index]\n    return None\n\n\ndef find_biggest_area_by_type(screen, area_type):\n    areas = find_areas_of_type(screen, area_type)\n    if not areas: return []\n    max_area = (areas[0], areas[0].width * areas[0].height)\n    for area in areas:\n        if area.width * area.height > max_area[1]:\n            max_area = (area, area.width * area.height)\n    return max_area[0]\n",
+    "register": "\n",
+    "unregister": "\n",
+    "variables": [],
+    "properties": [],
+    "variable_defs": {},
+    "properties_defs": {}
+}
