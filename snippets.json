@@ -291,6 +291,16 @@
             "author": "skdsam",
             "serpens_version": 3,
             "user": 371583582969528331
+        },
+        {
+            "title": "Collapse Collections",
+            "description": "Collapse Collections\nNote: Affects all Top Level Collections",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1061648682346352721/Collapse_Collections.json",
+            "blend_url": "",
+            "author": "Meshbuilders",
+            "serpens_version": 3,
+            "user": 685191287854727184
         }
     ]
 }

@@ -692,3 +692,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    32f0733..aac5f30  main -> main
 sh: 1: rmCollapse_Collections.json: not found
+[main 351abc7] Serverlog
+ 2 files changed, 34 insertions(+)
+ create mode 100644 Collapse_Collections.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   aac5f30..351abc7  main -> main
