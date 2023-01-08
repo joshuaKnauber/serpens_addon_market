@@ -686,3 +686,9 @@ To github.com:joshuaKnauber/serpens_addon_market.git
 Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    ec069af..32f0733  main -> main
+[main aac5f30] Serverlog
+ 1 file changed, 5 insertions(+)
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   32f0733..aac5f30  main -> main
+sh: 1: rmCollapse_Collections.json: not found
