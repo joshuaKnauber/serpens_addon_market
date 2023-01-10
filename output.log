@@ -781,3 +781,10 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    abfefab..4d4238e  main -> main
 sh: 1: rmshitagaki_1.0.0.zip: not found
+[main b4664c2] Serverlog
+ 2 files changed, 6 insertions(+)
+ create mode 100644 shitagaki_1.0.0.zip
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   4d4238e..b4664c2  main -> main
+sh: 1: rmShitagaki_Dev.blend: not found

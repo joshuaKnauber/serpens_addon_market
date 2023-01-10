@@ -1032,6 +1032,29 @@
             "blend_url": "",
             "user": 458056640307134465,
             "serpens_version": 3
+        },
+        {
+            "name": "Shitagaki",
+            "description": "Save Custom Resolutions for every frame",
+            "category": "3D View",
+            "author": "Gabriel1999",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1062436223148367933/shitagaki_1.0.0.zip",
+            "price": "",
+            "blend": true,
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/1062436299216277504/Shitagaki_Dev.blend",
+            "user": 377982367647924235,
+            "serpens_version": 3
         }
     ]
 }
