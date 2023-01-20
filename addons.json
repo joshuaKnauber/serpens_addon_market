@@ -781,29 +781,6 @@
             "serpens_version": 3
         },
         {
-            "name": "SPPies",
-            "description": "Multi Addon Pie Helper",
-            "category": "3D View",
-            "author": "Sam Poole",
-            "blender_version": [
-                3,
-                2,
-                0
-            ],
-            "addon_version": [
-                2,
-                1,
-                5
-            ],
-            "external": true,
-            "url": "https://spool.gumroad.com/l/lkgvf",
-            "price": "Free",
-            "blend": false,
-            "blend_url": "",
-            "user": 400396627111575554,
-            "serpens_version": 3
-        },
-        {
             "name": "Easy Soft Body",
             "description": "A nice fast Soft Body simulation with few clicks.",
             "category": "Physics",
@@ -1054,6 +1031,29 @@
             "blend": true,
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/1062436299216277504/Shitagaki_Dev.blend",
             "user": 377982367647924235,
+            "serpens_version": 3
+        },
+        {
+            "name": "SPPies",
+            "description": "Pie Menus",
+            "category": "3D View",
+            "author": "Sam Poole",
+            "blender_version": [
+                3,
+                4,
+                0
+            ],
+            "addon_version": [
+                1,
+                3,
+                3
+            ],
+            "external": true,
+            "url": "https://spool.gumroad.com/l/pndss",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 400396627111575554,
             "serpens_version": 3
         }
     ]
