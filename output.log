@@ -932,3 +932,9 @@ Bereits aktuell.
 To github.com:joshuaKnauber/serpens_addon_market.git
    01ac1da..69fc986  main -> main
 sh: 1: rmShape_Key_to_VGroup.json: not found
+[main 2f49a00] Serverlog
+ 2 files changed, 56 insertions(+)
+ create mode 100644 Shape_Key_to_VGroup.json
+Bereits aktuell.
+To github.com:joshuaKnauber/serpens_addon_market.git
+   69fc986..2f49a00  main -> main

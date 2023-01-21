@@ -321,6 +321,16 @@
             "author": "skdsam",
             "serpens_version": 3,
             "user": 371583582969528331
+        },
+        {
+            "title": "Shape Key to VGroup",
+            "description": "Select verts from a Shape Key\nEnable the Boolean to create a Vertex Group from that selection",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1066403100014940293/Shape_Key_to_VGroup.json",
+            "blend_url": "",
+            "author": "Meshbuilders",
+            "serpens_version": 3,
+            "user": 685191287854727184
         }
     ]
 }
