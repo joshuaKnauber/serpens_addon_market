@@ -1,0 +1,33 @@
+{
+    "version": 3,
+    "name": "Random Light Colour",
+    "func_name": "sna_random_light_colour_77055",
+    "inputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_CollectionPropertySocket",
+            "name": "Collection",
+            "subtype": "NONE"
+        }
+    ],
+    "outputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        }
+    ],
+    "function": "def sna_random_light_colour_77055(Collection):\n    for i_A4551 in range(len(Collection)-1,-1,-1):\n        if Collection[i_A4551].type == 'LIGHT':\n            bpy.data.lights[Collection[i_A4551].name].color = (random.uniform(0.0, 1.0), random.uniform(0.0, 1.0), random.uniform(0.0, 1.0))\n            \n    return",
+    "import": "import random\nimport random\nimport random",
+    "imperative": "",
+    "register": "",
+    "unregister": "",
+    "variables": [],
+    "properties": [],
+    "variable_defs": {},
+    "properties_defs": {}
+}
