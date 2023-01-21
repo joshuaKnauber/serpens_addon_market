@@ -1,0 +1,50 @@
+{
+    "version": 3,
+    "name": "Shape Key to VGroup",
+    "func_name": "sna_shape_key_to_vgroup_65480",
+    "inputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_PropertySocket",
+            "name": "Object",
+            "subtype": "NONE"
+        },
+        {
+            "idname": "SN_BooleanSocket",
+            "name": "VGroup_from_selection",
+            "subtype": "NONE"
+        }
+    ],
+    "outputs": [
+        {
+            "idname": "SN_ExecuteSocket",
+            "name": "Execute",
+            "subtype": "NONE"
+        }
+    ],
+    "function": "def sna_shape_key_to_vgroup_65480(Object, VGroup_from_selection):\n    if Object.type == 'MESH':\n        if property_exists(\"bpy.context.active_object.data.shape_keys.key_blocks\", globals(), locals()):\n            if 'EDIT_MESH'==bpy.context.mode:\n                bpy.ops.mesh.select_all(action='DESELECT')\n                bpy.ops.mesh.select_mode(type='VERT')\n                import bmesh\n\n\n                context = bpy.context\n                TOL = 1e-5 # tolerance\n                ob = context.edit_object\n                me = ob.data\n                bm = bmesh.from_edit_mesh(me)\n                ask = ob.active_shape_key\n                for v in bm.verts:\n                    bv = me.vertices[v.index]\n                    v.select = (ask.data[v.index].co - bv.co).length > TOL\n                bmesh.update_edit_mesh(me)\n            else:\n                bpy.ops.object.mode_set(mode='EDIT')\n                bpy.ops.mesh.select_all(action='DESELECT')\n                bpy.ops.mesh.select_mode(type='VERT')\n                import bmesh\n                context = bpy.context\n                TOL = 1e-5 # tolerance\n                ob = context.edit_object\n                me = ob.data\n                bm = bmesh.from_edit_mesh(me)\n                ask = ob.active_shape_key\n                for v in bm.verts:\n                    bv = me.vertices[v.index]\n                    v.select = (ask.data[v.index].co - bv.co).length > TOL\n                bmesh.update_edit_mesh(me)\n            if VGroup_from_selection:\n                sna_vgroup_from_selection_827A8()\n",
+    "import": "import bpy\nimport bpy\n\n\n",
+    "imperative": "def property_exists(prop_path, glob, loc):\n    try:\n        eval(prop_path, glob, loc)\n        return True\n    except:\n        return False\n\ndef sna_vgroup_from_selection_827A8():\n    main_SNIPPET_VARS['sna_sk_name'] = ''\n    if property_exists(\"bpy.context.active_object.data.shape_keys.key_blocks\", globals(), locals()):\n        main_SNIPPET_VARS['sna_sk_name'] = bpy.context.view_layer.objects.active.active_shape_key.name\n    group_74BE2 = bpy.context.active_object.vertex_groups.new(name=main_SNIPPET_VARS['sna_sk_name'], )\n    bpy.ops.object.vertex_group_assign()\n\ndef property_exists(prop_path, glob, loc):\n    try:\n        eval(prop_path, glob, loc)\n        return True\n    except:\n        return False\n",
+    "register": "\n\n\n",
+    "unregister": "\n\n\n",
+    "variables": [
+        {
+            "name": "sk_name",
+            "python_name": "sna_sk_name",
+            "tree": "main",
+            "type": "String",
+            "customizable": false
+        }
+    ],
+    "properties": [],
+    "variable_defs": {
+        "main_SNIPPET_VARS": {
+            "sna_sk_name": "''"
+        }
+    },
+    "properties_defs": {}
+}
