@@ -311,6 +311,16 @@
             "author": "Meshbuilders",
             "serpens_version": 3,
             "user": 685191287854727184
+        },
+        {
+            "title": "Random Light Colour",
+            "description": "Change the colour of a light randomly",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1066289034181218364/Light_Random_Colour.json",
+            "blend_url": "",
+            "author": "skdsam",
+            "serpens_version": 3,
+            "user": 371583582969528331
         }
     ]
 }
