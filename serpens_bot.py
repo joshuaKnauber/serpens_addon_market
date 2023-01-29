@@ -144,7 +144,7 @@ async def save_file(save_file):
     fileobject = discord.File(file_name)
     message = await channel.send(file=fileobject)
 
-    os.system("rm" + file_name)
+    os.system("rm " + file_name)
 
     return message.attachments[0].url
 
@@ -156,7 +156,7 @@ async def save_snippet(save_file, user_id):
     fileobject = discord.File(file_name)
     message = await channel.send(file=fileobject)
 
-    os.system("rm" + file_name)
+    os.system("rm " + file_name)
 
     return message.attachments[0].url
 
