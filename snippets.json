@@ -133,16 +133,6 @@
             "serpens_version": 3
         },
         {
-            "title": "True Deselect ALL",
-            "description": "Truly Deselect any Active or Selected Object in both Viewport and in the Outliner",
-            "price": "Free!",
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1053738272095993856/True_Deselect_ALL.json",
-            "blend_url": "",
-            "author": "Meshbuilders",
-            "user": 685191287854727184,
-            "serpens_version": 3
-        },
-        {
             "title": "RGB to HSV conversion",
             "description": "Convert RGB to HSV",
             "price": "Free",
