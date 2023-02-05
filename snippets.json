@@ -321,6 +321,16 @@
             "author": "Meshbuilders",
             "serpens_version": 3,
             "user": 685191287854727184
+        },
+        {
+            "title": "Convert integer to hours minutes seconds",
+            "description": "Convert integer into Hours, Minutes, Seconds",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1071884340730011760/Seconds_to_hours_minutes_seconds.json",
+            "blend_url": "",
+            "author": "skdsam",
+            "serpens_version": 3,
+            "user": 371583582969528331
         }
     ]
 }
