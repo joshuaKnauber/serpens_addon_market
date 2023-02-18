@@ -1078,6 +1078,29 @@
             "blend_url": "",
             "user": 957530751908315146,
             "serpens_version": 3
+        },
+        {
+            "name": "Blender Notepad",
+            "description": "Create Notes and To Do Lists",
+            "category": "Pop-up",
+            "author": "shade who",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://blendermarket.com/products/blender-notepad",
+            "price": "3",
+            "blend": false,
+            "blend_url": "",
+            "user": 957530751908315146,
+            "serpens_version": 3
         }
     ]
 }
