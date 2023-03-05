@@ -1101,29 +1101,6 @@
             "blend_url": "",
             "user": 957530751908315146,
             "serpens_version": 3
-        },
-        {
-            "name": "My Addon",
-            "description": "",
-            "category": "3D View",
-            "author": "Your Name",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1081949329637523506/serpens_node_documentation_1.0.3.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 371583582969528331,
-            "serpens_version": 3
         }
     ]
 }
