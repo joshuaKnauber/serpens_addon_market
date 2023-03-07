@@ -1124,6 +1124,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Shader Builder",
+            "description": "A nice material to shader tool for beginner or expert.",
+            "category": "Material",
+            "author": "Luca Boisvert",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                1
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1082810936097775717/shader_builder_1.0.1.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 507556394896195585,
+            "serpens_version": 3
         }
     ]
 }
