@@ -1147,6 +1147,29 @@
             "blend_url": "",
             "user": 458056640307134465,
             "serpens_version": 3
+        },
+        {
+            "name": "Serpens Custom Icons For Icon Node",
+            "description": "Add custom Icons to your Sepens icon nodes",
+            "category": "3D View",
+            "author": "Skdsam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1084117777029279855/serpens_custom_icons_for_icon_node_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
+            "serpens_version": 3
         }
     ]
 }
