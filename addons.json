@@ -1193,6 +1193,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Serpens Snippets +",
+            "description": "Custom Snippet Nodes, Cross Blender and computers ",
+            "category": "Node",
+            "author": "Skdsam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1084482696367063190/serpens_snippets__1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
+            "serpens_version": 3
         }
     ]
 }
