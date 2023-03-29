@@ -1216,6 +1216,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Addon Link Curve",
+            "description": "Creates a geonode to create a chain or track",
+            "category": "3D View",
+            "author": "VovrZull Kit\u0446yn\u044f",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                4
+            ],
+            "external": true,
+            "url": "https://blendermarket.com/products/link-curve",
+            "price": "15",
+            "blend": false,
+            "blend_url": "",
+            "user": 382835140004675595,
+            "serpens_version": 3
         }
     ]
 }
