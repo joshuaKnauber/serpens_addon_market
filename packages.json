@@ -61,6 +61,15 @@
             "author": "Meshbuilders",
             "user": 685191287854727184,
             "version": 3
+        },
+        {
+            "title": "MB_Extras",
+            "description": "A Collection of 12 custom nodes for Serpens!",
+            "price": "Free",
+            "url": "https://meshbuilders.gumroad.com/l/mb-extras-v1",
+            "author": "Meshbuilders",
+            "user": 685191287854727184,
+            "version": 3
         }
     ]
 }
