@@ -28,15 +28,6 @@
             "version": 3
         },
         {
-            "title": "Addon Installed",
-            "description": "Serpens 3 Check a plugin is installed and is active using the plugins name only",
-            "price": "Free",
-            "url": "https://design-demo.co.uk/Addon%20Installed.zip",
-            "author": "skdsam",
-            "user": 371583582969528331,
-            "version": 3
-        },
-        {
             "title": "Extended Scripting",
             "description": "Serpens 3: Extends scripting capabilities with new nodes.",
             "price": "Free",
@@ -70,6 +61,14 @@
             "author": "Meshbuilders",
             "user": 685191287854727184,
             "version": 3
+        },
+        {
+            "title": "Addon Installed",
+            "description": "Serpens 3 Check a plugin is installed and is active using the plugins name only",
+            "price": "Free",
+            "url": "",
+            "author": "skdsam",
+            "user": 371583582969528331
         }
     ]
 }
