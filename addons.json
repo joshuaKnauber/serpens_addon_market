@@ -1331,6 +1331,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Serpens Node Capture",
+            "description": "Capture your node tree nodes ",
+            "category": "Node",
+            "author": "SKDSam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                4
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1105168523044589578/serpens_node_capture_1.0.4.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
+            "serpens_version": 3
         }
     ]
 }
