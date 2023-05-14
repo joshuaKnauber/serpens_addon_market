@@ -1080,29 +1080,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Node Documentation",
-            "description": "Quick link to Serpens nodes documentation",
-            "category": "Development",
-            "author": "Skdsam",
-            "blender_version": [
-                3,
-                3,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                5
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1081997356326727700/serpens_node_documentation_1.0.5.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 371583582969528331,
-            "serpens_version": 3
-        },
-        {
             "name": "Shader Builder",
             "description": "A nice material to shader tool for beginner or expert.",
             "category": "Material",
@@ -1284,29 +1261,6 @@
             "blend": false,
             "blend_url": "",
             "user": 382835140004675595,
-            "serpens_version": 3
-        },
-        {
-            "name": "Serpens Node Documentation",
-            "description": "Quick link to Serpens nodes documentation",
-            "category": "Development",
-            "author": "Skdsam",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                7
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1107266334523396186/serpens_node_documentation_1.0.7.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 371583582969528331,
             "serpens_version": 3
         }
     ]
