@@ -331,6 +331,16 @@
             "author": "skdsam",
             "serpens_version": 3,
             "user": 371583582969528331
+        },
+        {
+            "title": "Return list item one by one",
+            "description": "With this snippet you will be able to loop through a list and getting each item individually. So with each execution the next item is returned and at the end of the list it will start at the beginning.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1112111858153947186/Loop_through_list_one_by_one.json",
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/1112112151117701291/LoopListExample.blend",
+            "author": "Erasers45-Studios",
+            "serpens_version": 3,
+            "user": 749672645057839187
         }
     ]
 }
