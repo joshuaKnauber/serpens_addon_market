@@ -5000,3 +5000,9 @@ Bereits aktuell.
 remote: Resolving deltas:   0% (0/2)        remote: Resolving deltas:  50% (1/2)        remote: Resolving deltas: 100% (2/2)        remote: Resolving deltas: 100% (2/2), completed with 2 local objects.        
 To github.com:joshuaKnauber/serpens_addon_market.git
    2e519eb..d152134  main -> main
+[main c18929a] Serverlog
+ 1 file changed, 6 insertions(+)
+Bereits aktuell.
+remote: Resolving deltas:   0% (0/2)        remote: Resolving deltas:  50% (1/2)        remote: Resolving deltas: 100% (2/2)        remote: Resolving deltas: 100% (2/2), completed with 2 local objects.        
+To github.com:joshuaKnauber/serpens_addon_market.git
+   d152134..c18929a  main -> main
