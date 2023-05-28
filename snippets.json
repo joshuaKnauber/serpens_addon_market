@@ -341,6 +341,16 @@
             "author": "Erasers45-Studios",
             "serpens_version": 3,
             "user": 749672645057839187
+        },
+        {
+            "title": "Add Material To Object",
+            "description": "With this snippet you will be able to add materials to a given object. Furthermore you can also overwrite existing material slots with your own material.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1112305489750020147/Add_Material_To_Object.json",
+            "blend_url": "",
+            "author": "Erasers45-Studios",
+            "serpens_version": 3,
+            "user": 749672645057839187
         }
     ]
 }
