@@ -351,6 +351,16 @@
             "author": "Erasers45-Studios",
             "serpens_version": 3,
             "user": 749672645057839187
+        },
+        {
+            "title": "Load image into displacement modifier",
+            "description": "With this snippet you can load an image directly into a displacement modifier of your object.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1112814799894614146/LoadImageIntoDisplacementModifier.json",
+            "blend_url": "",
+            "author": "Erasers45-Studios",
+            "serpens_version": 3,
+            "user": 749672645057839187
         }
     ]
 }
