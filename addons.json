@@ -1308,6 +1308,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Crystallographic  Nodes",
+            "description": "a collection of tools for creating crystallography illustrations",
+            "category": "Node",
+            "author": "Giorgio Luciano",
+            "blender_version": [
+                3,
+                5,
+                0
+            ],
+            "addon_version": [
+                0,
+                1,
+                2
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1114591185055518760/crystallographic_nodes_0.1.2.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 437316981302099979,
+            "serpens_version": 3
         }
     ]
 }
