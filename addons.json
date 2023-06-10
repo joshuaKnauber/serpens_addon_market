@@ -1354,6 +1354,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Blender Cabinets",
+            "description": "",
+            "category": "Cabinets",
+            "author": "Leo Baker",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                6
+            ],
+            "external": true,
+            "url": "https://github.com/leobaker202/Blender-Cabinets",
+            "price": "Free",
+            "blend": false,
+            "blend_url": "",
+            "user": 474498693530124308,
+            "serpens_version": 3
         }
     ]
 }
