@@ -1377,6 +1377,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Serpens Node Templates",
+            "description": "Save Serpens nodes as template to load",
+            "category": "Node",
+            "author": "skdsam",
+            "blender_version": [
+                3,
+                2,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                5
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1117488460916342815/serpens_node_templates_1.0.5.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
+            "serpens_version": 3
         }
     ]
 }
