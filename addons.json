@@ -1385,16 +1385,16 @@
             "author": "skdsam",
             "blender_version": [
                 3,
-                2,
+                3,
                 0
             ],
             "addon_version": [
                 1,
                 0,
-                6
+                11
             ],
             "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1117490326244966550/serpens_node_templates_1.0.6.zip",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1120012232932212836/serpens_node_templates_1.0.11.zip",
             "price": "",
             "blend": false,
             "blend_url": "",
