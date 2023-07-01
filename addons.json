@@ -1310,29 +1310,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Select Nodes By Type",
-            "description": "Select all nodes in a node tree by type",
-            "category": "Node",
-            "author": "Skdsam",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                0
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1114953756363202610/serpens_select_nodes_by_type_1.0.0.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 371583582969528331,
-            "serpens_version": 3
-        },
-        {
             "name": "Blender Cabinets",
             "description": "",
             "category": "Cabinets",
@@ -1395,6 +1372,29 @@
             ],
             "external": false,
             "url": "https://cdn.discordapp.com/attachments/785132940278366260/1122554951529402398/serpens_node_templates_1.1.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens Select Nodes By Type",
+            "description": "Select all nodes in a node tree by type",
+            "category": "Node",
+            "author": "Skdsam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                1
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1124735211079467168/serpens_select_nodes_by_type_1.0.1.zip",
             "price": "",
             "blend": false,
             "blend_url": "",
