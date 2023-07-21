@@ -1423,6 +1423,29 @@
             "blend_url": "",
             "user": 382835140004675595,
             "serpens_version": 3
+        },
+        {
+            "name": "Set Origin to Active Button",
+            "description": "It's self-explanatory",
+            "category": "Mesh",
+            "author": "Gabriel1999",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1131953324229398639/set_origin_to_active_button_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 377982367647924235,
+            "serpens_version": 3
         }
     ]
 }
