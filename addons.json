@@ -1469,6 +1469,29 @@
             "blend_url": "",
             "user": 115317954358280199,
             "serpens_version": 3
+        },
+        {
+            "name": "Roller Coaster Export Helper",
+            "description": "",
+            "category": "3D View",
+            "author": "Psynop",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                1
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1137902660750684200/roller_coaster_export_helper_1.0.1.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 115317954358280199,
+            "serpens_version": 3
         }
     ]
 }
