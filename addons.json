@@ -1492,6 +1492,29 @@
             "blend_url": "",
             "user": 115317954358280199,
             "serpens_version": 3
+        },
+        {
+            "name": "Curve Facefilled",
+            "description": "Allows you to fill complex shapes from curves and mesh lines with a face, editable in real time",
+            "category": "3D View",
+            "author": "Vovrsull Kit\u0446\u0443n\u044f",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                9
+            ],
+            "external": true,
+            "url": "https://blendermarket.com/products/curve-facefilled-pro",
+            "price": "8",
+            "blend": false,
+            "blend_url": "",
+            "user": 382835140004675595,
+            "serpens_version": 3
         }
     ]
 }
