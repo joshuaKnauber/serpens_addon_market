@@ -361,6 +361,16 @@
             "author": "Erasers45-Studios",
             "serpens_version": 3,
             "user": 749672645057839187
+        },
+        {
+            "title": "Import Geonode",
+            "description": "Imports a geonode to the active object using the geonode name and path",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1141265314470969397/Import_Geonode.json",
+            "blend_url": "",
+            "author": "Vovrzull",
+            "serpens_version": 3,
+            "user": 382835140004675595
         }
     ]
 }
