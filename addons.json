@@ -1379,29 +1379,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Select Nodes By Type",
-            "description": "Select all nodes in a node tree by type",
-            "category": "Node",
-            "author": "Skdsam",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                1
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1124737343245516981/serpens_select_nodes_by_type_1.0.1.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 371583582969528331,
-            "serpens_version": 3
-        },
-        {
             "name": "Progeoprim",
             "description": "displays an object that is a grid",
             "category": "3D View",
@@ -1537,6 +1514,29 @@
             "blend": false,
             "blend_url": "",
             "user": 382835140004675595,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens Select Nodes By Type",
+            "description": "Select all nodes in a node tree by type",
+            "category": "Node",
+            "author": "Skdsam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                2
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1147552093218025472/serpens_select_nodes_by_type_1.0.2.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
             "serpens_version": 3
         }
     ]
