@@ -1538,6 +1538,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "UPanel",
+            "description": "Added Panels in 3D Viewport to display HDRI Settings, Material Slot, Material Node, Node Geometry Node, and Modifier along with their parameters. Can display panels with Pie Menu in 3D View.",
+            "category": "3D View",
+            "author": "UitTree",
+            "blender_version": [
+                3,
+                5,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://www.blendermarket.com/products/upanel",
+            "price": "5",
+            "blend": false,
+            "blend_url": "",
+            "user": 859562188666830849,
+            "serpens_version": 3
         }
     ]
 }
