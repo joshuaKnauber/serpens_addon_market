@@ -1561,6 +1561,29 @@
             "blend_url": "",
             "user": 859562188666830849,
             "serpens_version": 3
+        },
+        {
+            "name": "Serpens Script Editor",
+            "description": "Quickly edit script files from run script node",
+            "category": "Node",
+            "author": "SkdSam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1150122187634782341/serpens_script_editor_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
+            "serpens_version": 3
         }
     ]
 }
