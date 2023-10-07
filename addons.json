@@ -1241,29 +1241,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Node Documentation",
-            "description": "Quick link to Serpens nodes documentation",
-            "category": "Development",
-            "author": "Skdsam",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                7
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1107270879123091477/serpens_node_documentation_1.0.7.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 371583582969528331,
-            "serpens_version": 3
-        },
-        {
             "name": "Naming for Baking",
             "description": "",
             "category": "3D View",
@@ -1579,6 +1556,29 @@
             ],
             "external": false,
             "url": "https://cdn.discordapp.com/attachments/785132940278366260/1150129688132468736/serpens_script_editor_1.0.0.zip",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens Node Documentation",
+            "description": "Quick link to Serpens nodes documentation",
+            "category": "Development",
+            "author": "Skdsam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                8
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1160209861754241034/serpens_node_documentation_1.0.8.zip?ex=6533d4a2&is=65215fa2&hm=ee0f7fa9cd9c32f2522f2fbad305f234e133a5fbc979055f128876bedbe6d6b3&",
             "price": "",
             "blend": false,
             "blend_url": "",
