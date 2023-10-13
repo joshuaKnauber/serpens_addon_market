@@ -1126,29 +1126,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Node Wrangler",
-            "description": "A Node Wrangler made with Serpens for Serpens",
-            "category": "Node",
-            "author": "Corza",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                3,
-                0,
-                9
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1085692441539121182/serpens_node_wrangler_3.0.9.zip",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
             "name": "Serpens Presets +",
             "description": "Custom Preset Nodes, Cross Blender and computers ",
             "category": "Node",
