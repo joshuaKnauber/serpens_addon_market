@@ -1574,11 +1574,11 @@
             ],
             "addon_version": [
                 5,
-                0,
-                9
+                1,
+                0
             ],
             "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1162396065752940594/serpens_node_wrangler_5.0.9.zip?ex=653bc8b2&is=652953b2&hm=456dd7e593bbb4dba381ef7163c2a1c5065ef7173966b3c423734a1aa1bd2613&",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1162450119715737690/serpens_node_wrangler_5.1.0.zip?ex=653bfb09&is=65298609&hm=76cce04d614c18b6d67f04828f9d44e4455b43d5114af468141bb69942d3f845&",
             "price": "",
             "blend": false,
             "blend_url": "",
