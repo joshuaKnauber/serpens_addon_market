@@ -1561,6 +1561,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Serpens Node Wrangler",
+            "description": "",
+            "category": "Node",
+            "author": "Corza",
+            "blender_version": [
+                3,
+                4,
+                0
+            ],
+            "addon_version": [
+                5,
+                0,
+                9
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1162396065752940594/serpens_node_wrangler_5.0.9.zip?ex=653bc8b2&is=652953b2&hm=456dd7e593bbb4dba381ef7163c2a1c5065ef7173966b3c423734a1aa1bd2613&",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 458056640307134465,
+            "serpens_version": 3
         }
     ]
 }
