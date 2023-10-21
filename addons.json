@@ -1540,29 +1540,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Node Documentation",
-            "description": "Quick link to Serpens nodes documentation",
-            "category": "Development",
-            "author": "Skdsam",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                8
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1160209861754241034/serpens_node_documentation_1.0.8.zip?ex=6533d4a2&is=65215fa2&hm=ee0f7fa9cd9c32f2522f2fbad305f234e133a5fbc979055f128876bedbe6d6b3&",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 371583582969528331,
-            "serpens_version": 3
-        },
-        {
             "name": "Serpens Node Wrangler",
             "description": "",
             "category": "Node",
@@ -1583,6 +1560,29 @@
             "blend": false,
             "blend_url": "",
             "user": 458056640307134465,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens Node Documentation",
+            "description": "Quick link to Serpens nodes documentation",
+            "category": "Development",
+            "author": "Skdsam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                9
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1165299226775920732/serpens_node_documentation_1.0.9.zip?ex=65465879&is=6533e379&hm=1df73ca932df9422d231f1716bb8c75421f59ed9e4a27a22f5c41ead1e6480b0&",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
             "serpens_version": 3
         }
     ]
