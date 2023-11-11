@@ -1287,29 +1287,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Progeoprim",
-            "description": "displays an object that is a grid",
-            "category": "3D View",
-            "author": "Vovrzull Kit\u0446yn\u044f",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                3
-            ],
-            "external": true,
-            "url": "https://blendermarket.com/products/pro-geo-prim",
-            "price": "12",
-            "blend": false,
-            "blend_url": "",
-            "user": 382835140004675595,
-            "serpens_version": 3
-        },
-        {
             "name": "Set Origin to Active Button",
             "description": "It's self-explanatory",
             "category": "Mesh",
@@ -1603,6 +1580,29 @@
             "external": true,
             "url": "https://blendermarket.com/products/projection-modeling",
             "price": "20",
+            "blend": false,
+            "blend_url": "",
+            "user": 382835140004675595,
+            "serpens_version": 3
+        },
+        {
+            "name": "Progeoprim",
+            "description": "modeling with geoprimitives, virtual boolean, deformation and more",
+            "category": "3D View",
+            "author": "Vovrzull Kit\u0446yn\u044f",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                7
+            ],
+            "external": true,
+            "url": "https://blendermarket.com/products/pro-geo-prim",
+            "price": "16",
             "blend": false,
             "blend_url": "",
             "user": 382835140004675595,
