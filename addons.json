@@ -1195,29 +1195,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Addon Link Curve",
-            "description": "Creates a geonode to create a chain or track",
-            "category": "3D View",
-            "author": "VovrZull Kit\u0446yn\u044f",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                1,
-                3
-            ],
-            "external": true,
-            "url": "https://blendermarket.com/products/link-curve",
-            "price": "20",
-            "blend": false,
-            "blend_url": "",
-            "user": 382835140004675595,
-            "serpens_version": 3
-        },
-        {
             "name": "Naming for Baking",
             "description": "",
             "category": "3D View",
@@ -1583,6 +1560,29 @@
             "blend": false,
             "blend_url": "",
             "user": 371583582969528331,
+            "serpens_version": 3
+        },
+        {
+            "name": "Addon Link Curve",
+            "description": "Add-on for the blender based on geonodes that allows you to start segments. Along a curve without deformation and with controlled deformation of the segment Allows you to work with a curve, create chains, tank tracks, corrugations, complex cylindrical parts without cylinders, flexible shapes, a more convenient way to create and configure tires and create a mesh during deformation using geometric primitives, and much more",
+            "category": "3D View",
+            "author": "Vovrzull Kit\u0446yn\u044f",
+            "blender_version": [
+                3,
+                3,
+                0
+            ],
+            "addon_version": [
+                1,
+                1,
+                8
+            ],
+            "external": true,
+            "url": "https://blendermarket.com/products/link-curve",
+            "price": "20",
+            "blend": false,
+            "blend_url": "",
+            "user": 382835140004675595,
             "serpens_version": 3
         }
     ]
