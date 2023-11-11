@@ -1195,29 +1195,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Naming for Baking",
-            "description": "",
-            "category": "3D View",
-            "author": "Vovrzull Kit\u0446yn\u044f",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                2,
-                8
-            ],
-            "external": true,
-            "url": "https://blendermarket.com/products/1-click-naming-for-baking",
-            "price": "20",
-            "blend": false,
-            "blend_url": "",
-            "user": 382835140004675595,
-            "serpens_version": 3
-        },
-        {
             "name": "Crystallographic  Nodes",
             "description": "a collection of tools for creating crystallography illustrations",
             "category": "Node",
@@ -1580,6 +1557,29 @@
             "external": true,
             "url": "https://blendermarket.com/products/link-curve",
             "price": "20",
+            "blend": false,
+            "blend_url": "",
+            "user": 382835140004675595,
+            "serpens_version": 3
+        },
+        {
+            "name": "Naming for Baking",
+            "description": "",
+            "category": "3D View",
+            "author": "Vovrzull Kit\u0446yn\u044f",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                2,
+                8
+            ],
+            "external": true,
+            "url": "https://worldowner777777.gumroad.com/l/NamingforBaking",
+            "price": "Free",
             "blend": false,
             "blend_url": "",
             "user": 382835140004675595,
