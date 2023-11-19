@@ -1607,6 +1607,29 @@
             "blend_url": "",
             "user": 382835140004675595,
             "serpens_version": 3
+        },
+        {
+            "name": "Happify Empties",
+            "description": "Adds an extra layer of fun to empty objects, making them more enjoyable or exciting in some way.",
+            "category": "3D View",
+            "author": "oobma",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1175749828890865664/happify_empties_1.0.0.zip?ex=656c5d5b&is=6559e85b&hm=8ac3ab103421cf35b38a100709448048932af7639773927ac427f437bb76572a&",
+            "price": "",
+            "blend": true,
+            "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/1175750079517294653/Happify_Empties.blend?ex=656c5d97&is=6559e897&hm=79e975c7a4b5a294db4ed9f3d383153e48e3df486aa7fe4754f759dc1383c7a8&",
+            "user": 389822929015144450,
+            "serpens_version": 3
         }
     ]
 }
