@@ -1425,29 +1425,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Node Wrangler",
-            "description": "",
-            "category": "Node",
-            "author": "Corza",
-            "blender_version": [
-                3,
-                4,
-                0
-            ],
-            "addon_version": [
-                5,
-                2,
-                2
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1164324752173846669/serpens_node_wrangler_5.2.2.zip?ex=6542cced&is=653057ed&hm=d2e728f75cdd969fa7e0a9825b252ef7560eb8b41fa643b8e1a630472394fa67&",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
             "name": "Serpens Node Documentation",
             "description": "Quick link to Serpens nodes documentation",
             "category": "Development",
@@ -1629,6 +1606,29 @@
             "blend": true,
             "blend_url": "https://cdn.discordapp.com/attachments/785132940278366260/1175750079517294653/Happify_Empties.blend?ex=656c5d97&is=6559e897&hm=79e975c7a4b5a294db4ed9f3d383153e48e3df486aa7fe4754f759dc1383c7a8&",
             "user": 389822929015144450,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens Node Wrangler",
+            "description": "Made with Serpens for Serpens!",
+            "category": "Node",
+            "author": "Corza",
+            "blender_version": [
+                3,
+                6,
+                0
+            ],
+            "addon_version": [
+                5,
+                2,
+                6
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1178842768890675240/serpens_wrangler_5.2.6.zip?ex=65779de1&is=656528e1&hm=a0063f582816332423ecc5fc913d716ec1bc23903109c509f215287e60f6909f&",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 458056640307134465,
             "serpens_version": 3
         }
     ]
