@@ -1630,6 +1630,29 @@
             "blend_url": "",
             "user": 458056640307134465,
             "serpens_version": 3
+        },
+        {
+            "name": "World_Generator 1.01",
+            "description": "Generate procedural landscape with help of geometry node. ",
+            "category": "3D View",
+            "author": "Thibault Fisset",
+            "blender_version": [
+                4,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                1
+            ],
+            "external": true,
+            "url": "https://blendermarket.com/products/world-generator-1",
+            "price": "15",
+            "blend": false,
+            "blend_url": "",
+            "user": 657136494896611328,
+            "serpens_version": 3
         }
     ]
 }
