@@ -1609,29 +1609,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Node Wrangler",
-            "description": "Made with Serpens for Serpens!",
-            "category": "Node",
-            "author": "Corza",
-            "blender_version": [
-                3,
-                6,
-                0
-            ],
-            "addon_version": [
-                5,
-                2,
-                7
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1178850491170557952/serpens_node_wrangler_5.2.7.zip?ex=6577a513&is=65653013&hm=7241c67c5fa9ce9f9ff9e266da5ceb229a4e22fac40f67471e5fec6be85eaf05&",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 458056640307134465,
-            "serpens_version": 3
-        },
-        {
             "name": "World_Generator 1.01",
             "description": "Generate procedural landscape with help of geometry node. ",
             "category": "3D View",
@@ -1652,6 +1629,29 @@
             "blend": false,
             "blend_url": "",
             "user": 657136494896611328,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens Node Wrangler",
+            "description": "Made with Serpens for Serpens!",
+            "category": "Node",
+            "author": "Corza",
+            "blender_version": [
+                3,
+                6,
+                0
+            ],
+            "addon_version": [
+                5,
+                3,
+                7
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1182949830566346752/serpens_node_wrangler_5.3.7.zip?ex=65868ee1&is=657419e1&hm=9fa037e54aa0d5cd7c9017bc54f0a5e7fe874fe1a9489633b05af650ff370eee&",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 458056640307134465,
             "serpens_version": 3
         }
     ]
