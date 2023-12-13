@@ -1653,6 +1653,29 @@
             "blend_url": "",
             "user": 458056640307134465,
             "serpens_version": 3
+        },
+        {
+            "name": "Bake Attributes",
+            "description": "",
+            "category": "3D View",
+            "author": "Blue Nile 3d",
+            "blender_version": [
+                3,
+                4,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": true,
+            "url": "https://blendermarket.com/products/bake-attributes",
+            "price": "5",
+            "blend": false,
+            "blend_url": "",
+            "user": 719756110399275121,
+            "serpens_version": 3
         }
     ]
 }
