@@ -1425,29 +1425,6 @@
             "serpens_version": 3
         },
         {
-            "name": "Serpens Node Documentation",
-            "description": "Quick link to Serpens nodes documentation",
-            "category": "Development",
-            "author": "Skdsam",
-            "blender_version": [
-                3,
-                0,
-                0
-            ],
-            "addon_version": [
-                1,
-                0,
-                9
-            ],
-            "external": false,
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1165307027560611950/serpens_node_documentation_1.0.9.zip?ex=65465fbd&is=6533eabd&hm=9dced4d427bf76f14d8d698a28f88dc54d67c60144b4581bb2e3785c706fe6a3&",
-            "price": "",
-            "blend": false,
-            "blend_url": "",
-            "user": 371583582969528331,
-            "serpens_version": 3
-        },
-        {
             "name": "Addon Link Curve",
             "description": "Add-on for the blender based on geonodes that allows you to start segments. Along a curve without deformation and with controlled deformation of the segment Allows you to work with a curve, create chains, tank tracks, corrugations, complex cylindrical parts without cylinders, flexible shapes, a more convenient way to create and configure tires and create a mesh during deformation using geometric primitives, and much more",
             "category": "3D View",
@@ -1675,6 +1652,29 @@
             "blend": false,
             "blend_url": "",
             "user": 719756110399275121,
+            "serpens_version": 3
+        },
+        {
+            "name": "Serpens Node Documentation",
+            "description": "Quick link to Serpens nodes documentation",
+            "category": "Development",
+            "author": "Skdsam",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                10
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1190793088122241176/serpens_node_documentation_1.0.10.zip?ex=65a3177c&is=6590a27c&hm=ce33611ea35f4bd9155df6fe4608eb949ba3d9207587d8f228f8caa277535305&",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 371583582969528331,
             "serpens_version": 3
         }
     ]
