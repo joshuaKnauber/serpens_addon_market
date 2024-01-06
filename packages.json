@@ -69,6 +69,15 @@
             "url": "https://design-demo.co.uk/Addon%20Installed.zip",
             "author": "skdsam",
             "user": 371583582969528331
+        },
+        {
+            "title": "Skd_Packages",
+            "description": "30+ packages nodes for Serpens 3.2",
+            "price": "Free",
+            "url": "",
+            "author": "SkdSam",
+            "user": 371583582969528331,
+            "version": 3
         }
     ]
 }
