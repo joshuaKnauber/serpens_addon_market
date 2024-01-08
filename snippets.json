@@ -383,20 +383,20 @@
             "user": 382835140004675595
         },
         {
-            "title": "New Resizable Window",
-            "description": "Opens a new Window to a user defined size and lets you set the UI Type to one of the main blender workspaces (FYI it uses viewport render operator to do this)",
+            "title": "New Resizable File Browser Window with Directory",
+            "description": "This will open up a new resizable file browser window and let you set the directory. (FYI this uses the blender viewport render to create a resizable window).",
             "price": "Free",
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1193711474221273168/New_Window_Resizable.json?ex=65adb571&is=659b4071&hm=e7cd214308a74566b52601433e838b4d5d86b53773fcb72ce68c8659409744e4&",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1193712333990666411/New_File_Browser_Window_Resizable_with_Directory.json?ex=65adb63e&is=659b413e&hm=245c299bde0f5e40ddfca48e7f35301d35f86ec0163ee463bd43e95652aeb168&",
             "blend_url": "",
             "author": "blanchsb",
             "serpens_version": 3,
             "user": 445245317789515776
         },
         {
-            "title": "New Resizable File Browser Window with Directory",
-            "description": "This will open up a new resizable file browser window and let you set the directory. (FYI this uses the blender viewport render to create a resizable window).",
+            "title": "New Resizable Window",
+            "description": "Opens a new Window to a user defined size and lets you set the UI Type to one of the main blender workspaces (FYI it uses viewport render operator to do this)",
             "price": "Free",
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1193712333990666411/New_File_Browser_Window_Resizable_with_Directory.json?ex=65adb63e&is=659b413e&hm=245c299bde0f5e40ddfca48e7f35301d35f86ec0163ee463bd43e95652aeb168&",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1193716549257797632/New_Window_Resizable.json?ex=65adba2b&is=659b452b&hm=06586e4aded7f677b3fba977aa338a92a144a600a196aa73f0923e3b68c023b9&",
             "blend_url": "",
             "author": "blanchsb",
             "serpens_version": 3,
