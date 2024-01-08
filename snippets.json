@@ -384,9 +384,9 @@
         },
         {
             "title": "New Resizable Window",
-            "description": "Opens a new Window to a user defined size and lets you set the UI Type to one of the main blender workspaces (FYI it uses viewport render operator to do this).",
+            "description": "Opens a new Window to a user defined size and lets you set the UI Type to one of the main blender workspaces (FYI it uses viewport render operator to do this)",
             "price": "Free",
-            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1193672784732229642/New_Window_Resizable.json?ex=65ad9169&is=659b1c69&hm=4ce8486ed326d788af2b59ea69374e5dbe3dbd930d810cb5147c991ec8dfe6ef&",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1193711474221273168/New_Window_Resizable.json?ex=65adb571&is=659b4071&hm=e7cd214308a74566b52601433e838b4d5d86b53773fcb72ce68c8659409744e4&",
             "blend_url": "",
             "author": "blanchsb",
             "serpens_version": 3,
