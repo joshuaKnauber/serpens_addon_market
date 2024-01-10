@@ -70,6 +70,15 @@
             "author": "SkdSam",
             "user": 371583582969528331,
             "version": 3
+        },
+        {
+            "title": "Custom Panel",
+            "description": "A Panel node with an extra output node \"Header Preset\"",
+            "price": "Free",
+            "url": "\"\"",
+            "author": "bears_bears",
+            "user": 515415496448016384,
+            "version": 3
         }
     ]
 }
