@@ -401,6 +401,16 @@
             "author": "blanchsb",
             "serpens_version": 3,
             "user": 445245317789515776
+        },
+        {
+            "title": "Get Matches in String",
+            "description": "Finds Any or All Substrings in String using a separator (comma, etc). Spaces get removed so don't use them as separators. String and substring are not case sensitive for better searching. Returns a bool if matches are found and a list of lower case strings for each match.",
+            "price": "Free",
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1196567283884105888/Get_Matches_in_String.json?ex=65b8191f&is=65a5a41f&hm=16f7c96bfacc851eca5fe76e09741ea0ea974e516f91cb05491bff149155ba89&",
+            "blend_url": "",
+            "author": "blanchsb",
+            "serpens_version": 3,
+            "user": 445245317789515776
         }
     ]
 }
