@@ -1676,6 +1676,29 @@
             "blend_url": "",
             "user": 371583582969528331,
             "serpens_version": 3
+        },
+        {
+            "name": "Shader Group Defaults",
+            "description": "Lets you set your custom values as the new node group defaults, and recall them at any time.",
+            "category": "Shader Editor",
+            "author": "SMOUSE",
+            "blender_version": [
+                4,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                3,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1197039368095924275/shader_group_defaults_1.3.0.zip?ex=65b9d0c9&is=65a75bc9&hm=64e7cd36b985736eba98f3413cdcdf2bbf03eb2f83415cb65fb3080d703b8ae2&",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 289849471419023362,
+            "serpens_version": 3
         }
     ]
 }
