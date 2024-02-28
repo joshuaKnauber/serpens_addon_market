@@ -1699,6 +1699,29 @@
             "blend_url": "",
             "user": 289849471419023362,
             "serpens_version": 3
+        },
+        {
+            "name": "Origin Pie Menu",
+            "description": "",
+            "category": "3D View",
+            "author": "Haleem",
+            "blender_version": [
+                3,
+                0,
+                0
+            ],
+            "addon_version": [
+                1,
+                0,
+                0
+            ],
+            "external": false,
+            "url": "https://cdn.discordapp.com/attachments/785132940278366260/1212357257468186665/origin_pie_menu_1.0.0.zip?ex=65f18aae&is=65df15ae&hm=16cf86682556672aa527cdf54e154d69cfb2c77e53626c295ab2b307346b24fd&",
+            "price": "",
+            "blend": false,
+            "blend_url": "",
+            "user": 403909963572838403,
+            "serpens_version": 3
         }
     ]
 }
